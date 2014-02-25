@@ -4,9 +4,8 @@
 function compete_themes_load_javascript_files() {
      
     wp_register_script('fitvids', get_template_directory_uri() . '/js/fitvids.min.js', array('jquery'),'', true);
-    wp_register_script('my-fitvids', get_template_directory_uri() . '/js/my-fitvids.js', array('fitvids'),'', true);
    
-    wp_register_script('functions', get_template_directory_uri() . '/js/functions.js', array('jquery'),'', true);
+    wp_register_script('functions', get_template_directory_uri() . '/js/functions.min.js', array('jquery'),'', true);
     
     wp_register_script('placeholders', get_template_directory_uri() . '/js/placeholders.js', array('jquery'),'', true);
     
@@ -23,7 +22,6 @@ function compete_themes_load_javascript_files() {
     // enqueues media query support polyfill for ie8 
     if(! is_admin() ) {
     	wp_enqueue_script('fitvids');
-	    wp_enqueue_script('my-fitvids');
         wp_enqueue_script('functions');
         wp_enqueue_script('placeholders');
         wp_enqueue_script('media-query-polyfill');
@@ -305,24 +303,6 @@ function ct_post_navigation() { ?>
     </div><?php
 }
 
-// displays the social icons in the .entry-author div
-function ct_author_social_icons() {
-
-	$social_sites = ct_create_social_array();
-    
-    foreach($social_sites as $key => $social_site) {
-    	if(get_the_author_meta( $social_site, $user->ID )) {
-    		if($key == 'googleplus') {
-				echo "<a href='".esc_attr(get_the_author_meta( $social_site, $user->ID ))."'><i class=\"fa fa-google-plus\"></i></a>";   
-			} elseif($key == 'vimeo') {
-				echo "<a href='".esc_attr(get_the_author_meta( $social_site, $user->ID ))."'><i class=\"fa fa-vimeo-square\"></i></a>";   
-			} else {
-	    		echo "<a href='".esc_attr(get_the_author_meta( $social_site, $user->ID ))."'><i class=\"fa fa-$key\"></i></a>";   
-	    	}
-    	}
-    }
-}
-
 // adds the url from the image credit box to the post and makes it clickable
 function ct_add_image_credit_link() {
     
@@ -333,57 +313,19 @@ function ct_add_image_credit_link() {
     }
 }
 
-// outputs all images from gallery post
-function ct_gallery_display() {
-
-	global $post;
-			
-	$galleries = get_post_galleries_images($post);	
-	
-	$html = "<div class='featured-image-gallery'>";
-		
-	$image_count = 0;
-		
-	// Loop through all galleries found
-	foreach( $galleries as $gallery ) {
-
-		// Loop through each image in each gallery
-		foreach( $gallery as $image ) {
-
-			$html .= "<img src='".$image."' />";
-
-			if(++$image_count > 6) {
-				break;
-			}
-		}
-	}
-	$html .= "</div>";
-	
-	return $html;
-}
-
 // for displaying featured images including mobile versions and default versions
 function ct_featured_image() {
 	
 	global $post;
-	$gallery = ct_gallery_display();	
 	$has_image = false;
-	$post_type = get_post_format($post);
 			
-	if($post_type == 'gallery') {
-		$image = $gallery;
-		$has_image = true;
-	} elseif (has_post_thumbnail( $post->ID ) ) {
+	if (has_post_thumbnail( $post->ID ) ) {
 		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
 		$image = $image[0];
 		$has_image = true;
 	}  
 	if ($has_image == true) {
-		if($post_type == 'gallery') {
-			echo $image;
-		} else {
-	        echo "<div class='featured-image' style=\"background-image: url('".$image."')\"></div>";
-	    }
+        echo "<div class='featured-image' style=\"background-image: url('".$image."')\"></div>";
     }
 }
 
@@ -396,6 +338,5 @@ function ct_contains_featured() {
 		echo " no-featured-image";
 	}
 }
-
 
 ?>

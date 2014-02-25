@@ -177,17 +177,6 @@ $rss: #fa9b39;
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
-/* grid stuff */
-
-	/* Baseline Grid 
-	background-image: linear-gradient(#fff 23px, #00fffc 24px, #fff 0px);
-	background-size: 1px 24px; */
-	
-	/* Column Grid 
-	background-color: gray;
-	background-image: linear-gradient(90deg, transparent 99%, rgba(255,255,255,.5) 0%);
-	background-size: 11.11%; /* This is at 9-columns -> just change this # */
-
 body {
     font-size: $base-font-size;
     line-height: $base-line-height;
@@ -209,6 +198,13 @@ body {
 	overflow: hidden;
 	z-index: 0;
 	@include transition(all 0.3s ease-in-out);
+
+    // enable hardware acceleration
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -503,7 +499,7 @@ input[type="submit"]:hover {
 		border-bottom: solid 0.125em $gray-darkest;
 	}
 	p {
-		@extend %t-base;
+        line-height: $base-line-height;
 		font-family: $base-font-family;
 	}
 	hr {
@@ -541,9 +537,9 @@ input[type="submit"]:hover {
 		
 		a {
 			display: block;
+            line-height: $base-line-height;
 			color: $gray-light;
 			padding: $base-line-height / 2 0;
-			@extend %t-base;
 
 			&:link,
 			&:visited {
@@ -688,7 +684,7 @@ input[type="submit"]:hover {
 }
 .more-link {
 	text-decoration: underline;
-	
+
 	&:link {
 		text-decoration: underline;
 	}
@@ -937,7 +933,14 @@ input[type="submit"] {
 	background: $gray;
 	padding: 1.5em 5.55% 0;
 	position: relative;
-	@include transition(all 0.3s ease-in-out);
+    @include transition(all 0.3s ease-in-out);
+
+    // enable hardware acceleration
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 	
 	.widget-title {
 		text-transform: uppercase;
@@ -1225,15 +1228,25 @@ input[type="search"]::-webkit-search-results-decoration {
 @media all and (min-width: 37.5em) {
 	
 	.excerpts-container {
-		@include transition(all 0.3s ease-in-out);
+
+      // enable hardware acceleration
+      -webkit-transform: translate3d(0,0,0);
+      -moz-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+      -o-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+
+	  @include transition(all 0.3s ease-in-out);
 	}	
 	.excerpts-container.open {
-		-webkit-transform: translateY($base-line-height * 4);
-		-moz-transform: translateY($base-line-height * 4);
-		-ms-transform: translateY($base-line-height * 4);				
-		-o-transform: translateY($base-line-height * 4);		
-		transform: translateY($base-line-height * 4);		
-		padding-bottom: $base-line-height * 4;
+
+      // give space for search bar drop-down
+      -webkit-transform: translateY($base-line-height * 4);
+      -moz-transform: translateY($base-line-height * 4);
+      -ms-transform: translateY($base-line-height * 4);
+      -o-transform: translateY($base-line-height * 4);
+      transform: translateY($base-line-height * 4);
+      padding-bottom: $base-line-height * 4;
 	}
 
 	/* menu */
@@ -1271,6 +1284,7 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   /* post */
+
 	.entry-categories,
 	.entry-tags {
 		
@@ -1343,11 +1357,11 @@ input[type="search"]::-webkit-search-results-decoration {
 			@include clearfix;
 		}
         &:hover {
-          -ms-overflow-style: auto;
+          -ms-overflow-style: auto; /* hide scroll bar until hovering in ie10+ */
         }
 	}
     .ie9 .site-header {
-      width: calc(33.33% + 18px);
+      width: calc(33.33% + 18px); /* adjust for additional scrollbar width between site=header and main */
     }
 	.title-info {
 		right: auto;
@@ -1377,6 +1391,13 @@ input[type="search"]::-webkit-search-results-decoration {
 			}
 		}
 	}
+  .ie9 .site-title a {
+
+    &:hover,
+    &:active {
+      color: $gray-dark;
+    }
+  }
 	.menu-slider {
 		width: 100%;
 		padding: 0 16.65%;
@@ -1406,36 +1427,7 @@ input[type="search"]::-webkit-search-results-decoration {
 		li {
 			overflow: hidden;
 			@include transition(all 0.3s ease-in-out);
-			
-			/*ul {
-				opacity: 0;
-				top: 0.5em;
-				position: absolute;
-				left: 100%;
-				width: auto;
-				z-index: auto;
-				background: $gray;
-				@include transition(all 0.3s ease-in-out);
-				
-				&:hover {
-					opacity: 1;
-					top: 0;
-					
-					&:before {
-						opacity: 1;
-					}
-				}
-				&:before {
-					content: '';
-					position: absolute;
-					top: 0.5em;
-					left: -0.5em;
-					border-top: solid 0.5em transparent;
-					border-right: solid 0.5em $gray;
-					border-bottom: solid 0.5em transparent;
-					opacity: 0;
-				}
-			}*/			
+
 			a,
 			a:link,
 			a:visited {
@@ -1444,18 +1436,6 @@ input[type="search"]::-webkit-search-results-decoration {
 			a:hover,
 			a:active {
 				color: $green;
-				
-				/*&:hover {
-
-					+ ul {
-						opacity: 1;
-						top: 0;
-						
-						&:before {
-							opacity: 1;
-						}
-					}
-				}*/
 			}
 		}
 	}
