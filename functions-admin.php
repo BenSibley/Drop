@@ -108,65 +108,6 @@ function ct_image_credit_meta_box( $meta_boxes ) {
 	return $meta_boxes;
 }
 
-function ct_create_social_array() {
-
-	$social_sites = array(
-		'twitter' => 'twitter_profile',
-		'facebook' => 'facebook_profile',
-		'googleplus' => 'googleplus_profile',
-		'pinterest' => 'pinterest_profile',
-		'linkedin' => 'linkedin_profile',
-		'youtube' => 'youtube_profile',
-		'vimeo' => 'vimeo_profile',
-		'tumblr' => 'tumblr_profile',
-		'instagram' => 'instagram_profile',
-		'flickr' => 'flickr_profile',
-		'dribbble' => 'dribbble_profile'
-	);
-	
-	return $social_sites;
-}
-
-// add the social profile boxes to the user screen.  NEEDS sanitize callback?
-function ct_add_social_profile_settings($user) {
-	
-	$social_sites = ct_create_social_array();
-	
-	?>	
-    <table class="form-table">
-        <tr>
-            <th><h3>Social Profiles</h3></th>
-        </tr>
-        <?php
-        	foreach($social_sites as $key => $social_site) {
-  				?>      	
-        		<tr>
-					<td>
-						<label for="<?php echo $key; ?>-profile"><?php echo ucfirst($key); ?> Profile:</label>
-					</td>
-					<td>
-						<input type='url' id='<?php echo $key; ?>-profile' class='regular-text' name='<?php echo $key; ?>-profile' value='<?php echo esc_attr(get_the_author_meta($social_site, $user->ID )); ?>' />
-					</td>
-					</td>
-				</tr>
-        	<?php }	?>
-    </table>
-    <?php 
-    
-} 
-
-add_action( 'show_user_profile', 'ct_add_social_profile_settings' );
-
-function ct_save_social_profiles($user_id) {
-
-	$social_sites = ct_create_social_array();
-   	
-   	foreach ($social_sites as $key => $social_site) {
-		if( isset( $_POST["$key-profile"] ) ){
-			update_user_meta( $user_id, $social_site, esc_attr( $_POST["$key-profile"] ) );
-		}
-	}
-}
 
 add_action( 'personal_options_update', 'ct_save_social_profiles' );
 
@@ -205,8 +146,6 @@ function ct_widget_contents() { ?>
 	<p>Please contact us before leaving a review - we can help you!</p>
 	
 	<?php
-} 
-
-
+}
 
 ?>
