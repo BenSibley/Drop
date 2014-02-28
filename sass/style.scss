@@ -5,7 +5,7 @@ Author: Ben Sibley
 Author URI: http://competethemes.com/
 Description: A Bold, Responsive Blog Theme
 Tags: green, gray, light, white, one-column, responsive-layout, accessibility-ready, custom-menu, featured-images, sticky-post, theme-options, threaded-comments
-Version: 1.00
+Version: 1.01
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -48,7 +48,7 @@ $small-font-size: 13px;
 $base-font-size: 16px;
 $medium-font-size: 21px;
 $medium-large-font-size: 26px;
-$large-font-size: 36px;;
+$large-font-size: 36px;
 $xlarge-font-size: 42px;
 
 %t-small {
@@ -275,7 +275,9 @@ ol ul,
 li li {
     font-size: 1em;   
 }
-
+article {
+  font-family: $secondary-font-family;
+}
 article hr {
 	border: none;
 	text-align: center;
@@ -296,7 +298,7 @@ pre {
 	-ms-word-wrap: break-word;
 }
 code {
-	background: $off-white;
+  background: $off-white;
 }
 blockquote {
 	margin: 0 12.499%;

@@ -9,7 +9,7 @@ if ( is_front_page() ) {
 if ( get_theme_mod( 'logo_upload') ) {
 	$logo = "<img class='logo' src='".get_theme_mod( 'logo_upload')."' alt='".esc_attr( get_bloginfo( 'name' ) )."' />";
 } else {
-	$logo = get_bloginfo('name' );
+	$logo = get_bloginfo('name');
 }
 
 $output = $heading_opening;

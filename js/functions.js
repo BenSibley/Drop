@@ -122,7 +122,8 @@ jQuery(document).ready(function($){
 	})
 
     // immediately sets the li's max-height equal to the a tag in order to hide the children
-	menuItemHeight();
+
+    $(window).load(menuItemHeight());
 	
 	function menuItemHeight() {
 		$('.menu-primary-items .menu-item-has-children').each(function(){
