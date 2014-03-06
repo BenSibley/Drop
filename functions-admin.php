@@ -142,8 +142,7 @@ add_action( 'wp_dashboard_setup', 'ct_add_dashboard_widget' );
 // outputs contents for widget created by aside_add_dashboard_widget
 function ct_widget_contents() { ?>
 
-    <p>If you need support <a target='_blank' href='http://competethemes.com/documentation'>visit the documentation</a> or contact support at support@competethemes.com for assistance.</p>
-	<p>Please contact us before leaving a review - we can help you!</p>
+    <p>If you need support <a target='_blank' href='http://competethemes.com/documentation'>visit the documentation</a> or the support forum for Drop on wordpress.org</p>
 	
 	<?php
 }
