@@ -5,7 +5,7 @@ Author: Ben Sibley
 Author URI: http://competethemes.com/
 Description: A Bold, Responsive Blog Theme
 Tags: green, gray, light, white, one-column, responsive-layout, accessibility-ready, custom-menu, featured-images, sticky-post, theme-options, threaded-comments
-Version: 1.01
+Version: 1.02
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -429,9 +429,10 @@ input[type="submit"]:hover {
 
 /*----- Menu Styles -----*/
 
-.toggle-button {	
+.fa.toggle-button {
 	color: $gray-light;
 	text-shadow: -0.077em 0.077em $gray-little-darker;
+    line-height: 1.85;
 	@extend %t-medium-large;
 	@include transition(all 0.15s ease-in-out);
 	
@@ -1417,7 +1418,7 @@ input[type="search"]::-webkit-search-results-decoration {
 			border-color: $gray;
 		}
 	}	
-	.toggle-button {
+	.fa.toggle-button {
 		display: none;
 	}
 	#menu-primary-items {

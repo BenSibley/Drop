@@ -1,45 +1,42 @@
 <?php
 
 // register and enqueue all of the scripts used by Aside
-function compete_themes_load_javascript_files() {
+function ct_load_javascript_files() {
      
     wp_register_script('fitvids', get_template_directory_uri() . '/js/fitvids.min.js', array('jquery'),'', true);
-   
     wp_register_script('functions', get_template_directory_uri() . '/js/functions.min.js', array('jquery'),'', true);
-    
     wp_register_script('placeholders', get_template_directory_uri() . '/js/placeholders.js', array('jquery'),'', true);
-    
     wp_register_script('media-query-polyfill', get_template_directory_uri() . '/js/respond.min.js', array('jquery'),'', true);
-
-	wp_register_script('share-buttons', get_template_directory_uri() . '/js/share.min.js', array('jquery'),'', true);
-	
 	wp_register_script('dotimeout', get_template_directory_uri() . '/js/dotimeout.min.js', array('jquery'),'', true);
-	       
-    // enqueues placeholder polyfill for ie8 & ie9
-    if( is_singular() && comments_open() ) {
-        wp_enqueue_script( 'placeholders' );    
-    }    
+    wp_register_script('double-tap', get_template_directory_uri() . '/js/double-tap.min.js', array('jquery'),'', true);
+
+    wp_register_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,400,700');
+    wp_register_style( 'font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.0.2/css/font-awesome.css');
+
     // enqueues media query support polyfill for ie8 
     if(! is_admin() ) {
     	wp_enqueue_script('fitvids');
         wp_enqueue_script('functions');
         wp_enqueue_script('placeholders');
         wp_enqueue_script('media-query-polyfill');
-        wp_enqueue_script('share-buttons');
         wp_enqueue_script('dotimeout');
+        wp_enqueue_script('double-tap');
+
+        wp_enqueue_style('google-fonts');
+        wp_enqueue_style('font-awesome');
     }
     // enqueues the comment-reply script on posts & pages.  This script is included in WP by default
     if( is_singular() && comments_open() && get_option('thread_comments') ) wp_enqueue_script( 'comment-reply' ); 
 }
 
-add_action('wp_enqueue_scripts', 'compete_themes_load_javascript_files' );
+add_action('wp_enqueue_scripts', 'ct_load_javascript_files' );
 
 /* Load the core theme framework. */
 require_once( trailingslashit( get_template_directory() ) . 'library/hybrid.php' );
 new Hybrid();
 
 /* Do theme setup on the 'after_setup_theme' hook. */
-add_action( 'after_setup_theme', 'compete_themes_theme_setup', 10 );
+add_action( 'after_setup_theme', 'ct_theme_setup', 10 );
 
 /**
  * Theme setup function.  This function adds support for theme features and defines the default theme
@@ -48,7 +45,7 @@ add_action( 'after_setup_theme', 'compete_themes_theme_setup', 10 );
  * @since 1.0
  */
 
-function compete_themes_theme_setup() {
+function ct_theme_setup() {
 	
     /* Get action/filter hook prefix. */
 	$prefix = hybrid_get_prefix();
@@ -88,7 +85,7 @@ function ct_social_media_icons() {
         echo "<ul class='social-media-icons'>";
 		foreach ($active_sites as $active_site) {?>
 			<li>
-				<a href="<?php echo get_theme_mod( $active_site ); ?>">
+				<a href="<?php echo esc_url(get_theme_mod( $active_site )); ?>">
 					<i class="fa fa-<?php echo $active_site; ?>-square"></i>
 				</a>
 			</li><?php
@@ -125,7 +122,7 @@ function ct_further_reading() {
     } else {
         echo "<p class='prev'>
                 <span>Return to Blog</span>
-        		<a href='".home_url()."'>This is the oldest post</a>
+        		<a href='".esc_url(home_url())."'>This is the oldest post</a>
         	</p>"; 
     }
     if($next_blog_post) {
@@ -137,7 +134,7 @@ function ct_further_reading() {
     } else {
         echo "<p class='next'>
                 <span>Return to Blog</span>
-        		<a href='".home_url()."'>This is the newest post</a>
+        		<a href='".esc_url(home_url())."'>This is the newest post</a>
         	 </p>";    
     }
     echo "</nav>";
@@ -146,7 +143,7 @@ function ct_further_reading() {
 function ct_excerpt_category_display() {
        
     $category = get_the_category();
-	echo '<a href="'.get_category_link( $category[0]->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s", 'ct_replace_me' ), $category[0]->name ) ) . '">'.$category[0]->cat_name.'</a>';
+	echo '<a href="'.get_category_link( $category[0]->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s", 'drop' ), $category[0]->name ) ) . '">'.$category[0]->cat_name.'</a>';
 }
 
 // Outputs the categories the post was included in with their names hyperlinked to their permalink
@@ -159,7 +156,7 @@ function ct_category_display() {
     if($categories){
 	    echo "<p><span>Categories: </span>";
         foreach($categories as $category) {
-            $output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s", 'ct_replace_me' ), $category->name ) ) . '">'.$category->cat_name.'</a>'.$separator;
+            $output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s", 'drop' ), $category->name ) ) . '">'.$category->cat_name.'</a>'.$separator;
         }
         echo trim($output, $separator);
 	    echo "</p>";
@@ -175,7 +172,7 @@ function ct_tags_display() {
     if($tags){
         echo "<p><span>Tagged as: </span>";
         foreach($tags as $tag) {
-            $output .= '<a href="'.get_tag_link( $tag->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts tagged %s", 'ct_replace_me' ), $tag->name ) ) . '">'.$tag->name.'</a>'.$separator;
+            $output .= '<a href="'.get_tag_link( $tag->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts tagged %s", 'drop' ), $tag->name ) ) . '">'.$tag->name.'</a>'.$separator;
         }
         echo trim($output, $separator);
 	    echo "</p>";
@@ -183,7 +180,7 @@ function ct_tags_display() {
 }
 
 /* added to customize the comments. Same as default except -> added use of gravatar images for comment authors */
-function compete_themes_customize_comments( $comment, $args, $depth ) {
+function ct_customize_comments( $comment, $args, $depth ) {
     $GLOBALS['comment'] = $comment;
  
     ?>
@@ -196,14 +193,14 @@ function compete_themes_customize_comments( $comment, $args, $depth ) {
                 </div>    
             </div>
             <?php if ($comment->comment_approved == '0') : ?>
-                <em><?php _e('Your comment is awaiting moderation.', 'ct_replace_me') ?></em>
+                <em><?php _e('Your comment is awaiting moderation.', 'drop') ?></em>
                 <br />
             <?php endif; ?>
             <div class="comment-content">
                 <?php comment_text(); ?>
             </div>
             <div class='comment-footer'>
-				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'ct_replace_me' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'drop' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 				<div class="comment-date"><?php comment_date(); ?></div>
 				<div><?php edit_comment_link( 'edit' ); ?></div>
 			</div>
@@ -214,6 +211,11 @@ function compete_themes_customize_comments( $comment, $args, $depth ) {
 
 /* added HTML5 placeholders for each default field */
 function ct_update_fields($fields) {
+
+    $commenter = wp_get_current_commenter();
+    $req = get_option( 'require_name_email' );
+    $aria_req = ( $req ? " aria-required='true'" : '' );
+
 	$fields['author'] = 
 		'<p class="comment-form-author">
 			<input required minlength="3" maxlength="30" placeholder="Your Name*" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
@@ -331,6 +333,8 @@ function ct_featured_image() {
 
 // does it contain a featured image?
 function ct_contains_featured() {
+
+    global $post;
 	
 	if(has_post_thumbnail( $post->ID ) ) {
 		echo " has-featured-image";

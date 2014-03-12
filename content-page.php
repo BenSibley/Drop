@@ -5,7 +5,7 @@
     <div class='entry-content'>
         <article>
             <?php the_content(); ?>
-            <?php wp_link_pages(array('before' => '<p class="singular-pagination">' . __('Pages:','ct_replace_me'), 'after' => '</p>', ) ); ?>
+            <?php wp_link_pages(array('before' => '<p class="singular-pagination">' . __('Pages:','drop'), 'after' => '</p>', ) ); ?>
         </article>
     </div>
 </div>

@@ -41,12 +41,11 @@ if( is_home() ) { ?>
 		<div class="entry-content">
 			<article>
 				<?php the_content(); ?>
-				<?php wp_link_pages(array('before' => '<p class="singular-pagination">' . __('Pages:','ct_replace_me'), 'after' => '</p>', ) ); ?>
+				<?php wp_link_pages(array('before' => '<p class="singular-pagination">' . __('Pages:','drop'), 'after' => '</p>', ) ); ?>
 				<?php ct_add_image_credit_link(); ?>
 			</article>
 		</div>
 		<div class='entry-meta-bottom'>
-			<div class='share-buttons'></div>
 			<?php ct_further_reading(); ?>
 			<div class="entry-categories"><?php ct_category_display(); ?></div>
 			<div class="entry-tags"><?php ct_tags_display(); ?></div>

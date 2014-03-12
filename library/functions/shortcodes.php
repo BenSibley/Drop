@@ -79,7 +79,7 @@ function hybrid_the_year_shortcode() {
  * @return string
  */
 function hybrid_site_link_shortcode() {
-	return '<a class="site-link" href="' . home_url() . '" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" rel="home"><span>' . get_bloginfo( 'name' ) . '</span></a>';
+	return '<a class="site-link" href="' . esc_url(home_url()) . '" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" rel="home"><span>' . get_bloginfo( 'name' ) . '</span></a>';
 }
 
 /**

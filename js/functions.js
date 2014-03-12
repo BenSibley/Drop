@@ -4,11 +4,6 @@ jQuery(document).ready(function($){
     $(".entry-content").fitVids();
     $(".excerpt-content").fitVids();
 
-    // adds simple sharing buttons displayed at bottom of posts
-    $('.share-buttons').share({
-        flyout: 'top right'
-    })
-
     // set width use to move main to reveal menu when toggled
 	if( $(window).width() < 600 ) {
 		var leftWidth = $(window).width() * .8889;	

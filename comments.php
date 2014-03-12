@@ -8,11 +8,11 @@ if ( comments_open() ) { ?>
     <section id="comments" class="comments">
         <div class="comments-number">
             <h3>
-                <?php comments_number( __( 'Be First to Comment', 'ct_replace_me' ), __( 'One Comment', 'ct_replace_me'), __( '% comments', 'ct_replace_me' ) ); ?>
+                <?php comments_number( __( 'Be First to Comment', 'drop' ), __( 'One Comment', 'drop'), __( '% comments', 'drop' ) ); ?>
             </h3>
         </div>
             <ol class="comment-list">
-                    <?php wp_list_comments(array( 'callback'=>'compete_themes_customize_comments', 'max_depth'=>'7') ); ?>
+                    <?php wp_list_comments(array( 'callback'=>'ct_customize_comments', 'max_depth'=>'7') ); ?>
             </ol><!-- .comment-list -->
             <?php    
             if( (get_option('page_comments') == 1) && (get_comment_pages_count() > 1) ) { ?>
@@ -26,11 +26,11 @@ if ( comments_open() ) { ?>
     <section id="comments" class="comments">
         <div class="comments-number">
             <h3>
-<?php comments_number( __( 'Be First to Comment', 'ct_replace_me' ), __( 'One Comment', 'ct_replace_me'), __( '% comments', 'ct_replace_me' ) ); ?>
+<?php comments_number( __( 'Be First to Comment', 'drop' ), __( 'One Comment', 'drop'), __( '% comments', 'drop' ) ); ?>
             </h3>
         </div>
             <ol class="comment-list">
-                    <?php wp_list_comments(array( 'callback'=>'compete_themes_customize_comments', 'max_depth'=>'3') ); ?>
+                    <?php wp_list_comments(array( 'callback'=>'ct_customize_comments', 'max_depth'=>'3') ); ?>
             </ol><!-- .comment-list -->
             <?php    
             if( (get_option('page_comments') == 1) && (get_comment_pages_count() > 1) ) { ?>
@@ -39,18 +39,18 @@ if ( comments_open() ) { ?>
                 </nav>
             <?php } ?>
             <p class="comments-closed pings-open">
-                    <?php printf( __( 'Comments are closed, but <a href="%s" title="Trackback URL for this post">trackbacks</a> and pingbacks are open.', 'ct_replace_me' ), esc_url( get_trackback_url() ) ); ?>
+                    <?php printf( __( 'Comments are closed, but <a href="%s" title="Trackback URL for this post">trackbacks</a> and pingbacks are open.', 'drop' ), esc_url( get_trackback_url() ) ); ?>
             </p><!-- .comments-closed .pings-open -->
 <?php
 } elseif ( !comments_open() && have_comments() ) { ?>
     <section id="comments" class="comments">
         <div class="comments-number">
             <h3>
-<?php comments_number( __( 'Be First to Comment', 'ct_replace_me' ), __( 'One Comment', 'ct_replace_me'), __( '% comments', 'ct_replace_me' ) ); ?>
+<?php comments_number( __( 'Be First to Comment', 'drop' ), __( 'One Comment', 'drop'), __( '% comments', 'drop' ) ); ?>
             </h3>
         </div>
             <ol class="comment-list">
-                    <?php wp_list_comments(array( 'callback'=>'compete_themes_customize_comments', 'max_depth'=>'3') ); ?>
+                    <?php wp_list_comments(array( 'callback'=>'ct_customize_comments', 'max_depth'=>'3') ); ?>
             </ol><!-- .comment-list -->
             <?php    
             if( (get_option('page_comments') == 1) && (get_comment_pages_count() > 1) ) { ?>
@@ -59,13 +59,13 @@ if ( comments_open() ) { ?>
                 </nav>
             <?php } ?>
             <p class="comments-closed">
-                <?php _e( 'Comments are closed.', 'ct_replace_me' ); ?>
+                <?php _e( 'Comments are closed.', 'drop' ); ?>
             </p><!-- .comments-closed -->
 <?php 
 } else { ?>
 
     <p class="comments-closed">
-            <?php _e( 'Comments are closed.', 'ct_replace_me' ); ?>
+            <?php _e( 'Comments are closed.', 'drop' ); ?>
     </p><!-- .comments-closed -->
 
 <?php } ?>

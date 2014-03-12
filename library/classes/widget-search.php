@@ -78,7 +78,7 @@ class Hybrid_Widget_Search extends WP_Widget {
 			$search_text = ( ( is_search() ) ? esc_attr( get_search_query() ) : esc_attr( $instance['search_text'] ) );
 
 			/* Open the form. */
-			$search = '<form method="get" class="search-form" id="search-form' . esc_attr( $this->id_base ) . '" action="' . home_url() . '/"><div>';
+			$search = '<form method="get" class="search-form" id="search-form' . esc_attr( $this->id_base ) . '" action="' . esc_url(home_url()) . '/"><div>';
 
 			/* If a search label was set, add it. */
 			if ( !empty( $instance['search_label'] ) )

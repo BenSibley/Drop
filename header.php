@@ -17,13 +17,6 @@
 
     <!-- set width to the device viewing the site -->
     <meta name="viewport" content="width=device-width" />
-    
-    <!-- load custom google fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
-    
-    <!-- load font awesome icon fonts -->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.2/css/font-awesome.css" rel="stylesheet">
-    
 
     <?php wp_head(); ?>
 
