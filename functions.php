@@ -2,28 +2,20 @@
 
 // register and enqueue all of the scripts used by Aside
 function ct_load_javascript_files() {
-     
-    wp_register_script('fitvids', get_template_directory_uri() . '/js/fitvids.min.js', array('jquery'),'', true);
-    wp_register_script('functions', get_template_directory_uri() . '/js/functions.min.js', array('jquery'),'', true);
-    wp_register_script('placeholders', get_template_directory_uri() . '/js/placeholders.js', array('jquery'),'', true);
-    wp_register_script('media-query-polyfill', get_template_directory_uri() . '/js/respond.min.js', array('jquery'),'', true);
-	wp_register_script('dotimeout', get_template_directory_uri() . '/js/dotimeout.min.js', array('jquery'),'', true);
-    wp_register_script('double-tap', get_template_directory_uri() . '/js/double-tap.min.js', array('jquery'),'', true);
 
-    wp_register_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,400,700');
-    wp_register_style( 'font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.0.2/css/font-awesome.css');
+    wp_register_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,400,700');
 
-    // enqueues media query support polyfill for ie8 
+    // enqueue scripts on front end
     if(! is_admin() ) {
-    	wp_enqueue_script('fitvids');
-        wp_enqueue_script('functions');
-        wp_enqueue_script('placeholders');
-        wp_enqueue_script('media-query-polyfill');
-        wp_enqueue_script('dotimeout');
-        wp_enqueue_script('double-tap');
+        wp_enqueue_script('fitvids', get_template_directory_uri() . '/js/fitvids.min.js', array('jquery'),'', true);
+        wp_enqueue_script('functions', get_template_directory_uri() . '/js/functions.min.js', array('jquery'),'', true);
+        wp_enqueue_script('placeholders', get_template_directory_uri() . '/js/placeholders.js', array('jquery'),'', true);
+        wp_enqueue_script('media-query-polyfill', get_template_directory_uri() . '/js/respond.min.js', array('jquery'),'', true);
+        wp_enqueue_script('dotimeout', get_template_directory_uri() . '/js/dotimeout.min.js', array('jquery'),'', true);
+        wp_enqueue_script('double-tap', get_template_directory_uri() . '/js/double-tap.min.js', array('jquery'),'', true);
 
         wp_enqueue_style('google-fonts');
-        wp_enqueue_style('font-awesome');
+        wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css');
     }
     // enqueues the comment-reply script on posts & pages.  This script is included in WP by default
     if( is_singular() && comments_open() && get_option('thread_comments') ) wp_enqueue_script( 'comment-reply' ); 
