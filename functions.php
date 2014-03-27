@@ -8,7 +8,7 @@ function ct_load_javascript_files() {
     // enqueue scripts on front end
     if(! is_admin() ) {
         wp_enqueue_script('fitvids', get_template_directory_uri() . '/js/fitvids.min.js', array('jquery'),'', true);
-        wp_enqueue_script('functions', get_template_directory_uri() . '/js/functions.js', array('jquery'),'', true);
+        wp_enqueue_script('functions', get_template_directory_uri() . '/js/functions.min.js', array('jquery'),'', true);
         wp_enqueue_script('placeholders', get_template_directory_uri() . '/js/placeholders.js', array('jquery'),'', true);
         wp_enqueue_script('media-query-polyfill', get_template_directory_uri() . '/js/respond.min.js', array('jquery'),'', true);
         wp_enqueue_script('dotimeout', get_template_directory_uri() . '/js/dotimeout.min.js', array('jquery'),'', true);
@@ -113,8 +113,8 @@ function ct_further_reading() {
 	        </p>"; 
     } else {
         echo "<p class='prev'>
-                <span>Return to Blog</span>
-        		<a href='".esc_url(home_url())."'>This is the oldest post</a>
+                <span>This is the oldest post</span>
+        		<a href='".esc_url(home_url())."'>Return to Blog</a>
         	</p>"; 
     }
     if($next_blog_post) {
@@ -125,8 +125,8 @@ function ct_further_reading() {
 	        </p>"; 
     } else {
         echo "<p class='next'>
-                <span>Return to Blog</span>
-        		<a href='".esc_url(home_url())."'>This is the newest post</a>
+                <span>This is the newest post</span>
+        		<a href='".esc_url(home_url())."'>Return to Blog</a>
         	 </p>";    
     }
     echo "</nav>";
@@ -333,6 +333,16 @@ function ct_contains_featured() {
 	} else {
 		echo " no-featured-image";
 	}
+}
+
+// adds title to homepage
+add_filter( 'wp_title', 'ct_add_homepage_title' );
+function ct_add_homepage_title( $title )
+{
+    if( empty( $title ) && ( is_home() || is_front_page() ) ) {
+        return __( get_bloginfo( 'title' ), 'theme_domain' ) . ' | ' . get_bloginfo( 'description' );
+    }
+    return $title;
 }
 
 // calls pages for menu if menu not set

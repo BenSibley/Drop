@@ -29,7 +29,7 @@ jQuery(document).ready(function($){
 
     // uses the leftWidth calculated earlier to translate the position of main & footer
 	function toggleNav() { 
-		$('.toggle-span').toggle(function(){
+		$('.toggle-button').toggle(function(){
 			$('.main').css('transform', 'translateX(' + leftWidth + 'px)');
 			$('.site-footer').css('transform', 'translateX(' + leftWidth + 'px)');
 			menuOpen = true;
