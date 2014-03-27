@@ -29,40 +29,13 @@ jQuery(document).ready(function($){
 
     // uses the leftWidth calculated earlier to translate the position of main & footer
 	function toggleNav() { 
-		$('.toggle-button').toggle(function(){
-			//webkit
-			$('.main').css('-webkit-transform', 'translateX(' + leftWidth + 'px)');
-			$('.site-footer').css('-webkit-transform', 'translateX(' + leftWidth + 'px)');
-			//moz
-			$('.main').css('-moz-transform', 'translateX(' + leftWidth + 'px)');
-			$('.site-footer').css('-moz-transform', 'translateX(' + leftWidth + 'px)');
-			//microsoft
-			$('.main').css('-ms-transform', 'translateX(' + leftWidth + 'px)');
-			$('.site-footer').css('-ms-transform', 'translateX(' + leftWidth + 'px)');
-			//opera
-			$('.main').css('-o-transform', 'translateX(' + leftWidth + 'px)');
-			$('.site-footer').css('-o-transform', 'translateX(' + leftWidth + 'px)');
-			//unprefixed
+		$('.toggle-span').toggle(function(){
 			$('.main').css('transform', 'translateX(' + leftWidth + 'px)');
 			$('.site-footer').css('transform', 'translateX(' + leftWidth + 'px)');
 			menuOpen = true;
-
             // calls function that closes menu when scrolling down over 600px
 			watchScroll();
 		}, function(){
-			//webkit
-			$('.main').css('-webkit-transform', 'translateX(0)');
-			$('.site-footer').css('-webkit-transform', 'translateX(0)');
-			//moz
-			$('.main').css('-moz-transform', 'translateX(0)');
-			$('.site-footer').css('-moz-transform', 'translateX(0)');
-			//microsoft
-			$('.main').css('-ms-transform', 'translateX(0)');
-			$('.site-footer').css('-ms-transform', 'translateX(0)');
-			//opera
-			$('.main').css('-o-transform', 'translateX(0)');
-			$('.site-footer').css('-o-transform', 'translateX(0)');
-			//unprefixed
 			$('.main').css('transform', 'translateX(0)');
 			$('.site-footer').css('transform', 'translateX(0)');
 			menuOpen = false;
@@ -79,8 +52,8 @@ jQuery(document).ready(function($){
 			$.doTimeout( 'scroll', 100, function(){
 				topDistance = $(window).scrollTop();
 				if( topDistance > 600 ) {
-					$('.main').css('-webkit-transform', 'translateX(0)');
-					$('.site-footer').css('-webkit-transform', 'translateX(0)');
+					$('.main').css('transform', 'translateX(0)');
+					$('.site-footer').css('transform', 'translateX(0)');
 					menuOpen = false;
 					$(window).unbind('scroll');
 					toggleNav();
@@ -92,8 +65,28 @@ jQuery(document).ready(function($){
 		});
 	}
 
+    $('.menu-item a').focus(function(){
+        $(this).parents('ul').addClass('focused');
+    });
+    $('.menu-item a').focusout(function(){
+        $(this).parents('ul').removeClass('focused');
+    });
+
+    // toggles search bar open when keyboard focuses on it
+    $( ".blog .search-field" ).focus(function() {
+
+        if( !$('.search-form-container').hasClass('open') ) {
+            $('.search-form-container').find('span').addClass('open')
+            $('.excerpts-container').addClass('open');
+            $('.search-form-container').addClass('open');
+        }
+    });
+
+    $('.search-form-container').find('span').bind('click', searchToggle);
+
     // toggles the open class that hides and reveals the search bar
-	$('.search-form-container').find('span').click(function(){
+    function searchToggle() {
+
 		if( $(this).hasClass('open') ) {
 			$(this).removeClass('open');
 			$('.excerpts-container').removeClass('open');
@@ -103,7 +96,7 @@ jQuery(document).ready(function($){
 			$('.excerpts-container').addClass('open');
 			$('.search-form-container').addClass('open');
 		}
-	});
+    }
 
     // hides the search bar if clicked anywhere outside the search bar container
 	$(document).click(function(event) { 

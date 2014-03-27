@@ -31,7 +31,7 @@ if (is_front_page() ) {
 }
 ?>
 <div class='overflow-container'>
-<header class="site-header">
+<header class="site-header" role="banner">
 
 	<div class="title-info">
 		<?php get_template_part('logo')  ?>    
@@ -40,4 +40,4 @@ if (is_front_page() ) {
 	<?php get_template_part( 'menu', 'primary' ); // adds the primary menu ?>
 
 </header>
-<div class="main">
+<div class="main" role="main">

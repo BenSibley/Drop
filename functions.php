@@ -8,7 +8,7 @@ function ct_load_javascript_files() {
     // enqueue scripts on front end
     if(! is_admin() ) {
         wp_enqueue_script('fitvids', get_template_directory_uri() . '/js/fitvids.min.js', array('jquery'),'', true);
-        wp_enqueue_script('functions', get_template_directory_uri() . '/js/functions.min.js', array('jquery'),'', true);
+        wp_enqueue_script('functions', get_template_directory_uri() . '/js/functions.js', array('jquery'),'', true);
         wp_enqueue_script('placeholders', get_template_directory_uri() . '/js/placeholders.js', array('jquery'),'', true);
         wp_enqueue_script('media-query-polyfill', get_template_directory_uri() . '/js/respond.min.js', array('jquery'),'', true);
         wp_enqueue_script('dotimeout', get_template_directory_uri() . '/js/dotimeout.min.js', array('jquery'),'', true);
@@ -333,6 +333,11 @@ function ct_contains_featured() {
 	} else {
 		echo " no-featured-image";
 	}
+}
+
+// calls pages for menu if menu not set
+function ct_wp_page_menu() {
+    wp_page_menu(array("menu_class" => "menu-unset"));
 }
 
 ?>

@@ -6,8 +6,8 @@
         <p><?php echo bloginfo('description'); ?></p>
         <hr />
     </div>
-    <div class="menu-container menu-primary">
-        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu', 'menu_class' => 'menu-primary-items', 'menu_id' => 'menu-primary-items', 'fallback_cb' => 'wp_page_menu' ) ); ?>
+    <div class="menu-container menu-primary" role="navigation">
+        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container'=> 'false', 'menu_class' => 'menu-primary-items', 'menu_id' => 'menu-primary-items', 'items_wrap' => '<ul id="%1$s" class="%2$s" role="menubar">%3$s</ul>', 'fallback_cb' => 'ct_wp_page_menu') ); ?>
     </div><!-- #menu-primary .menu-container -->
     <?php ct_social_media_icons(); // adds social media icons ?>
 </div>

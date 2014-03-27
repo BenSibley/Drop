@@ -1,6 +1,6 @@
 </div> <!-- .main -->
 
-<footer class="site-footer">
+<footer class="site-footer" role="contentinfo">
     <?php get_sidebar( 'subsidiary' ); ?>
     <div class="copyright">
         <p>Designed by <a href="http://www.competethemes.com">Compete Themes</a></p>
