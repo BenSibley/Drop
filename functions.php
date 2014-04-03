@@ -73,7 +73,7 @@ function ct_social_media_icons() {
     }
     
     // for each active social site, add it as a list item 
-    if($active_sites) {
+    if(!empty($active_sites)) {
         echo "<ul class='social-media-icons'>";
 		foreach ($active_sites as $active_site) {?>
 			<li>
@@ -210,18 +210,21 @@ function ct_update_fields($fields) {
 
 	$fields['author'] = 
 		'<p class="comment-form-author">
-			<input required minlength="3" maxlength="30" placeholder="Your Name*" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+		    <label class="screen-reader-text">Your Name</label>
+			<input required minlength="3" maxlength="30" placeholder="Your Name*" id="author" name="author" type="text" aria-required="true" value="' . esc_attr( $commenter['comment_author'] ) .
     '" size="30"' . $aria_req . ' />
     	</p>';
     
     $fields['email'] = 
     	'<p class="comment-form-email">
-    		<input required placeholder="Your Email*" id="email" name="email" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+    	    <label class="screen-reader-text">Your Email</label>
+    		<input required placeholder="Your Email*" id="email" name="email" type="email" aria-required="true" value="' . esc_attr(  $commenter['comment_author_email'] ) .
     '" size="30"' . $aria_req . ' />
     	</p>';
 	
 	$fields['url'] = 
 		'<p class="comment-form-url">
+		    <label class="screen-reader-text">Your Website</label>
 			<input placeholder="Your URL" id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) .
     '" size="30" />
     	</p>';
@@ -234,6 +237,7 @@ function ct_update_comment_field($comment_field) {
 	
 	$comment_field = 
 		'<p class="comment-form-comment">
+            <label class="screen-reader-text">Your Comment</label>
 			<textarea required placeholder="Enter Your Comment&#8230;" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
 		</p>';
 	
@@ -252,9 +256,7 @@ function ct_excerpt() {
 	*  works for both manual excerpts and read more tags
 	*/
     if($ismore) {
-        the_content("Read the Post");        
-    } elseif(get_post_format() == ('aside' || 'status')) {
-    	the_content();
+        the_content("Read the Post <span class='screen-reader-text'>" . get_the_title() . "</span>");
     }
     // otherwise the excerpt is automatic, so output it
     else {
@@ -265,7 +267,7 @@ function ct_excerpt() {
 // for custom & automatic excerpts
 function ct_excerpt_read_more_link($output) {
 	global $post;
-	return $output . "<p><a class='more-link' href='". get_permalink() ."'>Read the Post</a></p>";
+	return $output . "<p><a class='more-link' href='". get_permalink() ."'>Read the Post <span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
 }
 
 add_filter('the_excerpt', 'ct_excerpt_read_more_link');

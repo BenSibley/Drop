@@ -1,4 +1,7 @@
-<i class="fa fa-bars toggle-button"></i>
+<button class="toggle-button">
+    <i class="fa fa-bars"></i>
+</button>
+
 
 <div class='menu-slider'>
     <div class='site-info'>

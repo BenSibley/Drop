@@ -65,10 +65,10 @@ jQuery(document).ready(function($){
 		});
 	}
 
-    $('.menu-item a').focus(function(){
+    $('.menu-item a, .page_item a').focus(function(){
         $(this).parents('ul').addClass('focused');
     });
-    $('.menu-item a').focusout(function(){
+    $('.menu-item a, .page_item a').focusout(function(){
         $(this).parents('ul').removeClass('focused');
     });
 
