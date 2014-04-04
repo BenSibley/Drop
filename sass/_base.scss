@@ -319,7 +319,7 @@ button.toggle-button {
   a:hover,
   a:active,
   a:focus {
-    color: $green;
+    color: $green-lighter;
   }
   a:focus {
     background: $off-white;
@@ -405,7 +405,7 @@ button.toggle-button {
       &:hover,
       &:active,
       &:focus {
-        color: $green;
+        color: $green-lighter;
         cursor: pointer; /* for unlinked parents */
       }
     }
@@ -459,7 +459,7 @@ button.toggle-button {
     a:hover,
     a:active,
     a:focus {
-      color: $green;
+      color: $green-lighter;
     }
   }
 }
