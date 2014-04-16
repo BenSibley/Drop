@@ -1,7 +1,7 @@
 <?php
 
 // register and enqueue all of the scripts used by Aside
-function ct_load_javascript_files() {
+function ct_drop_load_javascript_files() {
 
     wp_register_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,400,700');
 
@@ -21,14 +21,14 @@ function ct_load_javascript_files() {
     if( is_singular() && comments_open() && get_option('thread_comments') ) wp_enqueue_script( 'comment-reply' ); 
 }
 
-add_action('wp_enqueue_scripts', 'ct_load_javascript_files' );
+add_action('wp_enqueue_scripts', 'ct_drop_load_javascript_files' );
 
 /* Load the core theme framework. */
 require_once( trailingslashit( get_template_directory() ) . 'library/hybrid.php' );
 new Hybrid();
 
 /* Do theme setup on the 'after_setup_theme' hook. */
-add_action( 'after_setup_theme', 'ct_theme_setup', 10 );
+add_action( 'after_setup_theme', 'ct_drop_theme_setup', 10 );
 
 /**
  * Theme setup function.  This function adds support for theme features and defines the default theme
@@ -37,7 +37,7 @@ add_action( 'after_setup_theme', 'ct_theme_setup', 10 );
  * @since 1.0
  */
 
-function ct_theme_setup() {
+function ct_drop_theme_setup() {
 	
     /* Get action/filter hook prefix. */
 	$prefix = hybrid_get_prefix();
@@ -61,9 +61,9 @@ function ct_theme_setup() {
 }
 
 // takes user input from the customizer and outputs linked social media icons
-function ct_social_media_icons() {
+function ct_drop_social_media_icons() {
     
-    $social_sites = ct_customizer_social_media_array();
+    $social_sites = ct_drop_customizer_social_media_array();
     	
     // any inputs that aren't empty are stored in $active_sites array
     foreach($social_sites as $social_site) {
@@ -86,7 +86,7 @@ function ct_social_media_icons() {
 	}
 }
 
-function ct_further_reading() {
+function ct_drop_further_reading() {
     
     global $post;
     
@@ -132,7 +132,7 @@ function ct_further_reading() {
     echo "</nav>";
 }
 
-function ct_excerpt_category_display() {
+function ct_drop_excerpt_category_display() {
        
     $category = get_the_category();
 	echo '<a href="'.get_category_link( $category[0]->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s", 'drop' ), $category[0]->name ) ) . '">'.$category[0]->cat_name.'</a>';
@@ -140,7 +140,7 @@ function ct_excerpt_category_display() {
 
 // Outputs the categories the post was included in with their names hyperlinked to their permalink
 // separator removed so links site tightly against each other
-function ct_category_display() {
+function ct_drop_category_display() {
        
     $categories = get_the_category();
     $separator = ' ';
@@ -156,7 +156,7 @@ function ct_category_display() {
 }
 
 // Outputs the tags the post used with their names hyperlinked to their permalink
-function ct_tags_display() {
+function ct_drop_tags_display() {
        
     $tags = get_the_tags();
     $separator = ' ';
@@ -172,7 +172,7 @@ function ct_tags_display() {
 }
 
 /* added to customize the comments. Same as default except -> added use of gravatar images for comment authors */
-function ct_customize_comments( $comment, $args, $depth ) {
+function ct_drop_customize_comments( $comment, $args, $depth ) {
     $GLOBALS['comment'] = $comment;
  
     ?>
@@ -202,7 +202,7 @@ function ct_customize_comments( $comment, $args, $depth ) {
 }
 
 /* added HTML5 placeholders for each default field */
-function ct_update_fields($fields) {
+function ct_drop_update_fields($fields) {
 
     $commenter = wp_get_current_commenter();
     $req = get_option( 'require_name_email' );
@@ -231,9 +231,9 @@ function ct_update_fields($fields) {
     
 	return $fields;
 }
-add_filter('comment_form_default_fields','ct_update_fields');
+add_filter('comment_form_default_fields','ct_drop_update_fields');
 
-function ct_update_comment_field($comment_field) {
+function ct_drop_update_comment_field($comment_field) {
 	
 	$comment_field = 
 		'<p class="comment-form-comment">
@@ -243,10 +243,10 @@ function ct_update_comment_field($comment_field) {
 	
 	return $comment_field;
 }
-add_filter('comment_form_field_comment','ct_update_comment_field');
+add_filter('comment_form_field_comment','ct_drop_update_comment_field');
 
 // for 'read more' tag excerpts
-function ct_excerpt() {
+function ct_drop_excerpt() {
 	
 	global $post;
 	// check for the more tag
@@ -265,26 +265,26 @@ function ct_excerpt() {
 }
 
 // for custom & automatic excerpts
-function ct_excerpt_read_more_link($output) {
+function ct_drop_excerpt_read_more_link($output) {
 	global $post;
 	return $output . "<p><a class='more-link' href='". get_permalink() ."'>Read the Post <span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
 }
 
-add_filter('the_excerpt', 'ct_excerpt_read_more_link');
+add_filter('the_excerpt', 'ct_drop_excerpt_read_more_link');
 
 // switch [...] to ellipsis on automatic excerpt
-function ct_new_excerpt_more( $more ) {
+function ct_drop_new_excerpt_more( $more ) {
 	return '&#8230;';
 }
-add_filter('excerpt_more', 'ct_new_excerpt_more');
+add_filter('excerpt_more', 'ct_drop_new_excerpt_more');
 
 // turns of the automatic scrolling to the read more link 
-function ct_remove_more_link_scroll( $link ) {
+function ct_drop_remove_more_link_scroll( $link ) {
 	$link = preg_replace( '|#more-[0-9]+|', '', $link );
 	return $link;
 }
 
-add_filter( 'the_content_more_link', 'ct_remove_more_link_scroll' );
+add_filter( 'the_content_more_link', 'ct_drop_remove_more_link_scroll' );
 
 // change the custom excerpt length
 function custom_excerpt_length( $length ) {
@@ -293,14 +293,14 @@ function custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 // Adds navigation through pages in the loop
-function ct_post_navigation() { ?>
+function ct_drop_post_navigation() { ?>
     <div class="loop-pagination-container">
         <?php if ( current_theme_supports( 'loop-pagination' ) ) loop_pagination(); ?>
     </div><?php
 }
 
 // adds the url from the image credit box to the post and makes it clickable
-function ct_add_image_credit_link() {
+function ct_drop_add_image_credit_link() {
     
     global $post;
     $link = get_post_meta( $post->ID, 'ct-image-credit-link', true );
@@ -310,7 +310,7 @@ function ct_add_image_credit_link() {
 }
 
 // for displaying featured images including mobile versions and default versions
-function ct_featured_image() {
+function ct_drop_featured_image() {
 	
 	global $post;
 	$has_image = false;
@@ -326,7 +326,7 @@ function ct_featured_image() {
 }
 
 // does it contain a featured image?
-function ct_contains_featured() {
+function ct_drop_contains_featured() {
 
     global $post;
 	
@@ -338,8 +338,8 @@ function ct_contains_featured() {
 }
 
 // adds title to homepage
-add_filter( 'wp_title', 'ct_add_homepage_title' );
-function ct_add_homepage_title( $title )
+add_filter( 'wp_title', 'ct_drop_add_homepage_title' );
+function ct_drop_add_homepage_title( $title )
 {
     if( empty( $title ) && ( is_home() || is_front_page() ) ) {
         return __( get_bloginfo( 'title' ), 'theme_domain' ) . ' | ' . get_bloginfo( 'description' );
@@ -348,8 +348,17 @@ function ct_add_homepage_title( $title )
 }
 
 // calls pages for menu if menu not set
-function ct_wp_page_menu() {
+function ct_drop_wp_page_menu() {
     wp_page_menu(array("menu_class" => "menu-unset"));
 }
+
+/* adds 'not-front' to body on non-front pages */
+function ct_drop_body_class( $classes ) {
+    if ( ! is_front_page() ) {
+        $classes[] = 'not-front';
+    }
+    return $classes;
+}
+add_filter( 'body_class', 'ct_drop_body_class' );
 
 ?>

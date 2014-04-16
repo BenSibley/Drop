@@ -14,6 +14,8 @@ body {
   background: $gray-darker;
   margin: 0;
   padding: 0;
+  word-wrap: break-word;
+  -ms-word-wrap: break-word;
 }
 .overflow-container {
   overflow: hidden;
@@ -28,11 +30,7 @@ body {
   @include transition(all 0.3s ease-in-out);
 
   // enable hardware acceleration
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  -o-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  @include transform(translateZ(0));
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -389,8 +387,6 @@ button.toggle-button {
   li {
     position: relative;
     overflow: hidden;
-    word-wrap: break-word;
-    -ms-word-wrap: break-word;
     @include transition(all 0.3s ease-in-out);
 
     a {
@@ -478,8 +474,6 @@ button.toggle-button {
   h1,
   h2 {
     text-shadow: -0.063em 0.063em $green-dark;
-    word-wrap: break-word;
-    -ms-word-wrap: break-word;
     color: $gray-darkest;
   }
   p {
@@ -572,8 +566,6 @@ button.toggle-button {
 }
 .excerpt-title {
   text-transform: uppercase;
-  word-wrap: break-word;
-  -ms-word-wrap: break-word;
 
   a {
     color: $gray-dark;
@@ -660,11 +652,13 @@ button.toggle-button {
 }
 .entry-title {
   text-transform: uppercase;
-  word-wrap: break-word;
-  -ms-word-wrap: break-word;
 }
 .entry-content {
   margin: 1.5em 5.55%;
+
+  iframe {
+    @include transform(translateZ(0));
+  }
 }
 .entry-meta-bottom {
   margin-top: $base-line-height * 2;
@@ -861,11 +855,7 @@ input[type="submit"] {
     }
   }
   // enable hardware acceleration
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  -o-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  @include transform(translateZ(0));
 
   .widget-title {
     text-transform: uppercase;
@@ -1181,11 +1171,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .excerpts-container {
 
     // enable hardware acceleration
-    -webkit-transform: translate3d(0,0,0);
-    -moz-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    -o-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    @include transform(translateZ(0));
 
     @include transition(all 0.3s ease-in-out);
   }
@@ -1617,8 +1603,6 @@ input[type="search"]::-webkit-search-results-decoration {
     line-height: 1.85;
     padding: 0 3% 0 2.08%;
     text-align: right;
-    word-wrap: break-word;
-    -ms-word-wrap: break-word;
 
     span {
       display: block;

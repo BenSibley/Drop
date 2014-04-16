@@ -12,6 +12,9 @@ please open a thread on the Drop forum on wordpress.org
     Licenses:
 -------------------------------------------------------
 
+Drop WordPress Theme, Copyright 2014 Compete Themes
+Drop is distributed under the terms of the GNU GPL
+
 For this Theme:
 
 License: GNU General Public License v2 or later
@@ -19,6 +22,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Drop also uses:
 
+*Hybyrid Core by Justin Tadlock, http://themehybrid.com/hybrid-core, licensed under the GPLv2 license.
 *jQuery doTimeout by Ben Alman, http://benalman.com/projects/jquery-dotimeout-plugin/, dual licensed under the MIT and GPL licenses.
 *DoubleTapToGo by Osvaldas Valutis, www.osvaldas.info, licensed under the MIT license.
 *Fitvids, by Chris Coyier & Dave Ruper, https://github.com/davatron5000/FitVids.js/, licensed under the WTFPL license.

@@ -12,7 +12,7 @@ if ( have_posts() ) :
     endwhile;
 endif; ?>
 
-<?php ct_post_navigation(); ?>
+<?php ct_drop_post_navigation(); ?>
 
 </div>
 
