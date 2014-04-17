@@ -287,7 +287,7 @@ function ct_drop_remove_more_link_scroll( $link ) {
 add_filter( 'the_content_more_link', 'ct_drop_remove_more_link_scroll' );
 
 // change the custom excerpt length
-function custom_excerpt_length( $length ) {
+function ct_drop_custom_excerpt_length( $length ) {
     return 35;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
