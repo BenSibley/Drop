@@ -77,9 +77,13 @@ function ct_drop_social_media_icons() {
         echo "<ul class='social-media-icons'>";
 		foreach ($active_sites as $active_site) {?>
 			<li>
-				<a href="<?php echo esc_url(get_theme_mod( $active_site )); ?>">
-					<i class="fa fa-<?php echo $active_site; ?>-square"></i>
-				</a>
+                <a href="<?php echo esc_url(get_theme_mod( $active_site )); ?>">
+                    <?php if( $active_site ==  "flickr" || $active_site ==  "dribbble" || $active_site ==  "instagram") { ?>
+                        <i class="fa fa-<?php echo $active_site; ?>"></i> <?php
+                    } else { ?>
+                    <i class="fa fa-<?php echo $active_site; ?>-square"></i><?php
+                    } ?>
+                </a>
 			</li><?php
 		}
 		echo "</ul>";
