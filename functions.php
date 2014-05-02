@@ -297,10 +297,8 @@ function ct_drop_custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 // Adds navigation through pages in the loop
-function ct_drop_post_navigation() { ?>
-    <div class="loop-pagination-container">
-        <?php if ( current_theme_supports( 'loop-pagination' ) ) loop_pagination(); ?>
-    </div><?php
+function ct_post_navigation() {
+    if ( current_theme_supports( 'loop-pagination' ) ) loop_pagination();
 }
 
 // adds the url from the image credit box to the post and makes it clickable
