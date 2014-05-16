@@ -116,7 +116,7 @@ function ct_drop_add_dashboard_widget() {
 
 	wp_add_dashboard_widget(
                  'ct_drop_dashboard_widget',    // Widget slug.
-                 'Support Dashboard',   // Title.
+                 'My Support Dashboard',   // Title.
                  'ct_drop_widget_contents' 	  // Display function.
         );	
         
@@ -143,12 +143,24 @@ add_action( 'wp_dashboard_setup', 'ct_drop_add_dashboard_widget' );
 function ct_drop_widget_contents() { ?>
 
     <ol>
-        <li>For self-help, <a target="_blank" href="http://competethemes.com/documentation">visit the knowledgebase</a></li>
-        <li>For support, <a target="_blank" href="http://wordpress.org/support/theme/drop">visit the support forum</a></li>
+        <li>For self-help, <a target="_blank" href="http://www.competethemes.com/documentation/drop-knowledgebase/?utm_source=WordPress%20Dashboard&utm_medium=User%20Admin&utm_content=Drop&utm_campaign=Admin%20Support%20Widgets">visit the knowledgebase</a></li>
+        <li>For community support, <a target="_blank" href="http://wordpress.org/support/theme/drop">visit the support forum</a></li>
         <li>If you like Drop, <a target="_blank" href="http://wordpress.org/support/view/theme-reviews/drop">take 1 minute to leave a review</a></li>
     </ol>
 	
 	<?php
 }
+
+function ct_drop_support_widget_styles() {
+
+    echo "
+    <style>
+        #ct_drop_dashboard_widget{background: white;}
+        #ct_drop_dashboard_widget h3{background: #E54C56; color: white;}
+    </style>";
+
+}
+
+add_action('admin_head', 'ct_drop_support_widget_styles');
 
 ?>
