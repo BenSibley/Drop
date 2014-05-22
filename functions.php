@@ -50,9 +50,14 @@ function ct_drop_theme_setup() {
     
     // adds the file with the customizer functionality
     require_once( trailingslashit( get_template_directory() ) . 'functions-admin.php' );
-    
-    // adds cmb meta box functionality
-    if ( is_admin() && ! class_exists( 'cmb_Meta_Box' ) ) require_once( trailingslashit( get_template_directory() ) . 'assets/meta-boxes/init.php' );
+}
+
+// Initialize the metabox class
+add_action( 'init', 'ct_drop_initialize_cmb_meta_boxes', 9999 );
+function ct_drop_initialize_cmb_meta_boxes() {
+    if ( !class_exists( 'cmb_Meta_Box' ) ) {
+        require_once( 'assets/custom-meta-boxes/init.php' );
+    }
 }
 
 // takes user input from the customizer and outputs linked social media icons
