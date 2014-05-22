@@ -1,15 +1,15 @@
 <?php 
 
 if( is_home() ) { ?>
-    <div class='excerpt <?php hybrid_post_class(); ct_drop_contains_featured(); ?>'>
+    <div class='excerpt <?php hybrid_post_class(); ct_drop_contains_featured(); ?>' itemscope itemtype="http://schema.org/BlogPosting">
     	<?php ct_drop_featured_image(); ?>
     	<div class='excerpt-meta'>
-			<span class='excerpt-date'>
+			<span class='excerpt-date' itemprop="datePublished" content="<?php echo get_the_date('Y-m-d'); ?>">
 				<?php echo get_the_date('d M Y'); ?>
 			</span>
-			<span class='excerpt-author'>
+			<span itemprop="author" itemscope itemtype="http://schema.org/Person" class='excerpt-author'>
 				<span>Published by:</span>
-				<?php echo the_author_posts_link(); ?>
+				<a href="<?php echo get_author_posts_url(get_the_author_meta('ID')) ?>" itemprop="name"><?php the_author_meta( 'display_name' ); ?></a>
 			</span>
 			<span class='excerpt-category'>
 				<span>Posted in:</span>
@@ -17,29 +17,33 @@ if( is_home() ) { ?>
 			</span>
     	</div>    	
 		<div class='excerpt-header'>
-			<h1 class='excerpt-title'>
-				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+			<h1 class='excerpt-title' itemprop="headline">
+				<a itemprop="url" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 			</h1>
 		</div>
 		<div class='excerpt-content'>
-			<article>
+			<article itemprop="description">
 				<?php ct_drop_excerpt(); ?>
 			</article>
 		</div>
 	</div>
 <?php     
 } elseif( is_single() ) { ?>
-   <div class='entry <?php hybrid_post_class(); ct_drop_contains_featured(); ?>'>
+   <div class='entry <?php hybrid_post_class(); ct_drop_contains_featured(); ?>' itemscope itemtype="http://schema.org/BlogPosting">
         <?php ct_drop_featured_image(); ?>
-        <div class='entry-meta-top'>
-			<p>Published by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')) ?>"><?php the_author_meta( 'display_name' ); ?></a> on <?php the_date('M j, Y'); ?></p>
+        <div class='entry-meta-top' itemprop="author">
+			<p>
+                <span itemscope itemtype="http://schema.org/Person">Published by
+                    <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')) ?>" itemprop="name"><?php the_author_meta( 'display_name' ); ?></a>
+                </span> on
+                <span itemprop="datePublished" content="<?php echo get_the_date('Y-m-d'); ?>"><?php the_date('M j, Y'); ?></span>
+            </p>
 		</div>
 		<div class='entry-header'>
-			<h1 class='entry-title'><?php the_title(); ?></h1>
-			
+			<h1 class='entry-title' itemprop="headline"><?php the_title(); ?></h1>
 		</div>
 		<div class="entry-content">
-			<article>
+			<article itemprop="articleBody">
 				<?php the_content(); ?>
 				<?php wp_link_pages(array('before' => '<p class="singular-pagination">' . __('Pages:','drop'), 'after' => '</p>', ) ); ?>
 				<?php ct_drop_add_image_credit_link(); ?>
@@ -53,32 +57,32 @@ if( is_home() ) { ?>
     </div>
 <?php 
 } else { ?>
-    <div class='excerpt <?php hybrid_post_class(); ct_drop_contains_featured(); ?>'>
-    	<?php ct_drop_featured_image(); ?>
-    	<div class='excerpt-meta'>
-			<span class='excerpt-date'>
+    <div class='excerpt <?php hybrid_post_class(); ct_drop_contains_featured(); ?>' itemscope itemtype="http://schema.org/BlogPosting">
+        <?php ct_drop_featured_image(); ?>
+        <div class='excerpt-meta'>
+			<span class='excerpt-date' itemprop="datePublished" content="<?php echo get_the_date('Y-m-d'); ?>">
 				<?php echo get_the_date('d M Y'); ?>
 			</span>
-			<span class='excerpt-author'>
+			<span itemprop="author" itemscope itemtype="http://schema.org/Person" class='excerpt-author'>
 				<span>Published by:</span>
-				<?php echo the_author_posts_link(); ?>
+				<a href="<?php echo get_author_posts_url(get_the_author_meta('ID')) ?>" itemprop="name"><?php the_author_meta( 'display_name' ); ?></a>
 			</span>
 			<span class='excerpt-category'>
 				<span>Posted in:</span>
-				<?php ct_drop_excerpt_category_display(); ?>
+                <?php ct_drop_excerpt_category_display(); ?>
 			</span>
-    	</div>  
-		<div class='excerpt-header'>
-			<h1 class='excerpt-title'>
-				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-			</h1>
-		</div>
-		<div class='excerpt-content'>
-			<article>
-				<?php ct_drop_excerpt(); ?>
-			</article>
-		</div>
-	</div>
+        </div>
+        <div class='excerpt-header'>
+            <h1 class='excerpt-title' itemprop="headline">
+                <a itemprop="url" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            </h1>
+        </div>
+        <div class='excerpt-content'>
+            <article itemprop="description">
+                <?php ct_drop_excerpt(); ?>
+            </article>
+        </div>
+    </div>
 <?php 
 }
 

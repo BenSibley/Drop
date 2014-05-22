@@ -323,7 +323,7 @@ function ct_drop_featured_image() {
 		$has_image = true;
 	}  
 	if ($has_image == true) {
-        echo "<div class='featured-image' style=\"background-image: url('".$image."')\"></div>";
+        echo "<div itemprop='thumbnailUrl' class='featured-image' style=\"background-image: url('".$image."')\"></div>";
     }
 }
 

@@ -5,7 +5,6 @@
 	<?php get_search_form(); ?>
 	
 	<div class='excerpts-container'>
-	
 		<div class="entry-content">
 			<article>
 				<p>
