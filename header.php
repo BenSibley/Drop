@@ -26,7 +26,7 @@
     <a class="skip-content" href="#main">Skip to content</a>
 <header class="site-header" role="banner">
 
-	<div class="title-info">
+	<div itemscope itemtype="http://schema.org/Organization" class="title-info">
 		<?php get_template_part('logo')  ?>    
 	</div>
 	
