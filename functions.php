@@ -294,7 +294,7 @@ add_filter( 'the_content_more_link', 'ct_drop_remove_more_link_scroll' );
 function ct_drop_custom_excerpt_length( $length ) {
     return 35;
 }
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'ct_drop_custom_excerpt_length', 999 );
 
 // Adds navigation through pages in the loop
 function ct_drop_post_navigation() {
@@ -362,5 +362,9 @@ function ct_drop_body_class( $classes ) {
     return $classes;
 }
 add_filter( 'body_class', 'ct_drop_body_class' );
+
+// fix for bug with Disqus saying comments are closed
+remove_filter( 'comments_template', 'dsq_comments_template' );
+add_filter( 'comments_template', 'dsq_comments_template', 99 ); // You can use any priority higher than '10'
 
 ?>

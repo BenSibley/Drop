@@ -27,7 +27,7 @@ function ct_drop_customize_register_logo( $wp_customize ) {
 			'default'           => '',
 			'type'              => 'theme_mod',
 			'capability'        => 'edit_theme_options',
-			'sanitize_callback' => 'esc_url',
+			'sanitize_callback' => 'esc_url_raw',
 			//'transport'         => 'postMessage'
 		)
 	);
@@ -70,6 +70,7 @@ function ct_drop_add_social_sites_customizer($wp_customize) {
 
 		$wp_customize->add_setting( "$social_site", array(
 				'default'        => '',
+                'sanitize_callback' => 'esc_url_raw'
 		) );
 
 		$wp_customize->add_control( $social_site, array(
