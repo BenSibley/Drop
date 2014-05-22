@@ -1,66 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="189415df-d7b9-453e-a8ea-3031cd32d73d" name="Default" comment="*updated Custom Meta Boxes and how it's included">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/images/ico-delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/images/ui-bg_flat_0_aaaaaa_40x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/images/ui-bg_flat_75_ffffff_40x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/images/ui-bg_glass_55_fbf9ee_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/images/ui-bg_glass_65_ffffff_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/images/ui-bg_glass_75_dadada_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/images/ui-bg_glass_75_e6e6e6_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/images/ui-bg_glass_95_fef1ec_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/images/ui-icons_222222_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/images/ui-icons_2e83ff_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/images/ui-icons_454545_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/images/ui-icons_888888_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/images/ui-icons_cd0a0a_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/tests/phpunit/tests/CMB_Core_Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/tests/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/tests/phpunit/includes/bootstrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/js/cmb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/js/cmb.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/helpers/cmb_Meta_Box_Sanitize.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/helpers/cmb_Meta_Box_Show_Filters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/helpers/cmb_Meta_Box_ajax.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/helpers/cmb_Meta_Box_field.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/helpers/cmb_Meta_Box_types.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/example-functions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/init.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/tests/bin/install-wp-tests.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/js/jquery.datePicker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/js/jquery.timePicker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/phpunit.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/custom-meta-boxes/style.min.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/example-functions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/images/ico-delete.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/images/ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/images/ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/images/ui-bg_glass_75_dadada_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/images/ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/images/ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/images/ui-icons_2e83ff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/images/ui-icons_454545_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/images/ui-icons_888888_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/images/ui-icons_cd0a0a_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/init.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/js/cmb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/js/jquery.timePicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/meta-boxes/style.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
+    <list default="true" id="189415df-d7b9-453e-a8ea-3031cd32d73d" name="Default" comment="* added custom control for social media icons so the 'http:// is automatically included.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions-admin.php" afterPath="$PROJECT_DIR$/functions-admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drop.iws" />
@@ -98,9 +40,9 @@
       <file leaf-file-name="functions-admin.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions-admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="24" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.5912519" vertical-offset="1048" max-vertical-offset="2580">
+            <state line="73" column="0" selection-start="1998" selection-end="1998" vertical-scroll-proportion="0.7285068" vertical-offset="612" max-vertical-offset="2865">
               <folding>
-                <marker date="1400768021000" expanded="true" signature="4904:5044" placeholder="..." />
+                <marker date="1400770134000" expanded="true" signature="5687:5827" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -219,7 +161,6 @@
         <option value="$PROJECT_DIR$/sass/_base.scss" />
         <option value="$PROJECT_DIR$/sass/_info.scss" />
         <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/functions-admin.php" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/gruntfile.js" />
@@ -229,6 +170,7 @@
         <option value="$PROJECT_DIR$/js/double-tap.min.js" />
         <option value="$PROJECT_DIR$/js/dotimeout.min.js" />
         <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/functions-admin.php" />
       </list>
     </option>
   </component>
@@ -344,24 +286,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="custom-meta-boxes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -523,12 +447,16 @@
       <created>1400768684552</created>
       <updated>1400768684552</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="*updated Custom Meta Boxes and how it's included">
+      <created>1400769004131</created>
+      <updated>1400769004131</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="457" y="-1058" width="1045" height="1052" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33053514" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32873806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -536,7 +464,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24958949" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2452642" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2452642" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10430107" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2231405" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -587,7 +515,8 @@
     <MESSAGE value="* added grunt" />
     <MESSAGE value="*unminified all 3rd party scripts" />
     <MESSAGE value="* now enqueueing one JS file (production.min.js)" />
-    <option name="LAST_COMMIT_MESSAGE" value="* now enqueueing one JS file (production.min.js)" />
+    <MESSAGE value="*updated Custom Meta Boxes and how it's included" />
+    <option name="LAST_COMMIT_MESSAGE" value="*updated Custom Meta Boxes and how it's included" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -880,9 +809,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions-admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="24" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.5912519" vertical-offset="1048" max-vertical-offset="2580">
+        <state line="73" column="0" selection-start="1998" selection-end="1998" vertical-scroll-proportion="0.7285068" vertical-offset="612" max-vertical-offset="2865">
           <folding>
-            <marker date="1400768021000" expanded="true" signature="4904:5044" placeholder="..." />
+            <marker date="1400770134000" expanded="true" signature="5687:5827" placeholder="..." />
           </folding>
         </state>
       </provider>

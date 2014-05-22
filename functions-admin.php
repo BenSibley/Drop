@@ -58,6 +58,20 @@ add_action('customize_register', 'ct_drop_add_social_sites_customizer');
 
 function ct_drop_add_social_sites_customizer($wp_customize) {
 
+    /* create custom control for url input so http:// is automatically added */
+    class ct_drop_url_input_control extends WP_Customize_Control {
+        public $type = 'url';
+
+        public function render_content() {
+            ?>
+            <label>
+                <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
+                <input type="url" <?php $this->link(); ?> value="<?php echo esc_url_raw( $this->value() ); ?>" />
+            </label>
+        <?php
+        }
+    }
+
 	$wp_customize->add_section( 'ct_drop_social_settings', array(
 			'title'          => 'Social Media Icons',
 			'priority'       => 35,
@@ -65,21 +79,26 @@ function ct_drop_add_social_sites_customizer($wp_customize) {
 		
 	$social_sites = ct_drop_customizer_social_media_array();
 	$priority = 5;
-	
+
 	foreach($social_sites as $social_site) {
 
+        /* add setting for each social site */
 		$wp_customize->add_setting( "$social_site", array(
 				'default'        => '',
                 'sanitize_callback' => 'esc_url_raw'
 		) );
-
-		$wp_customize->add_control( $social_site, array(
-				'label'   => __( "$social_site url:", 'ct_drop_icon' ),
-				'section' => 'ct_drop_social_settings',
-				'type'    => 'text',
-				'priority'=> $priority,
-		) );
-	
+        /* add URL HTML5 input */
+		$wp_customize->add_control(
+            new ct_drop_url_input_control(
+                $wp_customize, $social_site,
+                array(
+                    'label'   => __( "$social_site url:", 'ct_drop_icon' ),
+                    'section' => 'ct_drop_social_settings',
+                    'type'    => 'text',
+                    'priority'=> $priority
+                )
+		    )
+        );
 		$priority = $priority + 5;
 	}
 }
