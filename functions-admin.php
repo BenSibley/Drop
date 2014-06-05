@@ -28,7 +28,6 @@ function ct_drop_customize_register_logo( $wp_customize ) {
 			'type'              => 'theme_mod',
 			'capability'        => 'edit_theme_options',
 			'sanitize_callback' => 'esc_url_raw',
-			//'transport'         => 'postMessage'
 		)
 	);
 
@@ -42,7 +41,6 @@ function ct_drop_customize_register_logo( $wp_customize ) {
 			)
 		)
 	);
-
 }
 
 function ct_drop_customizer_social_media_array() {
@@ -73,7 +71,7 @@ function ct_drop_add_social_sites_customizer($wp_customize) {
     }
 
 	$wp_customize->add_section( 'ct_drop_social_settings', array(
-			'title'          => 'Social Media Icons',
+			'title'          => esc_html__('Social Media Icons','drop'),
 			'priority'       => 35,
 	) );
 		
@@ -110,21 +108,20 @@ function ct_drop_image_credit_meta_box( $meta_boxes ) {
     $prefix = 'ct-';
     $meta_boxes[] = array(
 		'id'         => 'image-credit-meta-box',
-		'title'      => 'Image Credit Link',
+		'title'      => __('Image Credit Link','drop'),
 		'pages'      => array( 'post', ), // Post type
 		'context'    => 'side',
 		'priority'   => 'low',
 		'show_names' => true, // Show field names on the left
 		'fields'     => array(
             array(
-				'name' => 'URL:',
-				'desc' => '(Optional) Where did you find the featured image?',
+				'name' => __('URL:','drop'),
+				'desc' => __('(Optional) Where did you find the featured image?','drop'),
 				'id'   => $prefix . 'image-credit-link',
 				'type' => 'text_medium',
 			)
         )
     );
-
 	return $meta_boxes;
 }
 
