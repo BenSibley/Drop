@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189415df-d7b9-453e-a8ea-3031cd32d73d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content-404.php" afterPath="$PROJECT_DIR$/content-404.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.php" afterPath="$PROJECT_DIR$/footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions-admin.php" afterPath="$PROJECT_DIR$/functions-admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -94,10 +92,8 @@
       <file leaf-file-name="functions-admin.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions-admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="9" selection-start="3620" selection-end="3620" vertical-scroll-proportion="0.3951613" vertical-offset="1536" max-vertical-offset="2820">
-              <folding>
-                <marker date="1402004309000" expanded="true" signature="5695:5835" placeholder="..." />
-              </folding>
+            <state line="126" column="0" selection-start="3651" selection-end="3651" vertical-scroll-proportion="0.8537604" vertical-offset="1277" max-vertical-offset="1995">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -453,7 +449,11 @@
       <created>1402003405350</created>
       <updated>1402003405350</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="* internationalized">
+      <created>1402004325664</created>
+      <updated>1402004325664</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -493,7 +493,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="made fixes based on feedback from WP theme review. Resubmitting this as V1.03" />
     <MESSAGE value="made small fixes on enqueueing based on feedback from WP theme review. Resubmitting this as V1.04" />
     <MESSAGE value="updated to v1.04" />
     <MESSAGE value="removed if statement stopping unset menu fallback from showing" />
@@ -518,7 +517,8 @@
     <MESSAGE value="* added schema microdata for blog posts on archives &amp; post pages" />
     <MESSAGE value="* added schema microdata for logo" />
     <MESSAGE value="* internationalization complete for functions.php and up to content.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="* internationalization complete for functions.php and up to content.php" />
+    <MESSAGE value="* internationalized" />
+    <option name="LAST_COMMIT_MESSAGE" value="* internationalized" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -825,10 +825,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions-admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="9" selection-start="3620" selection-end="3620" vertical-scroll-proportion="0.3951613" vertical-offset="1536" max-vertical-offset="2820">
-          <folding>
-            <marker date="1402004309000" expanded="true" signature="5695:5835" placeholder="..." />
-          </folding>
+        <state line="126" column="0" selection-start="3651" selection-end="3651" vertical-scroll-proportion="0.8537604" vertical-offset="1277" max-vertical-offset="1995">
+          <folding />
         </state>
       </provider>
     </entry>
