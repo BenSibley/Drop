@@ -4,15 +4,15 @@ if( is_home() ) { ?>
     <div class='excerpt <?php hybrid_post_class(); ct_drop_contains_featured(); ?>' itemscope itemtype="http://schema.org/BlogPosting">
     	<?php ct_drop_featured_image(); ?>
     	<div class='excerpt-meta'>
-			<span class='excerpt-date' itemprop="datePublished" content="<?php echo get_the_date('Y-m-d'); ?>">
+			<span class='excerpt-date updated' itemprop="datePublished" content="<?php echo get_the_date('Y-m-d'); ?>">
 				<?php echo get_the_date('d M Y'); ?>
 			</span>
 			<span itemprop="author" itemscope itemtype="http://schema.org/Person" class='excerpt-author'>
-				<span>Published by:</span>
+				<span><?php _e('Published by:','drop'); ?></span>
 				<a href="<?php echo get_author_posts_url(get_the_author_meta('ID')) ?>" itemprop="name"><?php the_author_meta( 'display_name' ); ?></a>
 			</span>
 			<span class='excerpt-category'>
-				<span>Posted in:</span>
+				<span><?php _e('Posted in:','drop'); ?></span>
 				<?php ct_drop_excerpt_category_display(); ?>
 			</span>
     	</div>    	
@@ -31,12 +31,12 @@ if( is_home() ) { ?>
 } elseif( is_single() ) { ?>
    <div class='entry <?php hybrid_post_class(); ct_drop_contains_featured(); ?>' itemscope itemtype="http://schema.org/BlogPosting">
         <?php ct_drop_featured_image(); ?>
-        <div class='entry-meta-top' itemprop="author">
+        <div class='entry-meta-top'>
 			<p>
-                <span itemscope itemtype="http://schema.org/Person">Published by
-                    <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')) ?>" itemprop="name"><?php the_author_meta( 'display_name' ); ?></a>
+                <span class="vcard author" itemprop="author" itemscope itemtype="http://schema.org/Person"><?php _e('Published by ','drop'); ?>
+                    <a class="fn" href="<?php esc_url(get_author_posts_url(get_the_author_meta('ID'))) ?>" itemprop="name"><?php the_author_meta( 'display_name' ); ?></a>
                 </span> on
-                <span itemprop="datePublished" content="<?php echo get_the_date('Y-m-d'); ?>"><?php the_date('M j, Y'); ?></span>
+                <span class="updated" itemprop="datePublished" content="<?php echo get_the_date('Y-m-d'); ?>"><?php the_date('M j, Y'); ?></span>
             </p>
 		</div>
 		<div class='entry-header'>
@@ -64,11 +64,11 @@ if( is_home() ) { ?>
 				<?php echo get_the_date('d M Y'); ?>
 			</span>
 			<span itemprop="author" itemscope itemtype="http://schema.org/Person" class='excerpt-author'>
-				<span>Published by:</span>
+				<span><?php _e('Published by:','drop'); ?></span>
 				<a href="<?php echo get_author_posts_url(get_the_author_meta('ID')) ?>" itemprop="name"><?php the_author_meta( 'display_name' ); ?></a>
 			</span>
 			<span class='excerpt-category'>
-				<span>Posted in:</span>
+				<span><?php _e('Posted in:','drop'); ?></span>
                 <?php ct_drop_excerpt_category_display(); ?>
 			</span>
         </div>

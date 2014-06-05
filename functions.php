@@ -101,36 +101,36 @@ function ct_drop_further_reading() {
 	if(get_the_title($previous_blog_post)) {
 		$previous_title = get_the_title($previous_blog_post);
 	} else {
-		$previous_title = "The Previous Post";
+		$previous_title = __('The Previous Post','drop');
 	}
 	if(get_the_title($next_blog_post)) {
 		$next_title = get_the_title($next_blog_post);
 	} else {
-		$next_title = "The Next Post";
+		$next_title = __('The Next Post','drop');
 	}
     
     echo "<nav class='further-reading'>";
     if($previous_blog_post) {
         echo "<p class='prev'>
-        		<span>Previous Post</span>
+        		<span>" . __('Previous Post','drop') . "</span>
         		<a href='".get_permalink($previous_blog_post)."'>".$previous_title."</a>
 	        </p>"; 
     } else {
         echo "<p class='prev'>
-                <span>This is the oldest post</span>
-        		<a href='".esc_url(home_url())."'>Return to Blog</a>
+                <span>" . __('This is the oldest post','drop') . "</span>
+        		<a href='".esc_url(home_url())."'>" . __('Return to Blog', 'drop') . "</a>
         	</p>"; 
     }
     if($next_blog_post) {
     
         echo "<p class='next'>
-        		<span>Next Post</span>
+        		<span>" . __('Next Post','drop') . "</span>
         		<a href='".get_permalink($next_blog_post)."'>".$next_title."</a>
 	        </p>"; 
     } else {
         echo "<p class='next'>
-                <span>This is the newest post</span>
-        		<a href='".esc_url(home_url())."'>Return to Blog</a>
+                <span>" . __('This is the newest post', 'drop') . "</span>
+        		<a href='".esc_url(home_url())."'>" . __('Return to Blog','drop') . "</a>
         	 </p>";    
     }
     echo "</nav>";
@@ -150,7 +150,7 @@ function ct_drop_category_display() {
     $separator = ' ';
     $output = '';
     if($categories){
-	    echo "<p><span>Categories: </span>";
+	    echo "<p><span>" . __('Categories:','drop') . "</span>";
         foreach($categories as $category) {
             $output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s", 'drop' ), $category->name ) ) . '">'.$category->cat_name.'</a>'.$separator;
         }
@@ -166,7 +166,7 @@ function ct_drop_tags_display() {
     $separator = ' ';
     $output = '';
     if($tags){
-        echo "<p><span>Tagged as: </span>";
+        echo "<p><span>" . __('Tagged as:','drop') . "</span>";
         foreach($tags as $tag) {
             $output .= '<a href="'.get_tag_link( $tag->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts tagged %s", 'drop' ), $tag->name ) ) . '">'.$tag->name.'</a>'.$separator;
         }
@@ -185,7 +185,7 @@ function ct_drop_customize_comments( $comment, $args, $depth ) {
             
             <div class="comment-author"><?php echo get_avatar( get_comment_author_email() ); ?>
                 <div>
-                    <div class="author-name"><?php comment_author_link(); ?> said&#8230;</div>
+                    <div class="author-name"><?php comment_author_link(); ?><?php _e('said','drop'); ?>&#8230;</div>
                 </div>    
             </div>
             <?php if ($comment->comment_approved == '0') : ?>
@@ -214,21 +214,21 @@ function ct_drop_update_fields($fields) {
 
 	$fields['author'] = 
 		'<p class="comment-form-author">
-		    <label class="screen-reader-text">Your Name</label>
+		    <label class="screen-reader-text">' . _e('Your Name','drop') . '</label>
 			<input required minlength="3" maxlength="30" placeholder="Your Name*" id="author" name="author" type="text" aria-required="true" value="' . esc_attr( $commenter['comment_author'] ) .
     '" size="30"' . $aria_req . ' />
     	</p>';
     
     $fields['email'] = 
     	'<p class="comment-form-email">
-    	    <label class="screen-reader-text">Your Email</label>
+    	    <label class="screen-reader-text">' . _e('Your Email','drop') . '</label>
     		<input required placeholder="Your Email*" id="email" name="email" type="email" aria-required="true" value="' . esc_attr(  $commenter['comment_author_email'] ) .
     '" size="30"' . $aria_req . ' />
     	</p>';
 	
 	$fields['url'] = 
 		'<p class="comment-form-url">
-		    <label class="screen-reader-text">Your Website</label>
+		    <label class="screen-reader-text">' . _e('Your Website','drop') . '</label>
 			<input placeholder="Your URL" id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) .
     '" size="30" />
     	</p>';
@@ -241,7 +241,7 @@ function ct_drop_update_comment_field($comment_field) {
 	
 	$comment_field = 
 		'<p class="comment-form-comment">
-            <label class="screen-reader-text">Your Comment</label>
+            <label class="screen-reader-text">' . _e('Your Comment','drop') . '</label>
 			<textarea required placeholder="Enter Your Comment&#8230;" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
 		</p>';
 	
@@ -260,7 +260,9 @@ function ct_drop_excerpt() {
 	*  works for both manual excerpts and read more tags
 	*/
     if($ismore) {
-        the_content("Read the Post <span class='screen-reader-text'>" . get_the_title() . "</span>");
+        $read_more_link = __('Read the Post','drop');
+        $read_more_link .= "<span class='screen-reader-text'>" . get_the_title() . "</span>";
+        the_content($read_more_link);
     }
     // otherwise the excerpt is automatic, so output it
     else {
@@ -271,7 +273,7 @@ function ct_drop_excerpt() {
 // for custom & automatic excerpts
 function ct_drop_excerpt_read_more_link($output) {
 	global $post;
-	return $output . "<p><a class='more-link' href='". get_permalink() ."'>Read the Post <span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
+	return $output . "<p><a class='more-link' href='". get_permalink() ."'>" . __('Read the Post','drop') . "<span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
 }
 
 add_filter('the_excerpt', 'ct_drop_excerpt_read_more_link');
@@ -307,7 +309,7 @@ function ct_drop_add_image_credit_link() {
     global $post;
     $link = get_post_meta( $post->ID, 'ct-image-credit-link', true );
     if(!empty($link)) {
-        echo "<p id='image-credit' class='image-credit'>image credit: ".make_clickable($link)."</p>";    
+        echo "<p id='image-credit' class='image-credit'>" . __('image credit:','drop') . make_clickable($link)."</p>";
     }
 }
 
@@ -344,7 +346,7 @@ add_filter( 'wp_title', 'ct_drop_add_homepage_title' );
 function ct_drop_add_homepage_title( $title )
 {
     if( empty( $title ) && ( is_home() || is_front_page() ) ) {
-        return __( get_bloginfo( 'title' ), 'theme_domain' ) . ' | ' . get_bloginfo( 'description' );
+        return get_bloginfo( 'title' ) . ' | ' . get_bloginfo( 'description' );
     }
     return $title;
 }
@@ -364,7 +366,9 @@ function ct_drop_body_class( $classes ) {
 add_filter( 'body_class', 'ct_drop_body_class' );
 
 // fix for bug with Disqus saying comments are closed
-remove_filter( 'comments_template', 'dsq_comments_template' );
-add_filter( 'comments_template', 'dsq_comments_template', 99 ); // You can use any priority higher than '10'
+if ( function_exists( 'dsq_options' ) ) {
+    remove_filter( 'comments_template', 'dsq_comments_template' );
+    add_filter( 'comments_template', 'dsq_comments_template', 99 ); // You can use any priority higher than '10'
+}
 
 ?>
