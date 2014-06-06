@@ -1,10 +1,5 @@
 /*===== Variables =====*/
 
-@import "compass/typography/vertical_rhythm";
-
-// import compass transform mixins
-@import "compass/css3/transform";
-
 /* Theme Colors */
 
 $green-lighter: #37B382;
@@ -35,32 +30,6 @@ $secondary-font-family: 'open sans', 'sans-serif';
 
 $base-font-weight: 400;
 $base-font-color: $gray-dark;
-
-$small-font-size: 13px;
-$base-font-size: 16px;
-$medium-font-size: 21px;
-$medium-large-font-size: 26px;
-$large-font-size: 36px;
-$xlarge-font-size: 42px;
-
-%t-small {
-  @include adjust-font-size-to($small-font-size);
-}
-%t-base {
-  @include adjust-font-size-to($base-font-size);
-}
-%t-medium {
-  @include adjust-font-size-to($medium-font-size);
-}
-%t-medium-large {
-  @include adjust-font-size-to($medium-large-font-size);
-}
-%t-large {
-  @include adjust-font-size-to($large-font-size);
-}
-%t-xlarge {
-  @include adjust-font-size-to($xlarge-font-size);
-}
 
 /* Social Media Brand Colors */
 

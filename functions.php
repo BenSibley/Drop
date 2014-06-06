@@ -50,6 +50,9 @@ function ct_drop_theme_setup() {
     
     // adds the file with the customizer functionality
     require_once( trailingslashit( get_template_directory() ) . 'functions-admin.php' );
+
+    // enable localization
+    load_theme_textdomain('drop', get_template_directory() . '/languages');
 }
 
 // Initialize the metabox class

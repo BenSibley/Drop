@@ -27,10 +27,10 @@ body {
   left: 0;
   overflow: hidden;
   z-index: 0;
-  @include transition(all 0.3s ease-in-out);
+  transition: all 0.3s ease-in-out;
 
   // enable hardware acceleration
-  @include transform(translateZ(0));
+  transform: translateZ(0);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -40,22 +40,28 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-  @extend %t-xlarge;
+  font-size: 2.625em; /* 42px */
+  line-height: 1.143;
 }
 h2 {
-  @extend %t-large;
+  font-size: 2.25em; /* 36px */
+  line-height: 1.33;
 }
 h3 {
-  @extend %t-medium-large;
+  font-size: 1.625em; /* 26px */
+  line-height: 1.08;
 }
 h4 {
-  @extend %t-medium;
+  font-size: 1.3125em; /* 21px */
+  line-height: 1.14;
 }
 h5 {
-  @extend %t-medium;
+  font-size: 1.3125em; /* 21px */
+  line-height: 1.14;
 }
 h6 {
-  @extend %t-base;
+  font-size: 1em;
+  line-height: 1.5;
 }
 
 /* Markup styles */
@@ -70,7 +76,7 @@ a,
 a:link {
   color: $green;
   text-decoration: none;
-  @include transition(all 0.15s ease);
+  transition: all 0.15s ease;
 }
 a:visited {
   color: $green-dark;
@@ -202,7 +208,8 @@ img,
   margin: 0;
   display: inline-block;
   border-bottom: solid 0.077em $gray-light;
-  @extend %t-small;
+  font-size: 0.813em;
+  lin-height: 1.85;
 }
 
 /* Form styles */
@@ -221,7 +228,7 @@ input[type="submit"] {
   font-family: $base-font-family;
   color: white;
   text-transform: uppercase;
-  @include transition(all 0.25s ease);
+  transition: all 0.25s ease;
 }
 input[type="submit"]:hover,
 input[type="submit"]:focus {
@@ -276,8 +283,9 @@ button.toggle-button {
   background: none;
   position: relative;
   border: none;
-  @extend %t-medium-large;
-  @include transition(all 0.15s ease-in-out);
+  font-size: 1.625em; /* 26px */
+  line-height: 1.08;
+  transition: all 0.15s ease-in-out;
 
   &:hover,
   &:active {
@@ -306,7 +314,8 @@ button.toggle-button {
   }
 }
 .site-title {
-  @extend %t-medium-large;
+  font-size: 1.625em; /* 26px */
+  line-height: 1.08;
   text-transform: uppercase;
   text-shadow: -0.077em 0.077em $gray-darkest;
 
@@ -341,12 +350,12 @@ button.toggle-button {
   background: $gray-darker;
   color: $gray-light;
   text-align: center;
-  @include transition(all 0.25s ease-in-out);
+  transition: all 0.25s ease-in-out;
 }
 .site-info {
 
   img {
-    @include border-radius(50%);
+    border-radius: 50%;
     width: 4.5em;
     height: auto;
     margin: 0 auto;
@@ -387,7 +396,7 @@ button.toggle-button {
   li {
     position: relative;
     overflow: hidden;
-    @include transition(all 0.3s ease-in-out);
+    transition: all 0.3s ease-in-out;
 
     a {
       display: block;
@@ -446,7 +455,8 @@ button.toggle-button {
   li {
     display: inline-block;
     margin: 0 0.125em;
-    @extend %t-medium-large;
+    font-size: 1.625em; /* 26px */
+    line-height: 1.08;
 
     a,
     a:link,
@@ -469,7 +479,7 @@ button.toggle-button {
   padding: 1.5em 5.55%;
   text-transform: uppercase;
   color: $gray-darker;
-  @include transition(margin 0.3s ease-in-out);
+  transition: margin 0.3s ease-in-out;
 
   h1,
   h2 {
@@ -657,7 +667,7 @@ button.toggle-button {
   margin: 1.5em 5.55%;
 
   iframe {
-    @include transform(translateZ(0));
+    transform: translateZ(0);
   }
 }
 .entry-meta-bottom {
@@ -678,7 +688,8 @@ button.toggle-button {
   a,
   a:link {
     text-decoration: underline;
-    @extend %t-small;
+    font-size: 0.813em;
+    lin-height: 1.85;
   }
 }
 .entry-categories,
@@ -694,7 +705,8 @@ button.toggle-button {
   a {
     margin: 0 1em 0 0;
     text-transform: uppercase;
-    @extend %t-small;
+    font-size: 0.813em;
+    lin-height: 1.85;
   }
 }
 .singular-pagination {
@@ -722,7 +734,8 @@ button.toggle-button {
   text-transform: uppercase;
 
   h3 {
-    @extend %t-large;
+    font-size: 2.25em; /* 36px */
+    line-height: 1.33;
     font-weight: 400;
   }
 }
@@ -750,7 +763,7 @@ li.pingback {
   .avatar {
     width: $base-line-height * 2;
     height: auto;
-    @include border-radius(50%);
+    border-radius: 50%;
     float: left;
     margin-right: 1em;
     margin-bottom: $base-line-height / 2;
@@ -768,7 +781,8 @@ li.pingback {
     margin: -$base-line-height / 2 0;
   }
   .comment-footer {
-    @extend %t-small;
+    font-size: 0.813em;
+    lin-height: 1.85;
 
     div {
       display: inline-block;
@@ -839,7 +853,7 @@ input[type="submit"] {
   padding: 1.5em 5.55% 0;
   position: relative;
   color: $gray-medium-dark;
-  @include transition(all 0.3s ease-in-out);
+  transition: all 0.3s ease-in-out;
 
   a {
     color: white;
@@ -855,7 +869,7 @@ input[type="submit"] {
     }
   }
   // enable hardware acceleration
-  @include transform(translateZ(0));
+  transform: translateZ(0);
 
   .widget-title {
     text-transform: uppercase;
@@ -888,7 +902,8 @@ input[type="submit"] {
 
   p {
     font-family: $base-font-family;
-    @extend %t-small;
+    font-size: 0.813em;
+    lin-height: 1.85;
     margin: 0;
   }
   a,
@@ -927,11 +942,12 @@ input[type="submit"] {
     z-index: -1;
     padding: 0.75em 11.11%;
     font-family: $base-font-family;
-    @extend %t-base;
+    font-size: 1em;
+    line-height: 1.5;
     color: $gray-dark;
     background: $gray-light;
-    @include transition(top 0.3s ease-in-out);
-    @include backface-visibility(hidden);
+    transition: top 0.3s ease-in-out;
+    backface-visibility: hidden;
 
     &::-webkit-input-placeholder {
       color: $gray-dark;
@@ -954,16 +970,17 @@ input[type="submit"] {
     background: none;
     font-size: $base-font-size;
     z-index: 0; /* so 'sticky' post outline doesn't get cut off */
-    @include transition(all 0.3s ease-in-out);
+    transition: all 0.3s ease-in-out;
   }
   span {
     color: white;
     background: $green;
     z-index: 5;
-    @include backface-visibility(hidden);
+    backface-visibility: hidden;
 
     i {
-      @extend %t-medium-large;
+      font-size: 1.625em; /* 26px */
+      line-height: 1.08;
       position: absolute;
       top: 28%;
       left: 35%;
@@ -1171,17 +1188,12 @@ input[type="search"]::-webkit-search-results-decoration {
   .excerpts-container {
 
     // enable hardware acceleration
-    @include transform(translateZ(0));
-
-    @include transition(all 0.3s ease-in-out);
+    transform: translateZ(0);
+    transition: all 0.3s ease-in-out;
   }
   .excerpts-container.open {
 
     // give space for search bar drop-down
-    -webkit-transform: translateY($base-line-height * 4);
-    -moz-transform: translateY($base-line-height * 4);
-    -ms-transform: translateY($base-line-height * 4);
-    -o-transform: translateY($base-line-height * 4);
     transform: translateY($base-line-height * 4);
     padding-bottom: $base-line-height * 4;
   }
@@ -1358,7 +1370,7 @@ input[type="search"]::-webkit-search-results-decoration {
       top: 1.5em;
       left: -999em;
       background: $gray;
-      @include transition(top 0.2s ease);
+      transition: top 0.2s ease;
 
       &.focused {
         left: 100%;
@@ -1387,7 +1399,7 @@ input[type="search"]::-webkit-search-results-decoration {
     li {
       position: relative;
       overflow: visible;
-      @include transition(all 0.3s ease-in-out);
+      transition: all 0.3s ease-in-out;
 
       &:hover,
       &:active,
