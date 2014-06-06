@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Drop\n"
-"POT-Creation-Date: 2014-06-06 14:18-0500\n"
-"PO-Revision-Date: 2014-06-06 14:30-0500\n"
+"POT-Creation-Date: 2014-06-06 16:30-0500\n"
+"PO-Revision-Date: 2014-06-06 16:33-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -1274,6 +1274,29 @@ msgstr ""
 #: library/functions/utility.php:197
 msgid "(Untitled)"
 msgstr "(Untitled)"
+
+#: node_modules/grunt-pot/test/fixtures/some-file.php:3
+msgid "I'm a translatable string."
+msgstr "I'm a translatable string."
+
+#: node_modules/grunt-pot/test/fixtures/some-other-file.php:4
+msgid "Me too"
+msgstr "Me too"
+
+#: node_modules/grunt-pot/test/fixtures/some-other-file.php:7
+#, php-format
+msgid "I have %d apple"
+msgid_plural "I have %d apples"
+msgstr[0] "I have %d apple"
+msgstr[1] "I have %d apples"
+
+#: node_modules/grunt-pot/test/fixtures/some-other-file.php:16
+msgid "yyyy-mm-dd"
+msgstr "yyyy-mm-dd"
+
+#: node_modules/grunt-wp-i18n/test/fixtures/basic-theme/exclude/file.php:3
+msgid "Exclude"
+msgstr "Exclude"
 
 #: search.php:11
 #, php-format

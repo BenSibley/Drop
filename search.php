@@ -8,9 +8,9 @@
             global $wp_query;
             $total_results = $wp_query->found_posts;
             if($total_results) {
-                printf(__('%d search results for','tracks'),$total_results);
+                printf(__('%d search results for','drop'),$total_results);
             } else {
-                _e("No search results for ");
+                _e("No search results for ",'drop');
             }
             ?>
             <span>"<?php echo $s ?>"</span>
