@@ -188,7 +188,7 @@ function ct_drop_customize_comments( $comment, $args, $depth ) {
             
             <div class="comment-author"><?php echo get_avatar( get_comment_author_email() ); ?>
                 <div>
-                    <div class="author-name"><?php comment_author_link(); ?><?php _e('said','drop'); ?>&#8230;</div>
+                    <div class="author-name"><?php comment_author_link(); ?> <?php _e('said','drop'); ?>&#8230;</div>
                 </div>    
             </div>
             <?php if ($comment->comment_approved == '0') : ?>

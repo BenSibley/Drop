@@ -60,6 +60,26 @@ module.exports = function(grunt) {
                     'style.min.css': ['style-prefixed.css']
                 }
             }
+        },
+        pot: {
+            options:{
+                text_domain: 'drop', //Your text domain. Produces my-text-domain.pot
+                dest: 'languages/', //directory to place the pot file
+                keywords: ['gettext', '__','_e','_n:1,2','_x:1,2c','_ex:1,2c','_nx:4c,1,2','esc_attr__','esc_attr_e','esc_attr_x:1,2c','esc_html__','esc_html_e','esc_html_x:1,2c','_n_noop:1,2','_nx_noop:3c,1,2','__ngettext_noop:1,2'] //functions to look for
+            },
+            files: {
+                src:  [ '**/*.php' ], //Parse all php files
+                expand: true
+            }
+        },
+        makepot: {
+            target: {
+                options: {
+                    domainPath: '/languages',
+                    potFilename: 'drop.pot',
+                    type: 'wp-theme'
+                }
+            }
         }
     });
 
@@ -70,8 +90,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-wp-i18n');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass', 'autoprefixer', 'cssmin']);
+    grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass', 'autoprefixer', 'cssmin','makepot']);
 
 };
