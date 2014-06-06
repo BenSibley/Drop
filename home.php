@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class='page-header'>
-	<h2>Blog</h2>
+	<h2><?php _x('Blog','noun: the blog page','drop'); ?></h2>
 	<?php get_search_form(); ?>
 </div>
 

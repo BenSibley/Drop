@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     
 <div class='page-header'>
-	<p>Category:</p>
+	<p><?php _e('Category:','drop'); ?></p>
 	<h2><?php single_cat_title(); ?></h2>
 	<?php get_search_form(); ?>
 </div>

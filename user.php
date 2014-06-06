@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     
 <div class='page-header'>
-	<p>These Posts are by:</p>
+    <p><?php _e('These are posts by:','drop'); ?></p>
 	<h2><?php echo get_the_author(); ?></h2>
 	<?php get_search_form(); ?>
 </div>

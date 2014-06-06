@@ -23,7 +23,7 @@
 <body id="<?php print get_stylesheet(); ?>" <?php body_class('ct-body'); ?>>
 
 <div class='overflow-container'>
-    <a class="skip-content" href="#main">Skip to content</a>
+    <a class="skip-content" href="#main"><?php _e('Skip to content','drop'); ?></a>
 <header class="site-header" role="banner">
 
 	<div itemscope itemtype="http://schema.org/Organization" class="title-info">

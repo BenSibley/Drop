@@ -8,6 +8,6 @@ if ( have_posts() ) :
         the_post();
         get_template_part( 'content' ); 
     endwhile;
-endif;
+endif; ?>
 
 <?php get_footer(); ?>

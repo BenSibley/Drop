@@ -3,7 +3,18 @@
 <div class="entry">
     
     <div class='page-header'>
-	    <h1>Search Results for "<?php echo $s ?>"</h1>
+	    <h1>
+            <?php
+            global $wp_query;
+            $total_results = $wp_query->found_posts;
+            if($total_results) {
+                printf(__('%d search results for','tracks'),$total_results);
+            } else {
+                _e("No search results for ");
+            }
+            ?>
+            <span>"<?php echo $s ?>"</span>
+        </h1>
 	</div>
     <?php get_search_form(); ?>
 	
@@ -22,7 +33,7 @@
     <?php if ( current_theme_supports( 'loop-pagination' ) ) loop_pagination(); ?>
     
     <div class="search-bottom">
-        <p>Can't find what you're looking for?  Try refining your search:</p>
+        <p><?php _e("Can't find what you're looking for?  Try refining your search:",'drop'); ?></p>
         <?php get_search_form(); ?>    
     </div>
 

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     
 <div class='page-header'>
-	<p>Tag:</p>
+    <p><?php _e('Tag:','drop'); ?></p>
 	<h2><?php single_tag_title(); ?></h2>
 	<?php get_search_form(); ?>
 </div>
