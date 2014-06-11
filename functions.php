@@ -7,16 +7,31 @@ function ct_drop_load_javascript_files() {
 
     // enqueue scripts on front end
     if(! is_admin() ) {
-        wp_enqueue_script('production', get_template_directory_uri() . '/js/build/production.min.js', array('jquery'),'', true);
+        wp_enqueue_script('production', get_template_directory_uri() . '/js/build/production.min.js#ct_drop_asyncload', array('jquery'),'', true);
 
         wp_enqueue_style('google-fonts');
         wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css');
     }
-    // enqueues the comment-reply script on posts & pages.  This script is included in WP by default
-    if( is_singular() && comments_open() && get_option('thread_comments') ) wp_enqueue_script( 'comment-reply' ); 
+
+    // enqueues the comment-reply script on posts & pages with comments open.
+    if( is_singular() && comments_open() && get_option('thread_comments') ){
+        wp_enqueue_script( 'comment-reply' );
+    }
 }
 
 add_action('wp_enqueue_scripts', 'ct_drop_load_javascript_files' );
+
+// load all scripts enqueued by theme asynchronously
+function ct_drop_add_async_script($url) {
+
+    // if async parameter not present, do nothing
+    if (strpos($url, '#ct_drop_asyncload')===false){
+        return $url;
+    }
+    // if async parameter present, add async attribute
+    return str_replace('#ct_drop_asyncload', '', $url)."' async='async";
+}
+add_filter('clean_url', 'ct_drop_add_async_script', 11, 1);
 
 /* Load the core theme framework. */
 require_once( trailingslashit( get_template_directory() ) . 'library/hybrid.php' );
