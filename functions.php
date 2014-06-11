@@ -335,25 +335,22 @@ function ct_drop_add_image_credit_link() {
 function ct_drop_featured_image() {
 	
 	global $post;
-	$has_image = false;
 
-
+    // if blog/archive load smaller image size
     if(is_home() || is_archive()){
 
+        // if not first page, lazy load image
         if (has_post_thumbnail( $post->ID ) ) {
             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'blog' );
             $image = $image[0];
-            $has_image = true;
+            echo "<div itemprop='thumbnailUrl' class='featured-image lazy' style=\"background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==')\" data-background='" . $image . "'></div>";
         }
     }
 	elseif (has_post_thumbnail( $post->ID ) ) {
 		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
 		$image = $image[0];
-		$has_image = true;
-	}  
-	if ($has_image == true) {
         echo "<div itemprop='thumbnailUrl' class='featured-image' style=\"background-image: url('".$image."')\"></div>";
-    }
+	}
 }
 
 /* add a smaller size for the blog page */
