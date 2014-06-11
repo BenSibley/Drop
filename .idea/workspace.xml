@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="189415df-d7b9-453e-a8ea-3031cd32d73d" name="Default" comment="now loading smaller versions of images on blog and archive pages">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/functions.js" afterPath="$PROJECT_DIR$/js/functions.js" />
+    <list default="true" id="189415df-d7b9-453e-a8ea-3031cd32d73d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/build/production.js" afterPath="$PROJECT_DIR$/js/build/production.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/build/production.min.js" afterPath="$PROJECT_DIR$/js/build/production.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drop.iws" />
@@ -59,10 +56,8 @@
       <file leaf-file-name="functions.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="399" column="1" selection-start="14588" selection-end="14588" vertical-scroll-proportion="0.75609756" vertical-offset="5613" max-vertical-offset="6105">
-              <folding>
-                <marker date="1402521059000" expanded="true" signature="12840:12947" placeholder="..." />
-              </folding>
+            <state line="345" column="116" selection-start="12873" selection-end="12873" vertical-scroll-proportion="0.5121951" vertical-offset="4923" max-vertical-offset="6105">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -492,7 +487,11 @@
       <created>1402517356582</created>
       <updated>1402517356582</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="added lazy loading to featured images on blog/archive pages">
+      <created>1402521079805</created>
+      <updated>1402521079805</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -532,7 +531,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="updated missing namespace update." />
     <MESSAGE value="fixed missing social icons" />
     <MESSAGE value="Updated loop-pagination to not add markup if empty. v1.12" />
     <MESSAGE value="fixed loop pagination error &amp; updated support widget." />
@@ -557,7 +555,8 @@
     <MESSAGE value="* removed old .pot grunt task&#10;* updated missing text domain&#10;* tagging as v.1.15" />
     <MESSAGE value="now loading production.min.js asynchronously" />
     <MESSAGE value="now loading smaller versions of images on blog and archive pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="now loading smaller versions of images on blog and archive pages" />
+    <MESSAGE value="added lazy loading to featured images on blog/archive pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="added lazy loading to featured images on blog/archive pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -842,10 +841,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="399" column="1" selection-start="14588" selection-end="14588" vertical-scroll-proportion="0.75609756" vertical-offset="5613" max-vertical-offset="6105">
-          <folding>
-            <marker date="1402521059000" expanded="true" signature="12840:12947" placeholder="..." />
-          </folding>
+        <state line="345" column="116" selection-start="12873" selection-end="12873" vertical-scroll-proportion="0.5121951" vertical-offset="4923" max-vertical-offset="6105">
+          <folding />
         </state>
       </provider>
     </entry>
