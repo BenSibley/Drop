@@ -336,8 +336,17 @@ function ct_drop_featured_image() {
 	
 	global $post;
 	$has_image = false;
-			
-	if (has_post_thumbnail( $post->ID ) ) {
+
+
+    if(is_home() || is_archive()){
+
+        if (has_post_thumbnail( $post->ID ) ) {
+            $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'blog' );
+            $image = $image[0];
+            $has_image = true;
+        }
+    }
+	elseif (has_post_thumbnail( $post->ID ) ) {
 		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
 		$image = $image[0];
 		$has_image = true;
@@ -347,6 +356,10 @@ function ct_drop_featured_image() {
     }
 }
 
+/* add a smaller size for the blog page */
+if( function_exists('add_image_size')){
+    add_image_size('blog', 600, 400);
+}
 // does it contain a featured image?
 function ct_drop_contains_featured() {
 
