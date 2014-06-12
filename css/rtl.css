@@ -38,6 +38,7 @@ body {
   padding: 0;
   word-wrap: break-word;
   -ms-word-wrap: break-word;
+  text-align: right;
   direction: rtl;
   unicode-bidi: embed;
 }

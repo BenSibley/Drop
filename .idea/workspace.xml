@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="189415df-d7b9-453e-a8ea-3031cd32d73d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_base.scss" afterPath="$PROJECT_DIR$/sass/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/functions.js" afterPath="$PROJECT_DIR$/js/functions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/build/production.js" afterPath="$PROJECT_DIR$/js/build/production.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/build/production.min.js" afterPath="$PROJECT_DIR$/js/build/production.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/rtl.css" afterPath="$PROJECT_DIR$/css/rtl.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/rtl.min.css" afterPath="$PROJECT_DIR$/css/rtl.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
@@ -54,7 +51,7 @@
       <file leaf-file-name="_base.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/_base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="560" column="14" selection-start="9644" selection-end="9644" vertical-scroll-proportion="0.30171072" vertical-offset="8206" max-vertical-offset="25815">
+            <state line="8" column="6" selection-start="205" selection-end="205" vertical-scroll-proportion="0.1866252" vertical-offset="0" max-vertical-offset="25830">
               <folding />
             </state>
           </provider>
@@ -533,7 +530,11 @@
       <created>1402590411867</created>
       <updated>1402590411867</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="updated menu toggle to support rtl. Fixed styling on .excerpt-date to support rtl">
+      <created>1402590852978</created>
+      <updated>1402590852978</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -573,7 +574,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* added schema microdata for logo" />
     <MESSAGE value="* internationalization complete for functions.php and up to content.php" />
     <MESSAGE value="* internationalized" />
     <MESSAGE value="* removed extraneous action filter for personal social icons&#10;* removed dashboard widget" />
@@ -598,7 +598,8 @@
     <MESSAGE value="added rtl stylesheet and grunt task for creating it" />
     <MESSAGE value="now enqueueing rtl.min.css. Updated gruntfile and added css directory for rtl.min.css enqueueing" />
     <MESSAGE value="fixed search bar style issues. adding rtl stylesheets." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed search bar style issues. adding rtl stylesheets." />
+    <MESSAGE value="updated menu toggle to support rtl. Fixed styling on .excerpt-date to support rtl" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated menu toggle to support rtl. Fixed styling on .excerpt-date to support rtl" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -891,7 +892,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="560" column="14" selection-start="9644" selection-end="9644" vertical-scroll-proportion="0.30171072" vertical-offset="8206" max-vertical-offset="25815">
+        <state line="8" column="6" selection-start="205" selection-end="205" vertical-scroll-proportion="0.1866252" vertical-offset="0" max-vertical-offset="25830">
           <folding />
         </state>
       </provider>
