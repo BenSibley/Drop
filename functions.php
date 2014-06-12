@@ -202,7 +202,7 @@ function ct_drop_customize_comments( $comment, $args, $depth ) {
         <article id="comment-<?php comment_ID(); ?>" class="comment">
             
             <div class="comment-author">
-                <img width="48" height="48" class="avatar lazy-image" data-src="<?php echo ct_drop_get_gravatar_url(get_avatar( $comment, 50 )); ?>" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                <img width="48" height="48" class="avatar lazy lazy-image" data-src="<?php echo ct_drop_get_gravatar_url(get_avatar( $comment, 50 )); ?>" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" />
                 <div>
                     <div class="author-name"><?php comment_author_link(); ?> <?php _e('said','drop'); ?>&#8230;</div>
                 </div>    
@@ -344,7 +344,7 @@ function ct_drop_featured_image() {
         if (has_post_thumbnail( $post->ID ) ) {
             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'blog' );
             $image = $image[0];
-            echo "<div itemprop='thumbnailUrl' class='featured-image lazy-bg-image' data-background='" . $image . "'></div>";
+            echo "<div itemprop='thumbnailUrl' class='featured-image lazy lazy-bg-image' data-background='" . $image . "'></div>";
         }
     }
 	elseif (has_post_thumbnail( $post->ID ) ) {

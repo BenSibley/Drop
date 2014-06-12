@@ -567,35 +567,27 @@ jQuery(document).ready(function($){
 	}
 
     /* lazy load images */
-    function lazyLoadBGImages(){
-
-        $('.lazy-bg-image').each(function(){
-            var distanceToTop = $(this).offset().top;
-            var scroll = $(window).scrollTop();
-            var windowHeight = $(window).height();
-            var isVisible = distanceToTop - scroll < windowHeight;
-            if (isVisible) {
-                $(this).css('background-image', 'url("' + $(this).attr('data-background') + '")').removeClass('lazy-bg-image');
-            }
-        });
-    }
-    lazyLoadBGImages();
-
     function lazyLoadImages(){
-        $('.lazy-image').each(function(){
+
+        $('.lazy').each(function(){
             var distanceToTop = $(this).offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
             var isVisible = distanceToTop - scroll < windowHeight;
             if (isVisible) {
-                $(this).attr('src', $(this).attr('data-src')).removeClass('lazy-image');
+
+                if( $(this).hasClass('lazy-image') ){
+                    $(this).attr('src', $(this).attr('data-src')).removeClass('lazy-image');
+                }
+                if( $(this).hasClass('lazy-bg-image') ){
+                    $(this).css('background-image', 'url("' + $(this).attr('data-background') + '")').removeClass('lazy-bg-image');
+                }
             }
         });
     }
     lazyLoadImages();
 
     $(window).scroll(function() {
-        lazyLoadBGImages();
         lazyLoadImages();
     });
 

@@ -32,7 +32,7 @@
       <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="209" column="61" selection-start="8010" selection-end="8010" vertical-scroll-proportion="-8.5" vertical-offset="2931" max-vertical-offset="6195">
+            <state line="346" column="74" selection-start="13022" selection-end="13022" vertical-scroll-proportion="-11.0" vertical-offset="4926" max-vertical-offset="6195">
               <folding />
             </state>
           </provider>
@@ -50,7 +50,7 @@
       <file leaf-file-name="functions.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="166" column="11" selection-start="5804" selection-end="5804" vertical-scroll-proportion="0.32086614" vertical-offset="2327" max-vertical-offset="3150">
+            <state line="162" column="38" selection-start="5582" selection-end="5582" vertical-scroll-proportion="0.32929292" vertical-offset="2267" max-vertical-offset="3030">
               <folding />
             </state>
           </provider>
@@ -439,7 +439,11 @@
       <created>1402539036698</created>
       <updated>1402539036698</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="added lazy loading for gravatar">
+      <created>1402540246329</created>
+      <updated>1402540246329</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -479,7 +483,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="fixed loop pagination error &amp; updated support widget." />
     <MESSAGE value="* added disqus fix&#10;* added validation/sanitization for customizer functions" />
     <MESSAGE value="* updated conditional ie logic in head" />
     <MESSAGE value="* added grunt" />
@@ -504,7 +507,8 @@
     <MESSAGE value="added lazy loading to featured images on blog/archive pages" />
     <MESSAGE value="removed unneeded background-image base64 gif for lazy loading" />
     <MESSAGE value="added lazy loading to comments. Updated class in featured image for lazy background images" />
-    <option name="LAST_COMMIT_MESSAGE" value="added lazy loading to comments. Updated class in featured image for lazy background images" />
+    <MESSAGE value="added lazy loading for gravatar" />
+    <option name="LAST_COMMIT_MESSAGE" value="added lazy loading for gravatar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -780,14 +784,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="61" selection-start="8010" selection-end="8010" vertical-scroll-proportion="-8.5" vertical-offset="2931" max-vertical-offset="6195">
+        <state line="346" column="74" selection-start="13022" selection-end="13022" vertical-scroll-proportion="-11.0" vertical-offset="4926" max-vertical-offset="6195">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="11" selection-start="5804" selection-end="5804" vertical-scroll-proportion="0.32086614" vertical-offset="2327" max-vertical-offset="3150">
+        <state line="162" column="38" selection-start="5582" selection-end="5582" vertical-scroll-proportion="0.32929292" vertical-offset="2267" max-vertical-offset="3030">
           <folding />
         </state>
       </provider>
