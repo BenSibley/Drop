@@ -28,7 +28,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ['sass/*.scss'],
-                tasks: ['sass', 'autoprefixer', 'cssmin'],
+                tasks: ['sass', 'autoprefixer', 'cssjanus', 'cssmin'],
                 options: {
                     livereload: true,
                     spawn: false
@@ -51,13 +51,14 @@ module.exports = function(grunt) {
                     browsers: ['last 1 version', '> 1%', 'ie 8']
                 },
                 src: 'style.css',
-                dest: 'style-prefixed.css'
+                dest: 'style.css'
             }
         },
         cssmin: {
             combine: {
                 files: {
-                    'style.min.css': ['style-prefixed.css']
+                    'style.min.css': ['style.css'],
+                    'css/rtl.min.css': ['css/rtl.css']
                 }
             }
         },
@@ -89,7 +90,7 @@ module.exports = function(grunt) {
                     swapLtrRtlInUrl: false // replace 'ltr' with 'rtl'
                 },
                 src: ['style.css'],
-                dest: 'rtl.css'
+                dest: 'css/rtl.css'
             }
         }
     });

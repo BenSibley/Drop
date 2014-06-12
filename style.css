@@ -38,6 +38,8 @@ body {
   padding: 0;
   word-wrap: break-word;
   -ms-word-wrap: break-word;
+  direction: ltr;
+  unicode-bidi: embed;
 }
 
 .overflow-container {
@@ -51,7 +53,9 @@ body {
   left: 0;
   overflow: hidden;
   z-index: 0;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
 
@@ -100,6 +104,9 @@ h6 {
 p {
   font-family: "open sans", "sans-serif";
   margin: 24px 0;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto;
 }
 
@@ -107,6 +114,7 @@ a,
 a:link {
   color: #28805d;
   text-decoration: none;
+  -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
 
@@ -260,7 +268,7 @@ img,
   display: inline-block;
   border-bottom: solid 0.077em #e6e6e6;
   font-size: 0.813em;
-  lin-height: 1.85;
+  line-height: 1.85;
 }
 
 /* Form styles */
@@ -279,6 +287,7 @@ input[type="submit"] {
   font-family: "montserrat", "open sans", "sans-serif";
   color: white;
   text-transform: uppercase;
+  -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 
@@ -337,6 +346,7 @@ button.toggle-button {
   font-size: 1.625em;
   /* 26px */
   line-height: 1.08;
+  -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
 button.toggle-button:hover, button.toggle-button:active {
@@ -408,6 +418,7 @@ button.toggle-button:focus {
   background: #333333;
   color: #e6e6e6;
   text-align: center;
+  -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
 
@@ -456,6 +467,7 @@ button.toggle-button:focus {
 .menu-unset > ul li {
   position: relative;
   overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .menu-primary-items li a,
@@ -549,6 +561,7 @@ button.toggle-button:focus {
   padding: 1.5em 5.55%;
   text-transform: uppercase;
   color: #333333;
+  -webkit-transition: margin 0.3s ease-in-out;
   transition: margin 0.3s ease-in-out;
 }
 .page-header h1,
@@ -603,6 +616,7 @@ button.toggle-button:focus {
 .featured-image {
   position: relative;
   height: 216px;
+  -webkit-background-size: cover;
   background-size: cover;
   background-position: 50%;
   margin-bottom: 24px;
@@ -725,6 +739,7 @@ button.toggle-button:focus {
   margin: 1.5em 5.55%;
 }
 .entry-content iframe {
+  -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
 
@@ -748,7 +763,7 @@ button.toggle-button:focus {
 .further-reading a:link {
   text-decoration: underline;
   font-size: 0.813em;
-  lin-height: 1.85;
+  line-height: 1.85;
 }
 
 .entry-categories p,
@@ -765,7 +780,7 @@ button.toggle-button:focus {
   margin: 0 1em 0 0;
   text-transform: uppercase;
   font-size: 0.813em;
-  lin-height: 1.85;
+  line-height: 1.85;
 }
 
 .singular-pagination {
@@ -841,7 +856,7 @@ li.pingback .comment-content {
 li.comment .comment-footer,
 li.pingback .comment-footer {
   font-size: 0.813em;
-  lin-height: 1.85;
+  line-height: 1.85;
 }
 li.comment .comment-footer div,
 li.pingback .comment-footer div {
@@ -906,7 +921,9 @@ input[type="submit"] {
   padding: 1.5em 5.55% 0;
   position: relative;
   color: #b3b3b3;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
 .site-footer a {
@@ -948,7 +965,7 @@ input[type="submit"] {
 .copyright p {
   font-family: "montserrat", "open sans", "sans-serif";
   font-size: 0.813em;
-  lin-height: 1.85;
+  line-height: 1.85;
   margin: 0;
 }
 .copyright a,
@@ -989,7 +1006,9 @@ input[type="submit"] {
   line-height: 1.5;
   color: #666666;
   background: #e6e6e6;
+  -webkit-transition: top 0.3s ease-in-out;
   transition: top 0.3s ease-in-out;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .search-form-container .search-field::-webkit-input-placeholder {
@@ -1013,12 +1032,14 @@ input[type="submit"] {
   font-size: 16px;
   z-index: 0;
   /* so 'sticky' post outline doesn't get cut off */
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .search-form-container span {
   color: white;
   background: #28805d;
   z-index: 5;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .search-form-container span i {
@@ -1223,11 +1244,15 @@ input[type="search"]::-webkit-search-results-decoration {
 /* 600px */
 @media all and (min-width: 37.5em) {
   .excerpts-container {
+    -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
 
   .excerpts-container.open {
+    -webkit-transform: translateY(96px);
+    -ms-transform: translateY(96px);
     transform: translateY(96px);
     padding-bottom: 96px;
   }
@@ -1389,6 +1414,7 @@ input[type="search"]::-webkit-search-results-decoration {
     top: 1.5em;
     left: -999em;
     background: #cccccc;
+    -webkit-transition: top 0.2s ease;
     transition: top 0.2s ease;
   }
   #menu-primary-items ul.focused,
@@ -1420,6 +1446,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .menu-unset > ul li {
     position: relative;
     overflow: visible;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
   #menu-primary-items li:hover > ul, #menu-primary-items li:active > ul, #menu-primary-items li:focus > ul,
