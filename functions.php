@@ -233,21 +233,21 @@ function ct_drop_update_fields($fields) {
 
 	$fields['author'] = 
 		'<p class="comment-form-author">
-		    <label class="screen-reader-text">' . _e('Your Name','drop') . '</label>
+		    <label class="screen-reader-text">' . __('Your Name','drop') . '</label>
 			<input required minlength="3" maxlength="30" placeholder="Your Name*" id="author" name="author" type="text" aria-required="true" value="' . esc_attr( $commenter['comment_author'] ) .
     '" size="30"' . $aria_req . ' />
     	</p>';
     
     $fields['email'] = 
     	'<p class="comment-form-email">
-    	    <label class="screen-reader-text">' . _e('Your Email','drop') . '</label>
+    	    <label class="screen-reader-text">' . __('Your Email','drop') . '</label>
     		<input required placeholder="Your Email*" id="email" name="email" type="email" aria-required="true" value="' . esc_attr(  $commenter['comment_author_email'] ) .
     '" size="30"' . $aria_req . ' />
     	</p>';
 	
 	$fields['url'] = 
 		'<p class="comment-form-url">
-		    <label class="screen-reader-text">' . _e('Your Website','drop') . '</label>
+		    <label class="screen-reader-text">' . __('Your Website','drop') . '</label>
 			<input placeholder="Your URL" id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) .
     '" size="30" />
     	</p>';
@@ -260,7 +260,7 @@ function ct_drop_update_comment_field($comment_field) {
 	
 	$comment_field = 
 		'<p class="comment-form-comment">
-            <label class="screen-reader-text">' . _e('Your Comment','drop') . '</label>
+            <label class="screen-reader-text">' . __('Your Comment','drop') . '</label>
 			<textarea required placeholder="Enter Your Comment&#8230;" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
 		</p>';
 	

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189415df-d7b9-453e-a8ea-3031cd32d73d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/functions.js" afterPath="$PROJECT_DIR$/js/functions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/build/production.js" afterPath="$PROJECT_DIR$/js/build/production.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/build/production.min.js" afterPath="$PROJECT_DIR$/js/build/production.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drop.iws" />
@@ -29,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="functions.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="346" column="74" selection-start="13022" selection-end="13022" vertical-scroll-proportion="-11.0" vertical-offset="4926" max-vertical-offset="6195">
+            <state line="255" column="1" selection-start="9915" selection-end="9915" vertical-scroll-proportion="0.43312103" vertical-offset="3621" max-vertical-offset="6195">
               <folding />
             </state>
           </provider>
@@ -47,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="162" column="38" selection-start="5582" selection-end="5582" vertical-scroll-proportion="0.32929292" vertical-offset="2267" max-vertical-offset="3030">
+            <state line="171" column="13" selection-start="6026" selection-end="6026" vertical-scroll-proportion="0.0" vertical-offset="2267" max-vertical-offset="3030">
               <folding />
             </state>
           </provider>
@@ -107,8 +104,8 @@
         <option value="$PROJECT_DIR$/gruntfile.js" />
         <option value="$PROJECT_DIR$/search.php" />
         <option value="$PROJECT_DIR$/sass/_info.scss" />
-        <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/js/functions.js" />
+        <option value="$PROJECT_DIR$/functions.php" />
       </list>
     </option>
   </component>
@@ -443,7 +440,11 @@
       <created>1402540246329</created>
       <updated>1402540246329</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="refactored">
+      <created>1402540842124</created>
+      <updated>1402540842124</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -483,7 +484,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* added disqus fix&#10;* added validation/sanitization for customizer functions" />
     <MESSAGE value="* updated conditional ie logic in head" />
     <MESSAGE value="* added grunt" />
     <MESSAGE value="*unminified all 3rd party scripts" />
@@ -508,7 +508,8 @@
     <MESSAGE value="removed unneeded background-image base64 gif for lazy loading" />
     <MESSAGE value="added lazy loading to comments. Updated class in featured image for lazy background images" />
     <MESSAGE value="added lazy loading for gravatar" />
-    <option name="LAST_COMMIT_MESSAGE" value="added lazy loading for gravatar" />
+    <MESSAGE value="refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -782,16 +783,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
+    <entry file="file://$PROJECT_DIR$/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="346" column="74" selection-start="13022" selection-end="13022" vertical-scroll-proportion="-11.0" vertical-offset="4926" max-vertical-offset="6195">
+        <state line="171" column="13" selection-start="6026" selection-end="6026" vertical-scroll-proportion="0.0" vertical-offset="2267" max-vertical-offset="3030">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/functions.js">
+    <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="38" selection-start="5582" selection-end="5582" vertical-scroll-proportion="0.32929292" vertical-offset="2267" max-vertical-offset="3030">
+        <state line="255" column="1" selection-start="9915" selection-end="9915" vertical-scroll-proportion="0.43312103" vertical-offset="3621" max-vertical-offset="6195">
           <folding />
         </state>
       </provider>
