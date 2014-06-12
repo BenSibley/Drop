@@ -82,6 +82,15 @@ module.exports = function(grunt) {
                     }
                 ]
             }
+        },
+        cssjanus: {
+            dev: {
+                options: {
+                    swapLtrRtlInUrl: false // replace 'ltr' with 'rtl'
+                },
+                src: ['style.css'],
+                dest: 'rtl.css'
+            }
         }
     });
 
@@ -94,8 +103,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-wp-i18n');
     grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-cssjanus');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass', 'autoprefixer', 'cssmin','makepot','compress']);
+    grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass', 'autoprefixer', 'cssmin','makepot','compress','cssjanus']);
 
 };

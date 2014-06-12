@@ -64,7 +64,7 @@ function ct_drop_add_social_sites_customizer($wp_customize) {
             ?>
             <label>
                 <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-                <input type="url" <?php $this->link(); ?> value="<?php echo esc_url_raw( $this->value() ); ?>" />
+                <input type="url" <?php $this->link(); ?> value="<?php echo esc_url( $this->value() ); ?>" />
             </label>
         <?php
         }
