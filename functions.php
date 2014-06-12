@@ -201,7 +201,8 @@ function ct_drop_customize_comments( $comment, $args, $depth ) {
     <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
         <article id="comment-<?php comment_ID(); ?>" class="comment">
             
-            <div class="comment-author"><?php echo get_avatar( get_comment_author_email() ); ?>
+            <div class="comment-author">
+                <img width="48" height="48" class="lazy-image" data-src="<?php echo ct_drop_get_gravatar_url(get_avatar( $comment, 50 )); ?>" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" />
                 <div>
                     <div class="author-name"><?php comment_author_link(); ?> <?php _e('said','drop'); ?>&#8230;</div>
                 </div>    
@@ -343,7 +344,7 @@ function ct_drop_featured_image() {
         if (has_post_thumbnail( $post->ID ) ) {
             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'blog' );
             $image = $image[0];
-            echo "<div itemprop='thumbnailUrl' class='featured-image lazy' data-background='" . $image . "'></div>";
+            echo "<div itemprop='thumbnailUrl' class='featured-image lazy-bg-image' data-background='" . $image . "'></div>";
         }
     }
 	elseif (has_post_thumbnail( $post->ID ) ) {
@@ -397,6 +398,11 @@ add_filter( 'body_class', 'ct_drop_body_class' );
 if ( function_exists( 'dsq_options' ) ) {
     remove_filter( 'comments_template', 'dsq_comments_template' );
     add_filter( 'comments_template', 'dsq_comments_template', 99 ); // You can use any priority higher than '10'
+}
+
+function ct_drop_get_gravatar_url($get_avatar){
+    preg_match("/src='(.*?)'/i", $get_avatar, $matches);
+    return $matches[1];
 }
 
 ?>
