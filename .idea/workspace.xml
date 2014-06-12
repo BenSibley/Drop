@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189415df-d7b9-453e-a8ea-3031cd32d73d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/rtl-manual.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_base.scss" afterPath="$PROJECT_DIR$/sass/_base.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/rtl.css" afterPath="$PROJECT_DIR$/css/rtl.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/rtl.min.css" afterPath="$PROJECT_DIR$/css/rtl.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.min.css" afterPath="$PROJECT_DIR$/style.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drop.iws" />
@@ -47,7 +51,7 @@
       <file leaf-file-name="_base.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/_base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="22" selection-start="496" selection-end="496" vertical-scroll-proportion="0.44323483" vertical-offset="0" max-vertical-offset="25830">
+            <state line="216" column="0" selection-start="3508" selection-end="3508" vertical-scroll-proportion="0.16207455" vertical-offset="3140" max-vertical-offset="25830">
               <folding />
             </state>
           </provider>
@@ -238,7 +242,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ignite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tracks" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -506,7 +510,11 @@
       <created>1402590915897</created>
       <updated>1402590915897</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="deleted unnecessary rtl-manual.css file">
+      <created>1402590948634</created>
+      <updated>1402590948634</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -523,7 +531,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10430107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2231405" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26426426" sideWeight="0.5027855" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26426426" sideWeight="0.5027855" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -546,7 +554,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* internationalized" />
     <MESSAGE value="* removed extraneous action filter for personal social icons&#10;* removed dashboard widget" />
     <MESSAGE value="* finished internationalizing strings" />
     <MESSAGE value="* generated po &amp; mo files&#10;* removed compass mixins" />
@@ -571,7 +578,8 @@
     <MESSAGE value="fixed search bar style issues. adding rtl stylesheets." />
     <MESSAGE value="updated menu toggle to support rtl. Fixed styling on .excerpt-date to support rtl" />
     <MESSAGE value="added text-align: left to body" />
-    <option name="LAST_COMMIT_MESSAGE" value="added text-align: left to body" />
+    <MESSAGE value="deleted unnecessary rtl-manual.css file" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted unnecessary rtl-manual.css file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -859,7 +867,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="22" selection-start="496" selection-end="496" vertical-scroll-proportion="0.44323483" vertical-offset="0" max-vertical-offset="25830">
+        <state line="216" column="0" selection-start="3508" selection-end="3508" vertical-scroll-proportion="0.16207455" vertical-offset="3140" max-vertical-offset="25830">
           <folding />
         </state>
       </provider>

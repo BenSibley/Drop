@@ -215,7 +215,7 @@ img,
 
 /* Form styles */
 
-input:not('checkbox'):not('radio'),
+input:not([type="checkbox"]):not([type="radio"]),
 textarea {
   padding: 0.75em 0.5em;
   border: none;
@@ -225,7 +225,7 @@ textarea {
   border-radius: 0;
 }
 input[type="submit"] {
-  background: $green;
+  background: $green !important;
   font-family: $base-font-family;
   color: white;
   text-transform: uppercase;
@@ -841,7 +841,7 @@ li.pingback {
 .comment-respond {
   margin-bottom: $base-line-height * 2;
 }
-input:not('checkbox'):not('radio'),
+input:not(input[type="checkbox"]):not(input[type="radio"]),
 textarea {
   width: 100%;
   color: $gray-dark;
@@ -1276,7 +1276,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   /* comments */
 
-  input:not('checkbox'):not('radio') {
+  input:not(input[type="checkbox"]):not(input[type="radio"]) {
     width: 57.135%;
   }
 
