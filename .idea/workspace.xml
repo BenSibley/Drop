@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189415df-d7b9-453e-a8ea-3031cd32d73d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_base.scss" afterPath="$PROJECT_DIR$/sass/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/rtl.css" afterPath="$PROJECT_DIR$/css/rtl.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/rtl.min.css" afterPath="$PROJECT_DIR$/css/rtl.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.min.css" afterPath="$PROJECT_DIR$/style.min.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/rtl-manual.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drop.iws" />
@@ -51,7 +47,7 @@
       <file leaf-file-name="_base.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/_base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="6" selection-start="205" selection-end="205" vertical-scroll-proportion="0.1866252" vertical-offset="0" max-vertical-offset="25830">
+            <state line="19" column="22" selection-start="496" selection-end="496" vertical-scroll-proportion="0.44323483" vertical-offset="0" max-vertical-offset="25830">
               <folding />
             </state>
           </provider>
@@ -201,34 +197,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="drop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -534,7 +502,11 @@
       <created>1402590852978</created>
       <updated>1402590852978</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="added text-align: left to body">
+      <created>1402590915897</created>
+      <updated>1402590915897</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -551,7 +523,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10430107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2231405" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26426426" sideWeight="0.5027855" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26426426" sideWeight="0.5027855" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -574,7 +546,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* internationalization complete for functions.php and up to content.php" />
     <MESSAGE value="* internationalized" />
     <MESSAGE value="* removed extraneous action filter for personal social icons&#10;* removed dashboard widget" />
     <MESSAGE value="* finished internationalizing strings" />
@@ -599,17 +570,13 @@
     <MESSAGE value="now enqueueing rtl.min.css. Updated gruntfile and added css directory for rtl.min.css enqueueing" />
     <MESSAGE value="fixed search bar style issues. adding rtl stylesheets." />
     <MESSAGE value="updated menu toggle to support rtl. Fixed styling on .excerpt-date to support rtl" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated menu toggle to support rtl. Fixed styling on .excerpt-date to support rtl" />
+    <MESSAGE value="added text-align: left to body" />
+    <option name="LAST_COMMIT_MESSAGE" value="added text-align: left to body" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library/functions/shortcodes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="62" selection-start="3494" selection-end="3494" vertical-scroll-proportion="0.3478261" vertical-offset="836" max-vertical-offset="8250" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/extensions/breadcrumb-trail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="793" column="148" selection-start="25095" selection-end="25095" vertical-scroll-proportion="0.3610586" vertical-offset="11389" max-vertical-offset="18015" />
@@ -892,7 +859,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="205" selection-end="205" vertical-scroll-proportion="0.1866252" vertical-offset="0" max-vertical-offset="25830">
+        <state line="19" column="22" selection-start="496" selection-end="496" vertical-scroll-proportion="0.44323483" vertical-offset="0" max-vertical-offset="25830">
           <folding />
         </state>
       </provider>
