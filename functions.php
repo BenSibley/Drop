@@ -202,7 +202,7 @@ function ct_drop_customize_comments( $comment, $args, $depth ) {
         <article id="comment-<?php comment_ID(); ?>" class="comment">
             
             <div class="comment-author">
-                <img width="48" height="48" class="lazy-image" data-src="<?php echo ct_drop_get_gravatar_url(get_avatar( $comment, 50 )); ?>" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                <img width="48" height="48" class="avatar lazy-image" data-src="<?php echo ct_drop_get_gravatar_url(get_avatar( $comment, 50 )); ?>" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" />
                 <div>
                     <div class="author-name"><?php comment_author_link(); ?> <?php _e('said','drop'); ?>&#8230;</div>
                 </div>    

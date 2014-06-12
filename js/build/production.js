@@ -567,22 +567,35 @@ jQuery(document).ready(function($){
 	}
 
     /* lazy load images */
-    function lazyLoadImages(){
+    function lazyLoadBGImages(){
 
-        $('div.lazy').each(function(){
+        $('.lazy-bg-image').each(function(){
             var distanceToTop = $(this).offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
             var isVisible = distanceToTop - scroll < windowHeight;
             if (isVisible) {
-                //$(this).attr('src', $(this).attr('data-src')).removeClass('lazy');
-                $(this).css('background-image', 'url("' + $(this).attr('data-background') + '")').removeClass('lazy');
+                $(this).css('background-image', 'url("' + $(this).attr('data-background') + '")').removeClass('lazy-bg-image');
+            }
+        });
+    }
+    lazyLoadBGImages();
+
+    function lazyLoadImages(){
+        $('.lazy-image').each(function(){
+            var distanceToTop = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var isVisible = distanceToTop - scroll < windowHeight;
+            if (isVisible) {
+                $(this).attr('src', $(this).attr('data-src')).removeClass('lazy-image');
             }
         });
     }
     lazyLoadImages();
 
     $(window).scroll(function() {
+        lazyLoadBGImages();
         lazyLoadImages();
     });
 
