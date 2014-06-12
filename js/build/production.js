@@ -443,8 +443,15 @@ jQuery(document).ready(function($){
     // uses the leftWidth calculated earlier to translate the position of main & footer
 	function toggleNav() { 
 		$('.toggle-button').toggle(function(){
-			$('.main').css('transform', 'translateX(' + leftWidth + 'px)');
-			$('.site-footer').css('transform', 'translateX(' + leftWidth + 'px)');
+
+            // transform from the right side if rtl
+            if( $('body').hasClass('rtl') ){
+                $('.main').css('transform', 'translateX(-' + leftWidth + 'px)');
+                $('.site-footer').css('transform', 'translateX(-' + leftWidth + 'px)');
+            } else {
+                $('.main').css('transform', 'translateX(' + leftWidth + 'px)');
+                $('.site-footer').css('transform', 'translateX(' + leftWidth + 'px)');
+            }
 			menuOpen = true;
             // calls function that closes menu when scrolling down over 600px
 			watchScroll();

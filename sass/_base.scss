@@ -559,6 +559,11 @@ button.toggle-button {
   }
 }
 .excerpt-date,
+.excerpt-author,
+.excerpt-category {
+  display: inline-block;
+}
+.excerpt-date,
 .excerpt-author {
 
   &:after {

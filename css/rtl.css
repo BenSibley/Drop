@@ -636,6 +636,12 @@ button.toggle-button:focus {
   z-index: -1;
 }
 
+.excerpt-date,
+.excerpt-author,
+.excerpt-category {
+  display: inline-block;
+}
+
 .excerpt-date:after,
 .excerpt-author:after {
   content: ' / ';
