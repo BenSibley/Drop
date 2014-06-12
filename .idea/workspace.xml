@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189415df-d7b9-453e-a8ea-3031cd32d73d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/style-prefixed.css" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/rtl-manual.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/rtl.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_base.scss" afterPath="$PROJECT_DIR$/sass/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gruntfile.js" afterPath="$PROJECT_DIR$/gruntfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.min.css" afterPath="$PROJECT_DIR$/style.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -50,10 +49,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_base.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_base.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/_base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="28" selection-start="473" selection-end="473" vertical-scroll-proportion="0.4054054" vertical-offset="0" max-vertical-offset="25680">
+            <state line="494" column="3" selection-start="8489" selection-end="8489" vertical-scroll-proportion="-8.708333" vertical-offset="7201" max-vertical-offset="25740">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/search.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="458" selection-end="458" vertical-scroll-proportion="0.36753446" vertical-offset="0" max-vertical-offset="705">
               <folding />
             </state>
           </provider>
@@ -483,7 +491,11 @@
       <created>1402580936164</created>
       <updated>1402580936164</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="now enqueueing rtl.min.css. Updated gruntfile and added css directory for rtl.min.css enqueueing">
+      <created>1402589402585</created>
+      <updated>1402589402586</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -523,7 +535,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* added custom control for social media icons so the 'http:// is automatically included." />
     <MESSAGE value="* added schema microdata for blog posts on archives &amp; post pages" />
     <MESSAGE value="* added schema microdata for logo" />
     <MESSAGE value="* internationalization complete for functions.php and up to content.php" />
@@ -548,7 +559,8 @@
     <MESSAGE value="attachment page updated and styled" />
     <MESSAGE value="changed how featured image support is added" />
     <MESSAGE value="added rtl stylesheet and grunt task for creating it" />
-    <option name="LAST_COMMIT_MESSAGE" value="added rtl stylesheet and grunt task for creating it" />
+    <MESSAGE value="now enqueueing rtl.min.css. Updated gruntfile and added css directory for rtl.min.css enqueueing" />
+    <option name="LAST_COMMIT_MESSAGE" value="now enqueueing rtl.min.css. Updated gruntfile and added css directory for rtl.min.css enqueueing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -675,11 +687,6 @@
     <entry file="file://$PROJECT_DIR$/languages/en_US.po">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="38" selection-start="131" selection-end="131" vertical-scroll-proportion="0.08230453" vertical-offset="0" max-vertical-offset="20010" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="48" selection-start="367" selection-end="367" vertical-scroll-proportion="0.25531915" vertical-offset="0" max-vertical-offset="705" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_info.scss">
@@ -839,7 +846,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="473" selection-end="473" vertical-scroll-proportion="0.4054054" vertical-offset="0" max-vertical-offset="25680">
+        <state line="494" column="3" selection-start="8489" selection-end="8489" vertical-scroll-proportion="-8.708333" vertical-offset="7201" max-vertical-offset="25740">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="458" selection-end="458" vertical-scroll-proportion="0.36753446" vertical-offset="0" max-vertical-offset="705">
           <folding />
         </state>
       </provider>

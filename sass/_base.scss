@@ -32,7 +32,6 @@ body {
   overflow: hidden;
   z-index: 0;
   transition: all 0.3s ease-in-out;
-
   // enable hardware acceleration
   transform: translateZ(0);
 }
@@ -481,6 +480,7 @@ button.toggle-button {
   text-transform: uppercase;
   color: $gray-darker;
   transition: margin 0.3s ease-in-out;
+  backface-visibility: hidden; // stops wiggling when search bar open
 
   h1,
   h2 {
@@ -497,6 +497,7 @@ button.toggle-button {
 .excerpts-container {
   position: relative;
   z-index: 10; /* so page header doesn't cover sticky outline */
+  backface-visibility: hidden; // stops wiggling when search container opens
 }
 .excerpt {
   margin: 1.5em 5.55% 4.5em;
@@ -929,6 +930,9 @@ input[type="submit"] {
   top: 0;
   right: 0;
 
+  input {
+    border: none;
+  }
   form {
     position: absolute;
     height: 100%;
