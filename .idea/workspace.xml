@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="189415df-d7b9-453e-a8ea-3031cd32d73d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_base.scss" afterPath="$PROJECT_DIR$/sass/_base.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content-attachment.php" afterPath="$PROJECT_DIR$/content-attachment.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style-prefixed.css" afterPath="$PROJECT_DIR$/style-prefixed.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.min.css" afterPath="$PROJECT_DIR$/style.min.css" />
@@ -41,7 +42,16 @@
       <file leaf-file-name="_base.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/_base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="214" column="17" selection-start="3425" selection-end="3425" vertical-scroll-proportion="0.29912663" vertical-offset="3073" max-vertical-offset="25455">
+            <state line="1029" column="0" selection-start="16876" selection-end="16876" vertical-scroll-proportion="0.26637554" vertical-offset="15313" max-vertical-offset="25665">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content-attachment.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content-attachment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="40" selection-start="374" selection-end="374" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="315">
               <folding />
             </state>
           </provider>
@@ -51,6 +61,15 @@
         <entry file="file://$PROJECT_DIR$/js/functions.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="171" column="13" selection-start="6026" selection-end="6026" vertical-scroll-proportion="0.0" vertical-offset="2267" max-vertical-offset="3030">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="14" selection-start="2061" selection-end="2061" vertical-scroll-proportion="-11.25" vertical-offset="375" max-vertical-offset="1410">
               <folding />
             </state>
           </provider>
@@ -108,6 +127,7 @@
         <option value="$PROJECT_DIR$/sass/_info.scss" />
         <option value="$PROJECT_DIR$/js/functions.js" />
         <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/content-attachment.php" />
         <option value="$PROJECT_DIR$/sass/_base.scss" />
       </list>
     </option>
@@ -451,7 +471,11 @@
       <created>1402541105581</created>
       <updated>1402541105581</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="removed unwanted radio and checkbox styling">
+      <created>1402542005581</created>
+      <updated>1402542005581</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -468,7 +492,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10430107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2231405" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21069692" sideWeight="0.5018657" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21069692" sideWeight="0.5018657" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -491,7 +515,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* added grunt" />
     <MESSAGE value="*unminified all 3rd party scripts" />
     <MESSAGE value="* now enqueueing one JS file (production.min.js)" />
     <MESSAGE value="*updated Custom Meta Boxes and how it's included" />
@@ -516,7 +539,8 @@
     <MESSAGE value="added lazy loading for gravatar" />
     <MESSAGE value="refactored" />
     <MESSAGE value="fixed _e() that should have been __()" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed _e() that should have been __()" />
+    <MESSAGE value="removed unwanted radio and checkbox styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unwanted radio and checkbox styling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -725,13 +749,6 @@
         <state line="10" column="10" selection-start="270" selection-end="270" vertical-scroll-proportion="0.22354695" vertical-offset="0" max-vertical-offset="671" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content-attachment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="0" selection-end="587" vertical-scroll-proportion="0.29157668" vertical-offset="0" max-vertical-offset="463">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="13" selection-start="675" selection-end="675" vertical-scroll-proportion="0.6666667" vertical-offset="0" max-vertical-offset="450">
@@ -776,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="103" selection-start="627" selection-end="642" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1410">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="171" column="13" selection-start="6026" selection-end="6026" vertical-scroll-proportion="0.0" vertical-offset="2267" max-vertical-offset="3030">
@@ -797,9 +807,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="14" selection-start="2061" selection-end="2061" vertical-scroll-proportion="-11.25" vertical-offset="375" max-vertical-offset="1410">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content-attachment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="40" selection-start="374" selection-end="374" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sass/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="17" selection-start="3425" selection-end="3425" vertical-scroll-proportion="0.29912663" vertical-offset="3073" max-vertical-offset="25455">
+        <state line="1029" column="0" selection-start="16876" selection-end="16876" vertical-scroll-proportion="0.26637554" vertical-offset="15313" max-vertical-offset="25665">
           <folding />
         </state>
       </provider>

@@ -1026,6 +1026,20 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 }
 
+/* content attachment */
+
+.attachment .entry {
+  margin-top: $base-line-height * 2;
+}
+
+/* 900px */
+@media all and (min-width: 56.25em){
+
+  .attachment .entry {
+    margin-top: $base-line-height * 3;
+  }
+}
+
 /* 404 */
 
 .error404,

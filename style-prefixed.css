@@ -1084,6 +1084,17 @@ input[type="search"]::-webkit-search-results-decoration {
   background: #20664a;
 }
 
+/* content attachment */
+.attachment .entry {
+  margin-top: 48px;
+}
+
+/* 900px */
+@media all and (min-width: 56.25em) {
+  .attachment .entry {
+    margin-top: 72px;
+  }
+}
 /* 404 */
 .error404 .search-form-container,
 .search .search-form-container {
