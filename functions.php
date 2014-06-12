@@ -59,9 +59,11 @@ function ct_drop_theme_setup() {
     add_theme_support( 'hybrid-core-template-hierarchy' );
     add_theme_support( 'hybrid-core-styles', array( 'style', 'reset', 'gallery' ) );
     add_theme_support( 'loop-pagination' );
-    add_theme_support( 'featured-header' );
     add_theme_support( 'cleaner-gallery' );
-    add_theme_support( 'automatic-feed-links' ); //from WordPress core not theme hybrid
+
+    // from WordPress core not theme hybrid
+    add_theme_support( 'automatic-feed-links' );
+    add_theme_support( 'post-thumbnails' );
     
     // adds the file with the customizer functionality
     require_once( trailingslashit( get_template_directory() ) . 'functions-admin.php' );
