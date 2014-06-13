@@ -277,23 +277,13 @@ input:not([type="checkbox"]):not([type="radio"]),
 textarea {
   padding: 0.75em 0.5em;
   border: none;
-  background: whitesmoke;
   margin: 0;
   -webkit-appearance: none;
   border-radius: 0;
-  width: 100%;
-}
-
-input:not([type="checkbox"]):not([type="radio"]) {
-  max-width: 30em;
-}
-
-textarea {
-  max-width: 50em;
 }
 
 input[type="submit"] {
-  background: #28805d !important;
+  background: #28805d;
   font-family: "montserrat", "open sans", "sans-serif";
   color: white;
   text-transform: uppercase;
@@ -921,9 +911,18 @@ li.pingback .comment-edit-link:before {
 .comment-respond textarea {
   color: #666666;
   padding: 1.6em !important;
+  width: 100%;
+  background: whitesmoke;
+}
+.comment-respond input {
+  max-width: 30em;
+}
+.comment-respond textarea {
+  max-width: 50em;
 }
 .comment-respond input[type="submit"] {
   color: white;
+  background: #28805d;
 }
 
 /* Footer */
@@ -1042,7 +1041,7 @@ li.pingback .comment-edit-link:before {
   -webkit-border-radius: 0px;
 }
 .search-form-container .search-submit {
-  background: none !important;
+  background: none;
   font-size: 16px;
   z-index: 0;
   /* so 'sticky' post outline doesn't get cut off */

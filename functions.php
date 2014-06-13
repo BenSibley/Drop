@@ -220,6 +220,10 @@ function ct_drop_customize_comments( $comment, $args, $depth ) {
                 <br />
             <?php endif; ?>
             <div class="comment-content">
+                <?php if ($comment->comment_approved == '0') : ?>
+                    <em><?php _e('Your comment is awaiting moderation.', 'drop') ?></em>
+                    <br />
+                <?php endif; ?>
                 <?php comment_text(); ?>
             </div>
             <div class='comment-footer'>

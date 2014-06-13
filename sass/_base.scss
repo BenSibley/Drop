@@ -219,20 +219,12 @@ input:not([type="checkbox"]):not([type="radio"]),
 textarea {
   padding: 0.75em 0.5em;
   border: none;
-  background: $off-white;
   margin: 0;
   -webkit-appearance: none;
   border-radius: 0;
-  width: 100%;
-}
-input:not([type="checkbox"]):not([type="radio"]) {
-  max-width: 30em;
-}
-textarea {
-  max-width: 50em;
 }
 input[type="submit"] {
-  background: $green !important;
+  background: $green;
   font-family: $base-font-family;
   color: white;
   text-transform: uppercase;
@@ -845,9 +837,18 @@ li.pingback {
   textarea {
     color: $gray-dark;
     padding: 1.6em !important;
+    width: 100%;
+    background: $off-white;
+  }
+  input {
+    max-width: 30em;
+  }
+  textarea {
+    max-width: 50em;
   }
   input[type="submit"] {
     color: white;
+    background: $green;
   }
 }
 
@@ -975,7 +976,7 @@ li.pingback {
     -webkit-border-radius: 0px;
   }
   .search-submit {
-    background: none !important;
+    background: none;
     font-size: $base-font-size;
     z-index: 0; /* so 'sticky' post outline doesn't get cut off */
     transition: all 0.3s ease-in-out;
