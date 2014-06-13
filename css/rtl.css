@@ -1042,7 +1042,7 @@ input[type="submit"] {
   -webkit-border-radius: 0px;
 }
 .search-form-container .search-submit {
-  background: none;
+  background: none !important;
   font-size: 16px;
   z-index: 0;
   /* so 'sticky' post outline doesn't get cut off */

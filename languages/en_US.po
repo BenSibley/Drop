@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Drop\n"
-"POT-Creation-Date: 2014-06-06 16:30-0500\n"
-"PO-Revision-Date: 2014-06-06 16:33-0500\n"
+"POT-Creation-Date: 2014-06-13 17:31-0500\n"
+"PO-Revision-Date: 2014-06-13 17:31-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -189,85 +189,85 @@ msgstr "URL:"
 msgid "(Optional) Where did you find the featured image?"
 msgstr "(Optional) Where did you find the featured image?"
 
-#: functions.php:107
+#: functions.php:130
 msgid "The Previous Post"
 msgstr "The Previous Post"
 
-#: functions.php:112
+#: functions.php:135
 msgid "The Next Post"
 msgstr "The Next Post"
 
-#: functions.php:118
+#: functions.php:141
 msgid "Previous Post"
 msgstr "Previous Post"
 
-#: functions.php:123
+#: functions.php:146
 msgid "This is the oldest post"
 msgstr "This is the oldest post"
 
-#: functions.php:124 functions.php:136
+#: functions.php:147 functions.php:159
 msgid "Return to Blog"
 msgstr "Return to Blog"
 
-#: functions.php:130
+#: functions.php:153
 msgid "Next Post"
 msgstr "Next Post"
 
-#: functions.php:135
+#: functions.php:158
 msgid "This is the newest post"
 msgstr "This is the newest post"
 
-#: functions.php:145 functions.php:158
+#: functions.php:168 functions.php:181
 #, php-format
 msgid "View all posts in %s"
 msgstr "View all posts in %s"
 
-#: functions.php:156
+#: functions.php:179
 msgid "Categories:"
 msgstr "Categories:"
 
-#: functions.php:172
+#: functions.php:195
 msgid "Tagged as:"
 msgstr "Tagged as:"
 
-#: functions.php:174
+#: functions.php:197
 #, php-format
 msgid "View all posts tagged %s"
 msgstr "View all posts tagged %s"
 
-#: functions.php:191
+#: functions.php:215
 msgid "said"
 msgstr "said"
 
-#: functions.php:195
+#: functions.php:219
 msgid "Your comment is awaiting moderation."
 msgstr "Your comment is awaiting moderation."
 
-#: functions.php:202 library/functions/shortcodes.php:546
+#: functions.php:226 library/functions/shortcodes.php:546
 msgid "Reply"
 msgstr "Reply"
 
-#: functions.php:220
+#: functions.php:244
 msgid "Your Name"
 msgstr "Your Name"
 
-#: functions.php:227
+#: functions.php:251
 msgid "Your Email"
 msgstr "Your Email"
 
-#: functions.php:234
+#: functions.php:258
 msgid "Your Website"
 msgstr "Your Website"
 
-#: functions.php:247
+#: functions.php:271
 msgid "Your Comment"
 msgstr "Your Comment"
 
-#: functions.php:266 functions.php:279
+#: functions.php:290 functions.php:303
 msgid "Read the Post"
 msgstr "Read the Post"
 
-#: functions.php:315
+#: functions.php:339
 msgid "image credit:"
 msgstr "image credit:"
 

@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Drop 1.13\n"
+"Project-Id-Version: Drop 1.15\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2014-06-06 19:36:03+00:00\n"
+"POT-Creation-Date: 2014-06-13 21:28:58+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -176,83 +176,83 @@ msgstr ""
 msgid "(Optional) Where did you find the featured image?"
 msgstr ""
 
-#: functions.php:107
+#: functions.php:130
 msgid "The Previous Post"
 msgstr ""
 
-#: functions.php:112
+#: functions.php:135
 msgid "The Next Post"
 msgstr ""
 
-#: functions.php:118
+#: functions.php:141
 msgid "Previous Post"
 msgstr ""
 
-#: functions.php:123
+#: functions.php:146
 msgid "This is the oldest post"
 msgstr ""
 
-#: functions.php:124 functions.php:136
+#: functions.php:147 functions.php:159
 msgid "Return to Blog"
 msgstr ""
 
-#: functions.php:130
+#: functions.php:153
 msgid "Next Post"
 msgstr ""
 
-#: functions.php:135
+#: functions.php:158
 msgid "This is the newest post"
 msgstr ""
 
-#: functions.php:145 functions.php:158
+#: functions.php:168 functions.php:181
 msgid "View all posts in %s"
 msgstr ""
 
-#: functions.php:156
+#: functions.php:179
 msgid "Categories:"
 msgstr ""
 
-#: functions.php:172
+#: functions.php:195
 msgid "Tagged as:"
 msgstr ""
 
-#: functions.php:174
+#: functions.php:197
 msgid "View all posts tagged %s"
 msgstr ""
 
-#: functions.php:191
+#: functions.php:215
 msgid "said"
 msgstr ""
 
-#: functions.php:195
+#: functions.php:219
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:202 library/functions/shortcodes.php:546
+#: functions.php:226 library/functions/shortcodes.php:546
 msgid "Reply"
 msgstr ""
 
-#: functions.php:220
+#: functions.php:244
 msgid "Your Name"
 msgstr ""
 
-#: functions.php:227
+#: functions.php:251
 msgid "Your Email"
 msgstr ""
 
-#: functions.php:234
+#: functions.php:258
 msgid "Your Website"
 msgstr ""
 
-#: functions.php:247
+#: functions.php:271
 msgid "Your Comment"
 msgstr ""
 
-#: functions.php:266 functions.php:279
+#: functions.php:290 functions.php:303
 msgid "Read the Post"
 msgstr ""
 
-#: functions.php:315
+#: functions.php:339
 msgid "image credit:"
 msgstr ""
 

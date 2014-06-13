@@ -978,7 +978,7 @@ input[type="submit"] {
     -webkit-border-radius: 0px;
   }
   .search-submit {
-    background: none;
+    background: none !important;
     font-size: $base-font-size;
     z-index: 0; /* so 'sticky' post outline doesn't get cut off */
     transition: all 0.3s ease-in-out;
