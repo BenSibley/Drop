@@ -384,7 +384,7 @@ button.toggle-button:focus {
 .site-title {
   font-size: 1.625em;
   /* 26px */
-  line-height: 1.08;
+  line-height: 48px;
   text-transform: uppercase;
   text-shadow: -0.077em 0.077em #242424;
 }
