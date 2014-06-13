@@ -4,7 +4,7 @@ Theme URI: http://www.competethemes.com/theme/drop/
 Author: Compete Themes
 Author URI: http://competethemes.com/
 Description: A Bold, Responsive Blog Theme
-Tags: green, gray, light, white, one-column, responsive-layout, accessibility-ready, custom-menu, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
+Tags: gray, green, tan, white, light, white, one-column, responsive-layout, accessibility-ready, custom-menu, featured-images, microformats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 Version: 1.15
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -281,6 +281,15 @@ textarea {
   margin: 0;
   -webkit-appearance: none;
   border-radius: 0;
+  width: 100%;
+}
+
+input:not([type="checkbox"]):not([type="radio"]) {
+  max-width: 30em;
+}
+
+textarea {
+  max-width: 50em;
 }
 
 input[type="submit"] {
@@ -298,11 +307,6 @@ input[type="submit"]:focus {
   background: #2f996f;
 }
 
-@media screen and (max-width: 720px) and (-webkit-min-device-pixel-ratio: 0) {
-  select:focus, textarea:focus, input:focus {
-    font-size: 16px;
-  }
-}
 /* placeholders */
 ::-webkit-input-placeholder {
   color: #cccccc;
@@ -913,19 +917,15 @@ li.pingback .comment-edit-link:before {
 .comment-respond {
   margin-bottom: 48px;
 }
-
-input:not(input[type="checkbox"]):not(input[type="radio"]),
-textarea {
-  width: 100%;
+.comment-respond input,
+.comment-respond textarea {
   color: #666666;
-  padding: 1.6em;
+  padding: 1.6em !important;
 }
-
-input[type="submit"] {
+.comment-respond input[type="submit"] {
   color: white;
 }
 
-/* archive */
 /* Footer */
 .site-footer {
   background: #333333;

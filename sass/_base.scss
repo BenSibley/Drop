@@ -223,6 +223,13 @@ textarea {
   margin: 0;
   -webkit-appearance: none;
   border-radius: 0;
+  width: 100%;
+}
+input:not([type="checkbox"]):not([type="radio"]) {
+  max-width: 30em;
+}
+textarea {
+  max-width: 50em;
 }
 input[type="submit"] {
   background: $green !important;
@@ -235,13 +242,6 @@ input[type="submit"]:hover,
 input[type="submit"]:focus {
   cursor: pointer;
   background: $green-light;
-}
-
-// turn off zoom in when using an input on iOS
-@media screen and (max-width: 720px) and (-webkit-min-device-pixel-ratio:0) {
-  select:focus, textarea:focus, input:focus {
-    font-size: 16px;
-  }
 }
 
 /* placeholders */
@@ -840,19 +840,16 @@ li.pingback {
 }
 .comment-respond {
   margin-bottom: $base-line-height * 2;
-}
-input:not(input[type="checkbox"]):not(input[type="radio"]),
-textarea {
-  width: 100%;
-  color: $gray-dark;
-  padding: 1.6em;
-}
-input[type="submit"] {
-  color: white;
-}
 
-/* archive */
-
+  input,
+  textarea {
+    color: $gray-dark;
+    padding: 1.6em !important;
+  }
+  input[type="submit"] {
+    color: white;
+  }
+}
 
 /* Footer */
 

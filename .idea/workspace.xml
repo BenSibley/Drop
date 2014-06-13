@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="189415df-d7b9-453e-a8ea-3031cd32d73d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_base.scss" afterPath="$PROJECT_DIR$/sass/_base.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_info.scss" afterPath="$PROJECT_DIR$/sass/_info.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/rtl.css" afterPath="$PROJECT_DIR$/css/rtl.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/rtl.min.css" afterPath="$PROJECT_DIR$/css/rtl.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
@@ -30,19 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions.php">
+      <file leaf-file-name="_info.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/_info.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="371" column="17" selection-start="13875" selection-end="13875" vertical-scroll-proportion="-7.4583335" vertical-offset="5386" max-vertical-offset="6315">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="22" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="300">
+            <state line="14" column="2" selection-start="644" selection-end="644" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
@@ -51,52 +43,7 @@
       <file leaf-file-name="_base.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/_base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="313" column="11" selection-start="5382" selection-end="5382" vertical-scroll-proportion="0.408867" vertical-offset="4529" max-vertical-offset="25830">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content-attachment.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content-attachment.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="11" selection-start="0" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="315">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/functions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="25" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="3135">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="19" selection-start="399" selection-end="399" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="1410">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="705">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gruntfile.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gruntfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="13" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0" vertical-offset="564" max-vertical-offset="1755">
+            <state line="221" column="25" selection-start="3636" selection-end="3636" vertical-scroll-proportion="0.3846154" vertical-offset="3150" max-vertical-offset="25785">
               <folding />
             </state>
           </provider>
@@ -148,7 +95,6 @@
         <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/search.php" />
-        <option value="$PROJECT_DIR$/sass/_info.scss" />
         <option value="$PROJECT_DIR$/content-attachment.php" />
         <option value="$PROJECT_DIR$/functions-admin.php" />
         <option value="$PROJECT_DIR$/ltr.css" />
@@ -158,6 +104,7 @@
         <option value="$PROJECT_DIR$/gruntfile.js" />
         <option value="$PROJECT_DIR$/js/functions.js" />
         <option value="$PROJECT_DIR$/content.php" />
+        <option value="$PROJECT_DIR$/sass/_info.scss" />
         <option value="$PROJECT_DIR$/sass/_base.scss" />
       </list>
     </option>
@@ -210,6 +157,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="drop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -531,7 +492,11 @@
       <created>1402695265972</created>
       <updated>1402695265973</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="fixed site title alignment">
+      <created>1402695348657</created>
+      <updated>1402695348657</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -571,7 +536,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* generated po &amp; mo files&#10;* removed compass mixins" />
     <MESSAGE value="* added grunt task to create .pot file&#10;* generate .pot file" />
     <MESSAGE value="* tagging as v1.14" />
     <MESSAGE value="* tagging as translation-ready" />
@@ -596,7 +560,8 @@
     <MESSAGE value="deleted unnecessary rtl-manual.css file" />
     <MESSAGE value="fixed input submit styling" />
     <MESSAGE value="fixed search bar submit style issue. regenerated language files." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed search bar submit style issue. regenerated language files." />
+    <MESSAGE value="fixed site title alignment" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed site title alignment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -727,11 +692,6 @@
         <state line="4" column="38" selection-start="131" selection-end="131" vertical-scroll-proportion="0.08230453" vertical-offset="0" max-vertical-offset="20010" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_info.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="2" selection-start="596" selection-end="596" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/archive.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="6" selection-start="240" selection-end="240" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="360" />
@@ -812,28 +772,49 @@
         <state line="1706" column="1" selection-start="31788" selection-end="31788" vertical-scroll-proportion="37.799114" vertical-offset="0" max-vertical-offset="25695" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="22" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="56" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gruntfile.js">
+    <entry file="file://$PROJECT_DIR$/css/rtl.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="13" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0" vertical-offset="564" max-vertical-offset="1755">
+        <state line="15" column="25" selection-start="622" selection-end="622" vertical-scroll-proportion="0.3323486" vertical-offset="0" max-vertical-offset="25695" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="236" selection-end="236" vertical-scroll-proportion="0.47191012" vertical-offset="0" max-vertical-offset="445">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/rtl.min.css">
+    <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="622" selection-end="622" vertical-scroll-proportion="0.3323486" vertical-offset="0" max-vertical-offset="25695" />
+        <state line="371" column="17" selection-start="13875" selection-end="13875" vertical-scroll-proportion="0.41435185" vertical-offset="5386" max-vertical-offset="6315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content-attachment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="11" selection-start="0" selection-end="428" vertical-scroll-proportion="0.3472222" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="25" selection-start="649" selection-end="649" vertical-scroll-proportion="0.34446764" vertical-offset="195" max-vertical-offset="3135">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="399" selection-end="399" vertical-scroll-proportion="0.26373628" vertical-offset="0" max-vertical-offset="1410">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search.php">
@@ -843,37 +824,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/functions.js">
+    <entry file="file://$PROJECT_DIR$/gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="25" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="3135">
+        <state line="62" column="13" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.76409185" vertical-offset="564" max-vertical-offset="1755">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content-attachment.php">
+    <entry file="file://$PROJECT_DIR$/sass/_info.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="11" selection-start="0" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="371" column="17" selection-start="13875" selection-end="13875" vertical-scroll-proportion="-7.4583335" vertical-offset="5386" max-vertical-offset="6315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="399" selection-end="399" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="1410">
+        <state line="14" column="2" selection-start="644" selection-end="644" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="313" column="11" selection-start="5382" selection-end="5382" vertical-scroll-proportion="0.408867" vertical-offset="4529" max-vertical-offset="25830">
+        <state line="221" column="25" selection-start="3636" selection-end="3636" vertical-scroll-proportion="0.3846154" vertical-offset="3150" max-vertical-offset="25785">
           <folding />
         </state>
       </provider>
