@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189415df-d7b9-453e-a8ea-3031cd32d73d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_base.scss" afterPath="$PROJECT_DIR$/sass/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/rtl.css" afterPath="$PROJECT_DIR$/css/rtl.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/rtl.min.css" afterPath="$PROJECT_DIR$/css/rtl.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.min.css" afterPath="$PROJECT_DIR$/style.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_info.scss" afterPath="$PROJECT_DIR$/sass/_info.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drop.iws" />
@@ -31,28 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="223" column="78" selection-start="8604" selection-end="8604" vertical-scroll-proportion="-8.708333" vertical-offset="3136" max-vertical-offset="6375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_info.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_info.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/_info.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="2" selection-start="644" selection-end="644" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_base.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sass/_base.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="845" column="12" selection-start="13776" selection-end="13776" vertical-scroll-proportion="0.47319347" vertical-offset="12472" max-vertical-offset="25800">
+            <state line="11" column="0" selection-start="538" selection-end="538" vertical-scroll-proportion="0.36263737" vertical-offset="0" max-vertical-offset="455">
               <folding />
             </state>
           </provider>
@@ -112,9 +89,9 @@
         <option value="$PROJECT_DIR$/gruntfile.js" />
         <option value="$PROJECT_DIR$/js/functions.js" />
         <option value="$PROJECT_DIR$/content.php" />
-        <option value="$PROJECT_DIR$/sass/_info.scss" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/sass/_base.scss" />
+        <option value="$PROJECT_DIR$/sass/_info.scss" />
       </list>
     </option>
   </component>
@@ -509,7 +486,11 @@
       <created>1402696051445</created>
       <updated>1402696051445</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="more styles updates">
+      <created>1402698772603</created>
+      <updated>1402698772604</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -549,7 +530,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* tagging as v1.14" />
     <MESSAGE value="* tagging as translation-ready" />
     <MESSAGE value="* updated missing text domain&#10;* tagging as v.1.15" />
     <MESSAGE value="* removed old .pot grunt task&#10;* updated missing text domain&#10;* tagging as v.1.15" />
@@ -574,7 +554,8 @@
     <MESSAGE value="fixed search bar submit style issue. regenerated language files." />
     <MESSAGE value="fixed site title alignment" />
     <MESSAGE value="fixed input styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed input styles" />
+    <MESSAGE value="more styles updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="more styles updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -837,13 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_info.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="2" selection-start="644" selection-end="644" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="223" column="78" selection-start="8604" selection-end="8604" vertical-scroll-proportion="-8.708333" vertical-offset="3136" max-vertical-offset="6375">
@@ -854,6 +828,13 @@
     <entry file="file://$PROJECT_DIR$/sass/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="845" column="12" selection-start="13776" selection-end="13776" vertical-scroll-proportion="0.47319347" vertical-offset="12472" max-vertical-offset="25800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_info.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="538" selection-end="538" vertical-scroll-proportion="0.36263737" vertical-offset="0" max-vertical-offset="455">
           <folding />
         </state>
       </provider>
