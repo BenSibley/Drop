@@ -1,0 +1,131 @@
+/* Footer */
+
+.site-footer {
+  background: $gray-darker;
+  padding: 1.5em 5.55% 0;
+  position: relative;
+  color: $gray-medium-dark;
+  transition: all 0.3s ease-in-out;
+
+  a {
+    color: white;
+
+    &:link,
+    &:visited {
+      color: white;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      color: $green-light;
+    }
+  }
+  // enable hardware acceleration
+  transform: translateZ(0);
+
+  .widget-title {
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .widget {
+
+    ul,
+    ol {
+      list-style: none;
+      margin-right: 0;
+    }
+  }
+  .copyright {
+    background: $gray-darkest;
+  }
+}
+.sidebar-subsidiary {
+  padding-bottom: $base-line-height;
+}
+.copyright {
+  position: relative;
+  background: $gray-darker;
+  color: $gray-medium-dark;
+  text-transform: uppercase;
+  width: 113%;
+  left: -6.5%;
+  padding: $base-line-height 5.55%;
+  text-align: center;
+
+  p {
+    font-family: $base-font-family;
+    font-size: 0.813em;
+    line-height: 1.85;
+    margin: 0;
+  }
+  a,
+  a:link,
+  a:visited {
+    color: $gray-medium-dark;
+    text-decoration: underline;
+  }
+  a:hover,
+  a:active,
+  a:focus {
+    color: $green;
+  }
+}
+
+
+/* 500px */
+@media all and (min-width: 31.25em) {
+
+  .site-footer {
+    padding: 1.5em 11.11% 0;
+  }
+  .copyright {
+    padding: $base-line-height / 2 11.11%;
+    left: -14.25%;
+    width: 128.5%;
+  }
+}
+
+/* 700px */
+@media all and (min-width: 43.75em) {
+
+  .site-footer {
+
+    .widget {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+      padding-right: 1em;
+      float: left;
+    }
+  }
+  .sidebar-subsidiary:after {
+    @include clearfix;
+  }
+}
+
+/* 900px */
+@media all and (min-width: 56.25em) {
+
+  .site-footer {
+    float: right;
+    width: 66.66%;
+    padding: 1.5em 5.55% 0;
+
+  }
+  .copyright {
+    left: -10%;
+    width: 120%;
+  }
+}
+
+/* 1100 */
+@media all and (min-width: 68.75em) {
+
+  .site-footer {
+    padding-left: 11.11%;
+  }
+  .copyright {
+    left: -22%;
+    width: 133.15%;
+  }
+}

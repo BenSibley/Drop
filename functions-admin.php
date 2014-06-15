@@ -123,6 +123,4 @@ function ct_drop_image_credit_meta_box( $meta_boxes ) {
         )
     );
 	return $meta_boxes;
-}
-
-?>
+}?>

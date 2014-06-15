@@ -1,0 +1,306 @@
+/* Blog */
+
+.page-header {
+  position: relative;
+  background: $green;
+  padding: 1.5em 5.55%;
+  text-transform: uppercase;
+  color: $gray-darker;
+  transition: margin 0.3s ease-in-out;
+  backface-visibility: hidden; // stops wiggling when search bar open
+
+  h1,
+  h2 {
+    text-shadow: -0.063em 0.063em $green-dark;
+    color: $gray-darkest;
+  }
+  p {
+    margin: 0;
+  }
+  > div {
+    display: none;
+  }
+}
+.excerpts-container {
+  position: relative;
+  z-index: 10; /* so page header doesn't cover sticky outline */
+  backface-visibility: hidden; // stops wiggling when search container opens
+}
+.excerpt {
+  margin: 1.5em 5.55% 4.5em;
+  border-bottom: solid 1px $gray-light;
+}
+.sticky {
+  margin: 0;
+  padding: 1.5em 5.55% 4.5em;
+  outline: solid 0.25em $gray-dark;
+  background: #b0e1ce;
+
+  .excerpt-meta,
+  .excerpt-content {
+    color: $gray-darker;
+  }
+  .excerpt-title {
+
+    a {
+      color: $gray-darker;
+
+      &:link,
+      &:visited,
+      &:hover,
+      &:active,
+      &:focus {
+        color: $gray-darker;
+      }
+    }
+  }
+  a {
+    color: $green-dark;
+
+    &:link,
+    &:visited {
+      color: $green-dark;
+    }
+    &:hover,
+    &:active {
+      color: $gray-darker;
+    }
+  }
+}
+.featured-image {
+  position: relative;
+  height: $base-line-height * 9;
+  background-size: cover;
+  background-position: 50%;
+  margin-bottom: $base-line-height;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0.25em;
+    width: 100%;
+    left: -0.25em;
+    bottom: -0.25em;
+    background: $gray-medium-dark;
+    z-index: -1;
+  }
+}
+.excerpt-date,
+.excerpt-author,
+.excerpt-category {
+  display: inline-block;
+}
+.excerpt-date,
+.excerpt-author {
+
+  &:after {
+    content: ' / ';
+  }
+}
+.excerpt-author,
+.excerpt-category {
+
+  span {
+    display: none; /* also affects archive */
+  }
+  a,
+  a:link {
+    text-decoration: underline; /* why is this being printed twice? */
+  }
+}
+.excerpt-title {
+  text-transform: uppercase;
+
+  a {
+    color: $gray-dark;
+  }
+  a:hover,
+  a:active,
+  a:focus {
+    text-decoration: underline;
+  }
+}
+.more-link {
+  text-decoration: underline;
+
+  &:link {
+    text-decoration: underline;
+  }
+}
+.loop-pagination {
+  margin: 1.5em 5.55%;
+  text-align: center;
+  position: relative;
+
+  a,
+  span {
+    margin: 0 0.25em;
+  }
+  a:link,
+  a:visited {
+    color: $green;
+  }
+  a:hover,
+  a:active,
+  a:focus {
+    color: $green-light;
+  }
+  .prev,
+  .next {
+    position: absolute;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+    &:link {
+      text-decoration: underline;
+    }
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+}
+
+/* 500px */
+@media all and (min-width: 31.25em) {
+
+  .page-header {
+    padding: 1.5em 11.11%;
+  }
+  .excerpt {
+    margin: 1.5em 11.11% 4.5em;
+  }
+  .sticky {
+    margin: 0;
+    padding: 1.5em 11.11% 4.5em;
+  }
+  .featured-image {
+    height: $base-line-height * 11;
+  }
+  .loop-pagination {
+    margin: 1.5em 11.11%;
+  }
+}
+
+/* 600px */
+@media all and (min-width: 37.5em) {
+
+  .excerpts-container {
+
+    // enable hardware acceleration
+    transform: translateZ(0);
+    transition: all 0.3s ease-in-out;
+  }
+  .excerpts-container.open {
+
+    // give space for search bar drop-down
+    transform: translateY($base-line-height * 4);
+    padding-bottom: $base-line-height * 4;
+  }
+  .page-header {
+
+    > div {
+      display: block;
+    }
+
+    h2,
+    p {
+      max-width: 80%;
+    }
+  }
+}
+
+/* 700px */
+@media all and (min-width: 43.75em) {
+
+  .featured-image {
+    height: $base-line-height * 13;
+  }
+  .excerpt {
+    border-bottom: none;
+  }
+}
+
+/* 900px */
+@media all and (min-width: 56.25em) {
+
+  .main {
+    float: right;
+    width: 66.66%;
+
+    &:after {
+      @include clearfix;
+    }
+  }
+  .page-header {
+    background: $green;
+    padding: 1.5em 8.33%;
+
+    h2 {
+      text-shadow: -0.063em 0.063em $green-dark;
+      font-size: 2.625em;
+      line-height: 1.14;
+    }
+  }
+  .excerpt {
+    margin: 1.5em 8.33% 4.5em;
+  }
+  .sticky {
+    margin: 0;
+    padding: 1.5em 8.33% 4.5em;
+    outline-offset: -0.25em;
+  }
+  .loop-pagination {
+    margin: 1.5em 8.33%;
+  }
+}
+
+/* 1100 */
+@media all and (min-width: 68.75em) {
+
+  .page-header {
+    padding: 1.5em 16.67%;
+  }
+  .excerpt {
+    margin: 1.5em 16.67% 4.5em;
+    position: relative;
+  }
+  .sticky {
+    margin: 0;
+    padding: 1.5em 16.67% 4.5em;
+
+    .excerpt-meta {
+      right: 83.5%;
+      top: 1.5em;
+    }
+  }
+  .excerpt-meta {
+    position: absolute;
+    right: 100%;
+    width: 25%;
+    top: 0;
+    font-size: 0.813em;
+    line-height: 1.85;
+    padding: 0 3% 0 2.08%;
+    text-align: right;
+
+    span {
+      display: block;
+    }
+  }
+  .excerpt-date {
+    font-weight: 700;
+  }
+  .excerpt-date,
+  .excerpt-author {
+
+    &:after {
+      content: '';
+    }
+  }
+  .loop-pagination {
+    margin: 1.5em 16.67%;
+  }
+}

@@ -92,7 +92,16 @@ module.exports = function(grunt) {
                 src: ['style.css'],
                 dest: 'css/rtl.css'
             }
+        },
+        phpcs: {
+            application: {
+                dir: ['*.php']
+            }/*,
+            options: {
+                tabWidth: 4
+            }*/
         }
+
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
@@ -107,6 +116,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-cssjanus');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass', 'autoprefixer', 'cssmin','makepot','compress','cssjanus']);
+    grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass', 'autoprefixer', 'cssmin','makepot','compress','cssjanus','phpcs']);
 
 };
