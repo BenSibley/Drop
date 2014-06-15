@@ -113,24 +113,6 @@ li.pingback {
 }
 .comment-respond {
   margin-bottom: $base-line-height * 2;
-
-  input,
-  textarea {
-    color: $gray-dark;
-    padding: 1.6em !important;
-    width: 100%;
-    background: $off-white;
-  }
-  input {
-    max-width: 30em;
-  }
-  textarea {
-    max-width: 50em;
-  }
-  input[type="submit"] {
-    color: white;
-    background: $green;
-  }
 }
 
 /* 500px */
@@ -150,14 +132,6 @@ li.pingback {
     .next-comment {
       text-align: right;
     }
-  }
-}
-
-/* 700px */
-@media all and (min-width: 43.75em) {
-
-  input:not(input[type="checkbox"]):not(input[type="radio"]) {
-    width: 57.135%;
   }
 }
 

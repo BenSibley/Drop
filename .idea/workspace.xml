@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189415df-d7b9-453e-a8ea-3031cd32d73d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_blog.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_comments.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_footer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_menu.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_other.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_post.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_search_form.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/1c691003ba4fbd94c12282a58f2e6d0fed19e6b4/style.scssc" afterPath="$PROJECT_DIR$/.sass-cache/1c691003ba4fbd94c12282a58f2e6d0fed19e6b4/style.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_base.scss" afterPath="$PROJECT_DIR$/sass/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions-admin.php" afterPath="$PROJECT_DIR$/functions-admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gruntfile.js" afterPath="$PROJECT_DIR$/gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_comments.scss" afterPath="$PROJECT_DIR$/sass/_comments.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/rtl.css" afterPath="$PROJECT_DIR$/css/rtl.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/rtl.min.css" afterPath="$PROJECT_DIR$/css/rtl.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/singular.php" afterPath="$PROJECT_DIR$/singular.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.min.css" afterPath="$PROJECT_DIR$/style.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/style.scss" afterPath="$PROJECT_DIR$/sass/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drop.iws" />
@@ -45,10 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_base.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_base.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/_base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="301" column="1" selection-start="4941" selection-end="4941" vertical-scroll-proportion="-24.25" vertical-offset="3933" max-vertical-offset="4605">
+            <state line="224" column="12" selection-start="3718" selection-end="3718" vertical-scroll-proportion="0.29593495" vertical-offset="3178" max-vertical-offset="4845">
               <folding />
             </state>
           </provider>
@@ -84,16 +70,16 @@
       <file leaf-file-name="_comments.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/_comments.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="0" selection-start="2666" selection-end="2666" vertical-scroll-proportion="-23.541666" vertical-offset="2030" max-vertical-offset="2745">
+            <state line="126" column="17" selection-start="1968" selection-end="1968" vertical-scroll-proportion="-9.083333" vertical-offset="1672" max-vertical-offset="2355">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_post.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_post.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/_post.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="3" selection-start="2577" selection-end="2577" vertical-scroll-proportion="0.69343066" vertical-offset="2090" max-vertical-offset="2835">
+            <state line="168" column="3" selection-start="2528" selection-end="2528" vertical-scroll-proportion="-15.333333" vertical-offset="2152" max-vertical-offset="2835">
               <folding />
             </state>
           </provider>
@@ -193,12 +179,12 @@
         <option value="$PROJECT_DIR$/sass/style.scss" />
         <option value="$PROJECT_DIR$/sass/_menu.scss" />
         <option value="$PROJECT_DIR$/sass/_blog.scss" />
-        <option value="$PROJECT_DIR$/sass/_comments.scss" />
         <option value="$PROJECT_DIR$/sass/_search_form.scss" />
         <option value="$PROJECT_DIR$/sass/_footer.scss" />
         <option value="$PROJECT_DIR$/sass/_other.scss" />
-        <option value="$PROJECT_DIR$/sass/_base.scss" />
         <option value="$PROJECT_DIR$/sass/_post.scss" />
+        <option value="$PROJECT_DIR$/sass/_comments.scss" />
+        <option value="$PROJECT_DIR$/sass/_base.scss" />
       </list>
     </option>
   </component>
@@ -615,29 +601,33 @@
       <created>1402698789465</created>
       <updated>1402698789465</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="moved scss into partials and fixed head html validation errors">
+      <created>1402840821309</created>
+      <updated>1402840821310</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="611" y="-1058" width="950" height="1058" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33053514" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32873806" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21487603" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21532091" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24958949" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29295155" sideWeight="0.92105263" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29295155" sideWeight="0.9208443" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10430107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2231405" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29295155" sideWeight="0.078947365" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29295155" sideWeight="0.079155676" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3273495" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33053514" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -655,7 +645,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="* updated missing text domain&#10;* tagging as v.1.15" />
     <MESSAGE value="* removed old .pot grunt task&#10;* updated missing text domain&#10;* tagging as v.1.15" />
     <MESSAGE value="now loading production.min.js asynchronously" />
     <MESSAGE value="now loading smaller versions of images on blog and archive pages" />
@@ -680,7 +669,8 @@
     <MESSAGE value="fixed input styles" />
     <MESSAGE value="more styles updates" />
     <MESSAGE value="tagged as v1.16" />
-    <option name="LAST_COMMIT_MESSAGE" value="tagged as v1.16" />
+    <MESSAGE value="moved scss into partials and fixed head html validation errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved scss into partials and fixed head html validation errors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -939,13 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_comments.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="0" selection-start="2666" selection-end="2666" vertical-scroll-proportion="-23.541666" vertical-offset="2030" max-vertical-offset="2745">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/_footer.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="122" column="0" selection-start="1857" selection-end="1857" vertical-scroll-proportion="-20.416666" vertical-offset="1340" max-vertical-offset="2040">
@@ -967,16 +950,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_base.scss">
+    <entry file="file://$PROJECT_DIR$/sass/_post.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="301" column="1" selection-start="4941" selection-end="4941" vertical-scroll-proportion="-24.25" vertical-offset="3933" max-vertical-offset="4605">
+        <state line="168" column="3" selection-start="2528" selection-end="2528" vertical-scroll-proportion="-15.333333" vertical-offset="2152" max-vertical-offset="2835">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_post.scss">
+    <entry file="file://$PROJECT_DIR$/sass/_comments.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="3" selection-start="2577" selection-end="2577" vertical-scroll-proportion="0.69343066" vertical-offset="2090" max-vertical-offset="2835">
+        <state line="126" column="17" selection-start="1968" selection-end="1968" vertical-scroll-proportion="-9.083333" vertical-offset="1672" max-vertical-offset="2355">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="224" column="12" selection-start="3718" selection-end="3718" vertical-scroll-proportion="0.29593495" vertical-offset="3178" max-vertical-offset="4845">
           <folding />
         </state>
       </provider>

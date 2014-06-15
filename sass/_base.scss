@@ -215,15 +215,31 @@ img,
 
 /* Form styles */
 
-input:not([type="checkbox"]):not([type="radio"]),
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]),
 textarea {
-  padding: 0.75em 0.5em;
+  color: $gray-dark;
+  background: $off-white;
+  padding: 1.6em;
+  width: 100%;
   border: none;
   margin: 0;
   -webkit-appearance: none;
   border-radius: 0;
 }
+input {
+  max-width: 30em;
+}
+textarea {
+  max-width: 40em;
+}
 input[type="submit"] {
+  padding: 1.6em;
+  border: none;
+  margin: 0;
+  width: 100%;
+  max-width: 20em;
+  -webkit-appearance: none;
+  border-radius: 0;
   background: $green;
   font-family: $base-font-family;
   color: white;
