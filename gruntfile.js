@@ -78,7 +78,7 @@ module.exports = function(grunt) {
                 },
                 files: [
                     {
-                        src: ['**', '!node_modules/**','!sass/**', '!gruntfile.js', '!package.json', '!style-prefixed.css','!/.git/','!/.idea/','!/.sass-cache/','!**.DS_Store'],
+                        src: ['**', '!node_modules/**','!sass/**', '!gruntfile.js', '!package.json', '!/.git/','!/.idea/','!/.sass-cache/','!**.DS_Store'],
                         filter: 'isFile'
                     }
                 ]

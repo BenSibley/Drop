@@ -3,6 +3,12 @@
 .attachment .entry {
   margin-top: $base-line-height * 2;
 }
+.singular-page {
+
+  .entry {
+    padding-top: 0;
+  }
+}
 
 /* 900px */
 @media all and (min-width: 56.25em){
@@ -14,9 +20,12 @@
 
 /* 404 */
 
-.error404,
+.error-404,
 .search {
 
+  .entry {
+    padding-top: 0;
+  }
   .search-form-container {
     position: relative;
     height: 4.5em;

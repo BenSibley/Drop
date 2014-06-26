@@ -7,6 +7,7 @@
   margin: 0 5.55%;
 }
 .entry {
+  padding-top: $base-line-height;
   padding-bottom: $base-line-height * 2;
 
   .featured-image {
@@ -16,8 +17,8 @@
     }
   }
 }
-.entry.no-featured-image {
-  padding-top: $base-line-height;
+.entry.has-post-thumbnail {
+  padding-top: 0;
 }
 .entry-meta-top {
 
@@ -143,8 +144,11 @@
 /* 900px */
 @media all and (min-width: 56.25em) {
 
-  .entry.no-featured-image {
+  .entry {
     padding-top: $base-line-height * 2;
+  }
+  .entry.has-post-thumbnail {
+    padding-top: 0;
   }
   .entry-meta-top,
   .entry-header,

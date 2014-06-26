@@ -1089,14 +1089,15 @@ button.toggle-button:focus {
 }
 
 .entry {
+  padding-top: 24px;
   padding-bottom: 48px;
 }
 .entry .featured-image:after {
   left: 0;
 }
 
-.entry.no-featured-image {
-  padding-top: 24px;
+.entry.has-post-thumbnail {
+  padding-top: 0;
 }
 
 .entry-meta-top p {
@@ -1212,8 +1213,12 @@ button.toggle-button:focus {
 }
 /* 900px */
 @media all and (min-width: 56.25em) {
-  .entry.no-featured-image {
+  .entry {
     padding-top: 48px;
+  }
+
+  .entry.has-post-thumbnail {
+    padding-top: 0;
   }
 
   .entry-meta-top,
@@ -1533,6 +1538,7 @@ li.pingback .comment-edit-link:before {
   top: 0;
   right: 0;
   width: 100%;
+  max-width: none;
   height: 72px;
   z-index: -1;
   padding: 0.75em 11.11%;
@@ -1665,6 +1671,10 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-top: 48px;
 }
 
+.singular-page .entry {
+  padding-top: 0;
+}
+
 /* 900px */
 @media all and (min-width: 56.25em) {
   .attachment .entry {
@@ -1672,39 +1682,43 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 }
 /* 404 */
-.error404 .search-form-container,
+.error-404 .entry,
+.search .entry {
+  padding-top: 0;
+}
+.error-404 .search-form-container,
 .search .search-form-container {
   position: relative;
   height: 4.5em;
   margin-bottom: 48px;
 }
-.error404 .search-form-container form,
+.error-404 .search-form-container form,
 .search .search-form-container form {
   top: -100%;
 }
-.error404 .search-form-container .search-field,
-.error404 .search-form-container .search-submit,
+.error-404 .search-form-container .search-field,
+.error-404 .search-form-container .search-submit,
 .search .search-form-container .search-field,
 .search .search-form-container .search-submit {
   top: 100%;
   z-index: 2;
 }
-.error404 .search-form-container .search-submit,
+.error-404 .search-form-container .search-submit,
 .search .search-form-container .search-submit {
   background: #20664a;
 }
-.error404 .search-form-container .search-submit:hover, .error404 .search-form-container .search-submit:active, .error404 .search-form-container .search-submit:focus,
+.error-404 .search-form-container .search-submit:hover, .error-404 .search-form-container .search-submit:active, .error-404 .search-form-container .search-submit:focus,
 .search .search-form-container .search-submit:hover,
 .search .search-form-container .search-submit:active,
 .search .search-form-container .search-submit:focus {
   background: #2f996f;
 }
-.error404 .search-form-container span,
+.error-404 .search-form-container span,
 .search .search-form-container span {
   top: 100%;
   z-index: 1;
 }
-.error404 .search-form-container span i,
+.error-404 .search-form-container span i,
 .search .search-form-container span i {
   top: 15%;
 }

@@ -10,10 +10,10 @@ function ct_drop_load_javascript_files() {
         wp_enqueue_script('production', get_template_directory_uri() . '/js/build/production.min.js#ct_drop_asyncload', array('jquery'),'', true);
 
         if( is_rtl() ){
-            wp_enqueue_style('style', get_template_directory_uri() . '/css/rtl.min.css', array(), 1.15);
+            wp_enqueue_style('style', get_template_directory_uri() . '/css/rtl.min.css');
         }
         else {
-            wp_enqueue_style('style', get_template_directory_uri() . '/style.min.css', array(), 1.15);
+            wp_enqueue_style('style', get_template_directory_uri() . '/style.min.css');
         }
 
         wp_enqueue_style('google-fonts');
@@ -59,11 +59,8 @@ function ct_drop_theme_setup() {
 	$prefix = hybrid_get_prefix();
     
 	/* Theme-supported features go here. */
-    add_theme_support( 'hybrid-core-menus', array( 'primary' ));
     add_theme_support( 'hybrid-core-sidebars', array( 'subsidiary' ) );
-    add_theme_support( 'hybrid-core-widgets' );
     add_theme_support( 'hybrid-core-template-hierarchy' );
-    //add_theme_support( 'hybrid-core-styles', array( 'reset', 'gallery' ) );
     add_theme_support( 'loop-pagination' );
     add_theme_support( 'cleaner-gallery' );
 
@@ -76,6 +73,10 @@ function ct_drop_theme_setup() {
 
     // enable localization
     load_theme_textdomain('drop', get_template_directory() . '/languages');
+
+    register_nav_menus(array(
+        'primary' => __('Primary', 'tracks')
+    ));
 }
 
 // Initialize the metabox class
@@ -85,6 +86,18 @@ function ct_drop_initialize_cmb_meta_boxes() {
         require_once( 'assets/custom-meta-boxes/init.php' );
     }
 }
+
+function ct_drop_register_widget_areas(){
+
+    /* register footer widget area */
+    hybrid_register_sidebar( array(
+        'name'         => __( 'Subsidiary', 'tracks' ),
+        'id'           => 'subsidiary',
+        'description'  => __( 'Widgets in this area will be shown in the footer', 'tracks' )
+    ) );
+
+}
+add_action('widgets_init','ct_drop_register_widget_areas');
 
 // takes user input from the customizer and outputs linked social media icons
 function ct_drop_social_media_icons() {
@@ -280,6 +293,16 @@ function ct_drop_update_comment_field($comment_field) {
 }
 add_filter('comment_form_field_comment','ct_drop_update_comment_field');
 
+// remove allowed tags text after comment form
+function ct_drop_remove_comments_notes_after($defaults){
+
+    $defaults['comment_notes_after']='';
+    return $defaults;
+}
+
+add_action('comment_form_defaults', 'ct_drop_remove_comments_notes_after');
+
+
 // for 'read more' tag excerpts
 function ct_drop_excerpt() {
 	
@@ -370,17 +393,6 @@ function ct_drop_featured_image() {
 if( function_exists('add_image_size')){
     add_image_size('blog', 600, 400);
 }
-// does it contain a featured image?
-function ct_drop_contains_featured() {
-
-    global $post;
-	
-	if(has_post_thumbnail( $post->ID ) ) {
-		echo " has-featured-image";
-	} else {
-		echo " no-featured-image";
-	}
-}
 
 // adds title to homepage
 add_filter( 'wp_title', 'ct_drop_add_homepage_title' );
@@ -405,6 +417,24 @@ function ct_drop_body_class( $classes ) {
     return $classes;
 }
 add_filter( 'body_class', 'ct_drop_body_class' );
+
+function ct_drop_post_class_update($classes){
+
+    $remove = array();
+    $remove[] = 'entry';
+
+    if ( ! is_singular() ) {
+        foreach ( $classes as $key => $class ) {
+
+            if ( in_array( $class, $remove ) ){
+                unset( $classes[ $key ] );
+                $classes[] = 'excerpt';
+            }
+        }
+    }
+    return $classes;
+}
+add_filter( 'post_class', 'ct_drop_post_class_update' );
 
 // fix for bug with Disqus saying comments are closed
 if ( function_exists( 'dsq_options' ) ) {

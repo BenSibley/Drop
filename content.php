@@ -1,7 +1,7 @@
 <?php 
 
 if( is_home() ) { ?>
-    <div class='excerpt <?php hybrid_post_class(); ct_drop_contains_featured(); ?>' itemscope itemtype="http://schema.org/BlogPosting">
+    <div <?php post_class(); ?> itemscope itemtype="http://schema.org/BlogPosting">
     	<?php ct_drop_featured_image(); ?>
     	<div class='excerpt-meta'>
 			<span class='excerpt-date updated' itemprop="datePublished" content="<?php echo get_the_date('Y-m-d'); ?>">
@@ -29,7 +29,7 @@ if( is_home() ) { ?>
 	</div>
 <?php     
 } elseif( is_single() ) { ?>
-   <div class='entry <?php hybrid_post_class(); ct_drop_contains_featured(); ?>' itemscope itemtype="http://schema.org/BlogPosting">
+   <div <?php post_class(); ?> itemscope itemtype="http://schema.org/BlogPosting">
         <?php ct_drop_featured_image(); ?>
         <div class='entry-meta-top'>
 			<p>
@@ -57,7 +57,7 @@ if( is_home() ) { ?>
     </div>
 <?php 
 } else { ?>
-    <div class='excerpt <?php hybrid_post_class(); ct_drop_contains_featured(); ?>' itemscope itemtype="http://schema.org/BlogPosting">
+    <div <?php post_class(); ?> itemscope itemtype="http://schema.org/BlogPosting">
         <?php ct_drop_featured_image(); ?>
         <div class='excerpt-meta'>
 			<span class='excerpt-date' itemprop="datePublished" content="<?php echo get_the_date('Y-m-d'); ?>">

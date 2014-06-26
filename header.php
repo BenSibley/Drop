@@ -11,12 +11,6 @@
 
 <head>
 
-    <meta charset="<?php bloginfo( 'charset' ); ?>" />
-    <title><?php wp_title("",true); ?></title>
-
-    <!-- set width to the device viewing the site -->
-    <meta name="viewport" content="width=device-width" />
-
     <?php wp_head(); ?>
 
 </head>
