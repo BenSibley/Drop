@@ -316,6 +316,11 @@ input[type="submit"]:focus {
   background: #2f996f;
 }
 
+.post-password-form input[type="password"] {
+  display: block;
+  margin: 12px 0 !important;
+}
+
 /* placeholders */
 ::-webkit-input-placeholder {
   color: #cccccc;

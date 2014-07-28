@@ -253,6 +253,15 @@ input[type="submit"]:focus {
   background: $green-light;
 }
 
+// password page styling
+.post-password-form {
+
+  input[type="password"]{
+    display: block;
+    margin: $base-line-height / 2 0 !important;
+  }
+}
+
 /* placeholders */
 
 ::-webkit-input-placeholder {
