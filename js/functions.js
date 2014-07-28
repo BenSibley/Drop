@@ -24,7 +24,6 @@ jQuery(document).ready(function($){
     // no longer using tappy library here b/c doesn't work when loaded asynchronously
     $('#toggle-button').bind('click', toggleNav);
 
-
     // uses the leftWidth calculated earlier to translate the position of main & footer
 	function toggleNav() {
         console.log('clicked');
