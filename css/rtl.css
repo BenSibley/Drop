@@ -898,6 +898,7 @@ button.toggle-button:focus {
 
 .more-link {
   text-decoration: underline;
+  clear: both;
 }
 .more-link:link {
   text-decoration: underline;
