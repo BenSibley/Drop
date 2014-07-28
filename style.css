@@ -240,6 +240,7 @@ th {
 .aligncenter {
   text-align: center;
   margin: 24px auto;
+  display: block;
 }
 
 .alignnone {
