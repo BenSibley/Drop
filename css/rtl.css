@@ -274,7 +274,7 @@ img,
 }
 
 /* Form styles */
-input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]):not([type="search"]),
 textarea {
   color: #666666;
   background: whitesmoke;
