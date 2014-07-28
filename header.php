@@ -19,7 +19,7 @@
 
 <div class='overflow-container'>
     <a class="skip-content" href="#main"><?php _e('Skip to content','drop'); ?></a>
-<header class="site-header" role="banner">
+<header id="site-header" class="site-header" role="banner">
 
 	<div itemscope itemtype="http://schema.org/Organization" class="title-info">
 		<?php get_template_part('logo')  ?>    

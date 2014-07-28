@@ -1,4 +1,4 @@
-<button class="toggle-button">
+<button id="toggle-button" class="toggle-button">
     <i class="fa fa-bars"></i>
 </button>
 

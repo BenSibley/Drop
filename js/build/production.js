@@ -434,56 +434,64 @@ jQuery(document).ready(function($){
 		}
 	});
 
-    // set variable used to tell if the toggle menu is open
-	var menuOpen = false;
+    // no longer using tappy library here b/c doesn't work when loaded asynchronously
+    $('#toggle-button').bind('click', toggleNav);
 
-    // run the toggle nav function
-    toggleNav();
 
     // uses the leftWidth calculated earlier to translate the position of main & footer
-	function toggleNav() { 
-		$('.toggle-button').toggle(function(){
+	function toggleNav() {
+        console.log('clicked');
+
+        // if nav already open
+        if ($('#site-header').hasClass('toggled')) {
+
+            // return main and footer to original position
+            $('.main').css('transform', 'translateX(0)');
+            $('.site-footer').css('transform', 'translateX(0)');
+
+            // remove toggled class
+            $('#site-header').removeClass('toggled');
+
+            // unbind the scroll watching function
+            $(window).unbind('scroll');
+        }
+        // nav was closed, so...
+        else {
+
+            // add toggled class
+            $('#site-header').addClass('toggled');
 
             // transform from the right side if rtl
             if( $('body').hasClass('rtl') ){
                 $('.main').css('transform', 'translateX(-' + leftWidth + 'px)');
                 $('.site-footer').css('transform', 'translateX(-' + leftWidth + 'px)');
-            } else {
+            }
+            // transform from left side if not
+            else {
                 $('.main').css('transform', 'translateX(' + leftWidth + 'px)');
                 $('.site-footer').css('transform', 'translateX(' + leftWidth + 'px)');
             }
-			menuOpen = true;
-            // calls function that closes menu when scrolling down over 600px
-			watchScroll();
-		}, function(){
-			$('.main').css('transform', 'translateX(0)');
-			$('.site-footer').css('transform', 'translateX(0)');
-			menuOpen = false;
-		});
+
+            // watch scrolling to close nav when scrolled past menu
+            $(window).scroll(onScroll);
+        }
 	}
 
-    // gets the difference to the top of the site from the top of the window
-    var topDistance = $(window).scrollTop();
+    function onScroll() {
 
-    // closes menu if open and scrolled more than 600px
-	function watchScroll() {
-		$(window).scroll(function(){
-            // so that the scroll event listener isn't too resource heavy
-			$.doTimeout( 'scroll', 100, function(){
-				topDistance = $(window).scrollTop();
-				if( topDistance > 600 ) {
-					$('.main').css('transform', 'translateX(0)');
-					$('.site-footer').css('transform', 'translateX(0)');
-					menuOpen = false;
-					$(window).unbind('scroll');
-					toggleNav();
-				}
-				if( menuOpen === false ) {
-					$(window).unbind('scroll');
-				}				
-			});
-		});
-	}
+        if($('#menu-primary-items').length){
+            var menuItemsBottom = $('#menu-primary-items').offset().top + $('#menu-primary-items').height();
+        } else {
+            var menuItemsBottom = $('.menu-unset').offset().top + $('.menu-unset').height();
+        }
+
+        // keep updating var on scroll
+        var topDistance = $(window).scrollTop();
+        if (topDistance > menuItemsBottom) {
+            $(window).unbind('scroll');
+            toggleNav();
+        }
+    }
 
     $('.menu-item a, .page_item a').focus(function(){
         $(this).parents('ul').addClass('focused');
