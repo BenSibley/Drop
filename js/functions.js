@@ -121,7 +121,13 @@ jQuery(document).ready(function($){
     $(window).load(menuItemHeight());
 	
 	function menuItemHeight() {
-		$('.menu-primary-items .menu-item-has-children').each(function(){
+
+        if($('.menu-primary-items').length){
+            var ParentMenuItems = $('.menu-primary-items .menu-item-has-children');
+        } else {
+            var ParentMenuItems = $('.menu-unset .page_item_has_children');
+        }
+		ParentMenuItems.each(function(){
 			var theHeight = $(this).children('a').outerHeight();
 			$(this).css('max-height', theHeight);
 		});
@@ -136,8 +142,14 @@ jQuery(document).ready(function($){
 		var liHeight = true;
 		var subMenuHeight = true;
 		var parentHeight = true;
-		
-		$('.menu-primary-items .menu-item-has-children > a').toggle(function(){
+
+        if($('.menu-primary-items').length){
+            var ParentMenuItems = $('.menu-primary-items .menu-item-has-children');
+        } else {
+            var ParentMenuItems = $('.menu-unset .page_item_has_children');
+        }
+
+        ParentMenuItems.children('a').toggle(function(){
                 // gets height of a tag
 				liHeight = $(this).outerHeight();
                 // gets height of the children
