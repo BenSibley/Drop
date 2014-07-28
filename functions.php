@@ -3,7 +3,7 @@
 // register and enqueue all of the scripts used by Aside
 function ct_drop_load_javascript_files() {
 
-    wp_register_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,400,700');
+    wp_register_style( 'ct-drop-google-fonts', '//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,400,700');
 
     // enqueue scripts on front end
     if(! is_admin() ) {
@@ -16,7 +16,7 @@ function ct_drop_load_javascript_files() {
             wp_enqueue_style('style', get_template_directory_uri() . '/style.min.css');
         }
 
-        wp_enqueue_style('google-fonts');
+        wp_enqueue_style('ct-drop-google-fonts');
         wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css');
     }
 
