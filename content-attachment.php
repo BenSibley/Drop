@@ -10,6 +10,14 @@
             echo "<img src='$image' />";
             ?>
         </article>
+        <nav class='further-reading'>
+            <p class='prev'>
+                <span><?php previous_image_link( false, __( 'Previous Image', 'drop' ) ); ?></span>
+            </p>
+            <p class='next'>
+                <span><?php next_image_link(false, __( 'Next Image', 'drop' )); ?></span>
+            </p>
+        </nav>
     </div>
 </div>
 

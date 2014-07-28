@@ -1,0 +1,26 @@
+/* Attachment styles */
+
+.singular-attachment {
+
+  .further-reading {
+
+    a {
+      font-size: 1em;
+      line-height: 1.5;
+      color: $base-font-color;
+
+      &:link,
+      &:visited {
+        color: $base-font-color;
+      }
+      &:hover,
+      &:active,
+      &:focus {
+        color: $green;
+      }
+    }
+    p {
+      width: 49.5%;
+    }
+  }
+}

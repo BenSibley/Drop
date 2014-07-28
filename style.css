@@ -274,7 +274,7 @@ img,
 }
 
 /* Form styles */
-input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]),
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
 textarea {
   color: #666666;
   background: whitesmoke;
@@ -1519,6 +1519,22 @@ li.pingback .comment-edit-link:before {
     width: 133.15%;
   }
 }
+/* Attachment styles */
+.singular-attachment .further-reading a {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #666666;
+}
+.singular-attachment .further-reading a:link, .singular-attachment .further-reading a:visited {
+  color: #666666;
+}
+.singular-attachment .further-reading a:hover, .singular-attachment .further-reading a:active, .singular-attachment .further-reading a:focus {
+  color: #28805d;
+}
+.singular-attachment .further-reading p {
+  width: 49.5%;
+}
+
 /* Search Form */
 .search-form-container {
   position: absolute;
