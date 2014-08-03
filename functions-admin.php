@@ -90,7 +90,7 @@ function ct_drop_add_social_sites_customizer($wp_customize) {
             new ct_drop_url_input_control(
                 $wp_customize, $social_site,
                 array(
-                    'label'   => __( "$social_site url:", 'ct_drop_icon' ),
+                    'label'   => $social_site . " " . __( "url:", 'drop' ),
                     'section' => 'ct_drop_social_settings',
                     'type'    => 'text',
                     'priority'=> $priority
