@@ -102,25 +102,3 @@ function ct_drop_add_social_sites_customizer($wp_customize) {
 }
 
 add_filter( 'cmb_meta_boxes', 'ct_drop_image_credit_meta_box' );
-
-// creates meta box for image credit above the featured image box
-function ct_drop_image_credit_meta_box( $meta_boxes ) {
-    $prefix = 'ct-';
-    $meta_boxes[] = array(
-		'id'         => 'image-credit-meta-box',
-		'title'      => __('Image Credit Link','drop'),
-		'pages'      => array( 'post', ), // Post type
-		'context'    => 'side',
-		'priority'   => 'low',
-		'show_names' => true, // Show field names on the left
-		'fields'     => array(
-            array(
-				'name' => __('URL:','drop'),
-				'desc' => __('(Optional) Where did you find the featured image?','drop'),
-				'id'   => $prefix . 'image-credit-link',
-				'type' => 'text_medium',
-			)
-        )
-    );
-	return $meta_boxes;
-}?>

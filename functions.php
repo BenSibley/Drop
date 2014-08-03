@@ -79,14 +79,6 @@ function ct_drop_theme_setup() {
     ));
 }
 
-// Initialize the metabox class
-add_action( 'init', 'ct_drop_initialize_cmb_meta_boxes', 9999 );
-function ct_drop_initialize_cmb_meta_boxes() {
-    if ( !class_exists( 'cmb_Meta_Box' ) ) {
-        require_once( 'assets/custom-meta-boxes/init.php' );
-    }
-}
-
 function ct_drop_register_widget_areas(){
 
     /* register footer widget area */
