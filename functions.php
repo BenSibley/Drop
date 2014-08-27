@@ -30,7 +30,7 @@ add_action('wp_enqueue_scripts', 'ct_drop_load_javascript_files' );
 function ct_drop_enqueue_profile_image_uploader($hook) {
 
     // if is user profile page
-    if('profile.php' == $hook || 'user-edit.php' == $hook){
+    if( 'options-general.php' == $hook ){
 
         // Enqueues all scripts, styles, settings, and templates necessary to use all media JavaScript APIs.
         wp_enqueue_media();
@@ -499,5 +499,50 @@ function ct_drop_get_image_id($url) {
     // Returns null if no attachment is found
     return $attachment[0];
 }
+
+/**
+ * Class for adding a new field to the options-general.php page
+ */
+class ct_drop_add_profile_image_upload {
+
+    /**
+     * Class constructor
+     */
+    public function __construct() {
+        add_filter( 'admin_init' , array( &$this , 'register_fields' ) );
+    }
+
+    /**
+     * Add new fields to wp-admin/options-general.php page
+     */
+    public function register_fields() {
+        register_setting( 'general', 'ct_drop_profile_image_upload', 'esc_attr' );
+        add_settings_field(
+            'ct_drop_profile_image_upload',
+            '<label for="ct_drop_profile_image_upload">' . __( 'Avatar' , 'drop' ) . '</label>',
+            array( &$this, 'fields_html' ),
+            'general'
+        );
+    }
+
+    /**
+     * HTML for extra settings
+     */
+    public function fields_html() {
+        $value = get_option( 'ct_drop_profile_image_upload', '' );
+
+        ?>
+        <!-- Outputs the image after save -->
+        <img id="image-preview" src="<?php echo esc_url( $value ); ?>" style="width:100px;"><br />
+        <!-- Outputs the text field and displays the URL of the image retrieved by the media uploader -->
+        <input type="text" name="ct_drop_profile_image_upload" id="ct_drop_profile_image_upload" value="<?php echo esc_url_raw( $value ); ?>" class="regular-text" />
+        <!-- Outputs the save button -->
+        <input type='button' id="profile-image-upload" class="button-primary" value="<?php _e( 'Upload Image', 'drop' ); ?>"/><br />
+        <span class="description"><?php _e( 'This image will be used in the sidebar instead of your Gravatar.', 'drop' ); ?></span>
+        <?php
+    }
+}
+new ct_drop_add_profile_image_upload();
+
 
 ?>

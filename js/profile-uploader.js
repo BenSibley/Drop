@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
 // Uploading files
     var file_frame;
 
-    $('#user-profile-upload').on('click', function( event ){
+    $('#profile-image-upload').on('click', function( event ){
 
         event.preventDefault();
 
@@ -30,7 +30,7 @@ jQuery(document).ready(function($){
             attachment = file_frame.state().get('selection').first().toJSON();
 
             // Do something with attachment.id and/or attachment.url here
-            $('#ct_drop_user_profile_image').val(attachment.url);
+            $('#ct_drop_profile_image_upload').val(attachment.url);
             $('#image-preview').attr('src', attachment.url);
         });
 
