@@ -36,7 +36,7 @@ function ct_drop_enqueue_profile_image_uploader($hook) {
         wp_enqueue_media();
 
         // enqueue the JS needed to utilize media uploader on profile image upload
-        wp_enqueue_script('ct-profile-uploader', get_template_directory_uri() . '/js/profile-uploader.js');
+        wp_enqueue_script('ct-profile-uploader', get_template_directory_uri() . '/js/build/profile-uploader.min.js');
     }
 }
 add_action('admin_enqueue_scripts', 'ct_drop_enqueue_profile_image_uploader');
