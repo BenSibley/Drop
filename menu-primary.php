@@ -5,7 +5,7 @@
 
 <div class='menu-slider'>
     <div class='site-info'>
-        <?php echo get_avatar(get_bloginfo('admin_email')); ?>
+        <?php ct_drop_profile_image_output(); ?>
         <p><?php echo bloginfo('description'); ?></p>
         <hr />
     </div>

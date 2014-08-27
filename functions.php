@@ -471,7 +471,7 @@ function ct_drop_profile_image_output(){
         echo $image_thumb;
 
     } else {
-        echo get_avatar( get_comment_author_email(), 48 );
+        echo get_avatar( get_the_author_meta( 'ID' ), 72 );
     }
 }
 
