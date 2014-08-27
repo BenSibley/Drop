@@ -1326,13 +1326,21 @@ li.pingback {
   position: relative;
 }
 li.comment .avatar,
-li.pingback .avatar {
+li.comment .author-profile-avatar,
+li.pingback .avatar,
+li.pingback .author-profile-avatar {
   width: 48px;
   height: auto;
   border-radius: 50%;
   float: right;
   margin-left: 1em;
   margin-bottom: 12px;
+}
+li.comment .avatar img,
+li.comment .author-profile-avatar img,
+li.pingback .avatar img,
+li.pingback .author-profile-avatar img {
+  border-radius: 50%;
 }
 li.comment .author-name a,
 li.comment .author-name a:link,

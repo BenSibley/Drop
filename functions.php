@@ -223,13 +223,23 @@ function ct_drop_tags_display() {
 /* added to customize the comments. Same as default except -> added use of gravatar images for comment authors */
 function ct_drop_customize_comments( $comment, $args, $depth ) {
     $GLOBALS['comment'] = $comment;
+    global $post;
  
     ?>
     <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
         <article id="comment-<?php comment_ID(); ?>" class="comment">
             
             <div class="comment-author">
-                <img width="48" height="48" class="avatar lazy lazy-image" data-src="<?php echo ct_drop_get_gravatar_url(get_avatar( $comment, 50 )); ?>" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                <?php
+                // if is post author
+                if( $comment->user_id === $post->post_author ) {
+                    echo "<div class='author-profile-avatar'>";
+                        ct_drop_profile_image_output();
+                    echo "</div>";
+                } else { ?>
+                    <img width="48" height="48" class="avatar lazy lazy-image" data-src="<?php echo ct_drop_get_gravatar_url(get_avatar( $comment, 50 )); ?>" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                <?php } ?>
+
                 <div>
                     <div class="author-name"><?php comment_author_link(); ?> <?php _e('said','drop'); ?>&#8230;</div>
                 </div>    

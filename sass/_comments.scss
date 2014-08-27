@@ -41,13 +41,18 @@ li.pingback {
   margin-bottom: $base-line-height * 2;
   position: relative;
 
-  .avatar {
+  .avatar,
+  .author-profile-avatar {
     width: $base-line-height * 2;
     height: auto;
     border-radius: 50%;
     float: left;
     margin-right: 1em;
     margin-bottom: $base-line-height / 2;
+
+    img {
+      border-radius: 50%;
+    }
   }
   .author-name {
 
