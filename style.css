@@ -867,6 +867,14 @@ button.toggle-button:focus {
   background-position: 50%;
   margin-bottom: 24px;
 }
+.featured-image a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
 .featured-image:after {
   content: '';
   position: absolute;

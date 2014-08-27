@@ -364,14 +364,16 @@ function ct_drop_featured_image() {
 	
 	global $post;
 
-    // if blog/archive load smaller image size
+    // if blog or archive, lazy load smaller image
     if(is_home() || is_archive()){
 
-        // if not first page, lazy load image
         if (has_post_thumbnail( $post->ID ) ) {
             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'blog' );
             $image = $image[0];
-            echo "<div itemprop='thumbnailUrl' class='featured-image lazy lazy-bg-image' data-background='" . $image . "'></div>";
+            echo "
+                <div itemprop='thumbnailUrl' class='featured-image lazy lazy-bg-image' data-background='" . $image . "'>
+                    <a href='" . get_the_permalink() ."'>" . get_the_title() . "</a>
+                </div>";
         }
     }
 	elseif (has_post_thumbnail( $post->ID ) ) {
