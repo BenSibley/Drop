@@ -83,9 +83,9 @@ function ct_drop_register_widget_areas(){
 
     /* register footer widget area */
     hybrid_register_sidebar( array(
-        'name'         => __( 'Subsidiary', 'tracks' ),
+        'name'         => __( 'Subsidiary', 'drop' ),
         'id'           => 'subsidiary',
-        'description'  => __( 'Widgets in this area will be shown in the footer', 'tracks' )
+        'description'  => __( 'Widgets in this area will be shown in the footer', 'drop' )
     ) );
 
 }
