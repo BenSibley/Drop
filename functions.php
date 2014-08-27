@@ -75,7 +75,7 @@ function ct_drop_theme_setup() {
     load_theme_textdomain('drop', get_template_directory() . '/languages');
 
     register_nav_menus(array(
-        'primary' => __('Primary', 'tracks')
+        'primary' => __('Primary', 'drop')
     ));
 }
 
