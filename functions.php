@@ -27,6 +27,20 @@ function ct_drop_load_javascript_files() {
 }
 add_action('wp_enqueue_scripts', 'ct_drop_load_javascript_files' );
 
+function ct_drop_enqueue_profile_image_uploader($hook) {
+
+    // if is user profile page
+    if('profile.php' == $hook || 'user-edit.php' == $hook){
+
+        // Enqueues all scripts, styles, settings, and templates necessary to use all media JavaScript APIs.
+        wp_enqueue_media();
+
+        // enqueue the JS needed to utilize media uploader on profile image upload
+        wp_enqueue_script('ct-profile-uploader', get_template_directory_uri() . '/js/profile-uploader.js');
+    }
+}
+add_action('admin_enqueue_scripts', 'ct_drop_enqueue_profile_image_uploader');
+
 // load all scripts enqueued by theme asynchronously
 function ct_drop_add_async_script($url) {
 
