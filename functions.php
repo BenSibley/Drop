@@ -459,10 +459,10 @@ function ct_drop_get_gravatar_url($get_avatar){
 function ct_drop_profile_image_output(){
 
     // if post author has profile image set
-    if(get_the_author_meta('ct_drop_user_profile_image')) {
+    if(get_option('ct_drop_profile_image_upload')) {
 
         // get the id based on the image's URL
-        $image_id = ct_drop_get_image_id(get_the_author_meta('ct_drop_user_profile_image'));
+        $image_id = ct_drop_get_image_id(get_option('ct_drop_profile_image_upload'));
 
         // retrieve the thumbnail size of profile image
         $image_thumb = wp_get_attachment_image($image_id, 'thumbnail');
