@@ -5,7 +5,7 @@ if( is_single() ) { ?>
         <div class='entry-meta-top'>
 			<p>
                 <span class="vcard author" itemprop="author" itemscope itemtype="http://schema.org/Person"><?php _e('Published by ','drop'); ?>
-                    <a class="fn" href="<?php esc_url(get_author_posts_url(get_the_author_meta('ID'))) ?>" itemprop="name"><?php the_author_meta( 'display_name' ); ?></a>
+                    <a class="fn" href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))) ?>" itemprop="name"><?php the_author_meta( 'display_name' ); ?></a>
                 </span> on
                 <span class="updated" itemprop="datePublished" content="<?php echo get_the_date('Y-m-d'); ?>"><?php echo date_i18n( get_option( 'date_format' ), strtotime( get_the_date() ) ); ?></span>
             </p>

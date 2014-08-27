@@ -101,4 +101,40 @@ function ct_drop_add_social_sites_customizer($wp_customize) {
 	}
 }
 
-add_filter( 'cmb_meta_boxes', 'ct_drop_image_credit_meta_box' );
+function ct_drop_user_profile_image_setting( $user ) { ?>
+
+    <table id="profile-image-table" class="form-table">
+
+        <tr>
+            <th><label for="ct_drop_user_profile_image"><?php _e( 'Profile image', 'drop' ); ?></label></th>
+            <td>
+                <!-- Outputs the image after save -->
+                <img id="image-preview" src="<?php echo esc_url( get_the_author_meta( 'ct_drop_user_profile_image', $user->ID ) ); ?>" style="width:100px;"><br />
+                <!-- Outputs the text field and displays the URL of the image retrieved by the media uploader -->
+                <input type="text" name="ct_drop_user_profile_image" id="ct_drop_user_profile_image" value="<?php echo esc_url_raw( get_the_author_meta( 'ct_drop_user_profile_image', $user->ID ) ); ?>" class="regular-text" />
+                <!-- Outputs the save button -->
+                <input type='button' id="user-profile-upload" class="button-primary" value="<?php _e( 'Upload Image', 'drop' ); ?>"/><br />
+                <span class="description"><?php _e( 'Upload an image here to use instead of your Gravatar. Perfectly square images will not be cropped.', 'drop' ); ?></span>
+            </td>
+        </tr>
+
+    </table><!-- end form-table -->
+<?php } // additional_user_fields
+
+add_action( 'show_user_profile', 'ct_drop_user_profile_image_setting' );
+add_action( 'edit_user_profile', 'ct_drop_user_profile_image_setting' );
+
+/**
+ * Saves additional user fields to the database
+ */
+function ct_drop_save_user_profile_image( $user_id ) {
+
+    // only saves if the current user can edit user profiles
+    if ( !current_user_can( 'edit_user', $user_id ) )
+        return false;
+
+    update_user_meta( $user_id, 'ct_drop_user_profile_image', $_POST['ct_drop_user_profile_image'] );
+}
+
+add_action( 'personal_options_update', 'ct_drop_save_user_profile_image' );
+add_action( 'edit_user_profile_update', 'ct_drop_save_user_profile_image' );
