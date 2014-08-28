@@ -32,7 +32,7 @@ if( is_single() ) { ?>
         <?php ct_drop_featured_image(); ?>
         <div class='excerpt-meta'>
 			<span class='excerpt-date' itemprop="datePublished" content="<?php echo get_the_date('Y-m-d'); ?>">
-				<?php echo get_the_date('d M Y'); ?>
+				<?php echo date_i18n( get_option( 'date_format' ), strtotime( get_the_date() ) ); ?>
 			</span>
 			<span itemprop="author" itemscope itemtype="http://schema.org/Person" class='excerpt-author'>
 				<span><?php _e('Published by:','drop'); ?></span>
