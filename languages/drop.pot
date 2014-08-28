@@ -2,94 +2,15 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Drop 1.17\n"
+"Project-Id-Version: Drop 1.18\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2014-08-03 15:54:01+00:00\n"
+"POT-Creation-Date: 2014-08-28 15:54:28+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_ajax.php:47
-msgid "Please Try Again"
-msgstr ""
-
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_ajax.php:131
-msgid "Remove Embed"
-msgstr ""
-
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_ajax.php:134
-msgid "No oEmbed Results Found for %s. View more info at"
-msgstr ""
-
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_field.php:459
-msgid "Add Group"
-msgstr ""
-
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_field.php:460
-msgid "Remove Group"
-msgstr ""
-
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_types.php:250
-msgid "Add Row"
-msgstr ""
-
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_types.php:306
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_types.php:706
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_types.php:768
-msgid "Remove"
-msgstr ""
-
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_types.php:601
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_types.php:635
-msgid "No terms"
-msgstr ""
-
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_types.php:674
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_types.php:728
-msgid "Add or Upload File"
-msgstr ""
-
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_types.php:695
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_types.php:760
-msgid "Remove Image"
-msgstr ""
-
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_types.php:706
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_types.php:768
-msgid "File:"
-msgstr ""
-
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_types.php:706
-#: assets/custom-meta-boxes/helpers/cmb_Meta_Box_types.php:768
-msgid "Download"
-msgstr ""
-
-#: assets/custom-meta-boxes/init.php:258
-msgid "Clear"
-msgstr ""
-
-#: assets/custom-meta-boxes/init.php:259
-msgid "Default"
-msgstr ""
-
-#: assets/custom-meta-boxes/init.php:260
-msgid "Select Color"
-msgstr ""
-
-#: assets/custom-meta-boxes/init.php:261
-msgid "Current Color"
-msgstr ""
-
-#: assets/custom-meta-boxes/init.php:288
-msgid "Select / Deselect All"
-msgstr ""
-
-#: assets/custom-meta-boxes/init.php:1177
-msgid "Save"
-msgstr ""
 
 #: comments.php:11 comments.php:29 comments.php:49
 msgid "Be First to Comment"
@@ -135,20 +56,20 @@ msgstr ""
 msgid "Next Image"
 msgstr ""
 
-#: content-page.php:8 content.php:48
+#: content-page.php:8 content.php:19
 msgid "Pages:"
 msgstr ""
 
-#: content.php:11 content.php:67
+#: content.php:7
+msgid "Published by "
+msgstr ""
+
+#: content.php:38
 msgid "Published by:"
 msgstr ""
 
-#: content.php:15 content.php:71
+#: content.php:42
 msgid "Posted in:"
-msgstr ""
-
-#: content.php:36
-msgid "Published by "
 msgstr ""
 
 #: footer.php:6
@@ -175,108 +96,108 @@ msgstr ""
 msgid "url:"
 msgstr ""
 
-#: functions-admin.php:111
-msgid "Image Credit Link"
-msgstr ""
-
-#: functions-admin.php:118
-msgid "URL:"
-msgstr ""
-
-#: functions-admin.php:119
-msgid "(Optional) Where did you find the featured image?"
-msgstr ""
-
-#: functions.php:78
+#: functions.php:92
 msgid "Primary"
 msgstr ""
 
-#: functions.php:94
+#: functions.php:100
 msgid "Subsidiary"
 msgstr ""
 
-#: functions.php:96
+#: functions.php:102
 msgid "Widgets in this area will be shown in the footer"
 msgstr ""
 
-#: functions.php:143
+#: functions.php:149
 msgid "The Previous Post"
 msgstr ""
 
-#: functions.php:148
+#: functions.php:154
 msgid "The Next Post"
 msgstr ""
 
-#: functions.php:154
+#: functions.php:160
 msgid "Previous Post"
 msgstr ""
 
-#: functions.php:159
+#: functions.php:165
 msgid "This is the oldest post"
 msgstr ""
 
-#: functions.php:160 functions.php:172
+#: functions.php:166 functions.php:178
 msgid "Return to Blog"
 msgstr ""
 
-#: functions.php:166
+#: functions.php:172
 msgid "Next Post"
 msgstr ""
 
-#: functions.php:171
+#: functions.php:177
 msgid "This is the newest post"
 msgstr ""
 
-#: functions.php:181 functions.php:194
+#: functions.php:187 functions.php:200
 msgid "View all posts in %s"
 msgstr ""
 
-#: functions.php:192
+#: functions.php:198
 msgid "Categories:"
 msgstr ""
 
-#: functions.php:208
+#: functions.php:214
 msgid "Tagged as:"
 msgstr ""
 
-#: functions.php:210
+#: functions.php:216
 msgid "View all posts tagged %s"
 msgstr ""
 
-#: functions.php:228
+#: functions.php:244
 msgid "said"
 msgstr ""
 
-#: functions.php:232 functions.php:237
+#: functions.php:248 functions.php:253
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:243
+#: functions.php:259
 msgid "Reply"
 msgstr ""
 
-#: functions.php:261
+#: functions.php:277
 msgid "Your Name"
 msgstr ""
 
-#: functions.php:268
+#: functions.php:284
 msgid "Your Email"
 msgstr ""
 
-#: functions.php:275
+#: functions.php:291
 msgid "Your Website"
 msgstr ""
 
-#: functions.php:288
+#: functions.php:304
 msgid "Your Comment"
 msgstr ""
 
-#: functions.php:317 functions.php:330
+#: functions.php:333 functions.php:346
 msgid "Read the Post"
 msgstr ""
 
-#: functions.php:366
+#: functions.php:382
 msgid "image credit:"
+msgstr ""
+
+#: functions.php:532
+msgid "Avatar"
+msgstr ""
+
+#: functions.php:550
+msgid "Upload Image"
+msgstr ""
+
+#: functions.php:551
+msgid "This image will be used in the sidebar instead of your Gravatar."
 msgstr ""
 
 #: header.php:15
