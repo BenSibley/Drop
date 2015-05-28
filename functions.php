@@ -211,7 +211,7 @@ function ct_drop_customize_comments( $comment, $args, $depth ) {
             <div class='comment-footer'>
 				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'drop' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 				<div class="comment-date"><?php comment_date(); ?></div>
-				<div><?php edit_comment_link( 'edit' ); ?></div>
+				<div><?php edit_comment_link( 'Edit' ); ?></div>
 			</div>
         </article>
     <?php
