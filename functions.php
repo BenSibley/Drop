@@ -511,3 +511,16 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) :
 	}
 	add_action( 'wp_head', 'ct_drop_add_title_tag' );
 endif;
+
+// custom css output
+function ct_drop_custom_css_output(){
+
+	$custom_css = get_theme_mod('custom_css');
+
+	/* output custom css */
+	if( $custom_css ) {
+		wp_add_inline_style( 'ct-drop-style', $custom_css );
+		wp_add_inline_style( 'ct-drop-style-rtl', $custom_css );
+	}
+}
+add_action('wp_enqueue_scripts', 'ct_drop_custom_css_output', 20);
