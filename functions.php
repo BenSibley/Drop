@@ -214,7 +214,6 @@ function ct_drop_customize_comments( $comment, $args, $depth ) {
 				<div><?php edit_comment_link( 'edit' ); ?></div>
 			</div>
         </article>
-    </li>
     <?php
 }
 
