@@ -86,6 +86,11 @@ function ct_drop_theme_setup() {
     // adds the file with the customizer functionality
     require_once( trailingslashit( get_template_directory() ) . 'functions-admin.php' );
 
+	// add inc folder files
+	foreach ( glob( trailingslashit( get_template_directory() ) . 'inc/*' ) as $filename ) {
+		include $filename;
+	}
+
     // enable localization
     load_theme_textdomain('drop', get_template_directory() . '/languages');
 
