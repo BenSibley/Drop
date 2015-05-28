@@ -22,11 +22,10 @@
 }
 .comment-list {
   padding: 0;
-  margin-top: $base-line-height;
+  margin: $base-line-height * 2 0;
 
   ul {
-    margin-left: 1.5em;
-    margin-right: 0;
+    margin: $base-line-height 0 $base-line-height $base-line-height;
 
     li:first-child:before {
       content: "\2192";

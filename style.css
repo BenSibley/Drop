@@ -6,7 +6,6 @@ Author URI: http://competethemes.com/
 Description: A Bold, Responsive Blog Theme
 Tags: gray, green, tan, white, light, white, one-column, responsive-layout, accessibility-ready, custom-menu, featured-images, microformats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 Version: 1.19
-
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: drop
@@ -1308,11 +1307,10 @@ button.toggle-button:focus {
 
 .comment-list {
   padding: 0;
-  margin-top: 24px;
+  margin: 48px 0;
 }
 .comment-list ul {
-  margin-left: 1.5em;
-  margin-right: 0;
+  margin: 24px 0 24px 24px;
 }
 .comment-list ul li:first-child:before {
   content: "\2192";
