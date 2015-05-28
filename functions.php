@@ -29,9 +29,6 @@ function ct_drop_theme_setup() {
     add_theme_support( 'automatic-feed-links' );
     add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'title-tag' );
-    
-    // adds the file with the customizer functionality
-    require_once( trailingslashit( get_template_directory() ) . 'functions-admin.php' );
 
 	// add inc folder files
 	foreach ( glob( trailingslashit( get_template_directory() ) . 'inc/*' ) as $filename ) {
