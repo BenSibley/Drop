@@ -43,7 +43,7 @@ function ct_drop_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'ct-upload', array(
 		'title'      => __( 'Logo', 'drop' ),
-		'priority'   => 60,
+		'priority'   => 20,
 		'capability' => 'edit_theme_options'
 	) );
 	// setting
