@@ -38,6 +38,12 @@ function ct_drop_enqueue_profile_image_uploader($hook) {
 		// enqueue the JS needed to utilize media uploader on profile image upload
 		wp_enqueue_script('ct-profile-uploader', get_template_directory_uri() . '/js/build/profile-uploader.min.js');
 	}
+	// if theme options page
+	if( 'appearance_page_drop-options' == $hook ) {
+
+		// Admin styles
+		wp_enqueue_style('ct-drop-admin-styles', get_template_directory_uri() . '/css/admin.min.css');
+	}
 }
 add_action('admin_enqueue_scripts', 'ct_drop_enqueue_profile_image_uploader');
 
