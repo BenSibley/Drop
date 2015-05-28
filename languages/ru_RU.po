@@ -1,0 +1,1007 @@
+# Copyright (C) 2014 Compete Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Drop 1.18\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2014-08-28 15:54:28+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-12-26 01:17+0300\n"
+"Last-Translator: Dmitry \"Dima\" Sobennikov <info@sodiac.ru>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.7.1\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru_RU\n"
+
+#: comments.php:11 comments.php:29 comments.php:49
+msgid "Be First to Comment"
+msgstr "﻿Ваш комментарий будет первым"
+
+#: comments.php:11 comments.php:29 comments.php:49
+msgid "One Comment"
+msgstr "﻿Один комментарий"
+
+#: comments.php:11 comments.php:29 comments.php:49
+msgid "% comments"
+msgstr "﻿% комментариев"
+
+#: comments.php:42
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
+"﻿Дискуссия закрыта, но <a href=\"%s\" title=\"URL обратной ссылки\">обратные "
+"ссылки</a> и запросы ещё работают."
+
+#: comments.php:62 comments.php:68
+msgid "Comments are closed."
+msgstr "﻿Обсуждение закрыто."
+
+#: content-404.php:3
+msgid "404: Page Not Found"
+msgstr "﻿404: страница не найдена"
+
+#: content-404.php:11
+msgid "Looks like nothing was found on this url!"
+msgstr "﻿Похоже, ничего не было найдено по этой ссылке!"
+
+#: content-404.php:14
+msgid ""
+"Double-check that the url is correct or try the search form below to find "
+"what you were looking for."
+msgstr "﻿Убедитесь, что адрес верен, или воспользуйтесь окном поиска ниже."
+
+#: content-attachment.php:15
+msgid "Previous Image"
+msgstr "﻿Предыдущее изображение"
+
+#: content-attachment.php:18
+msgid "Next Image"
+msgstr "﻿Следующее изображение"
+
+#: content-page.php:8 content.php:19
+msgid "Pages:"
+msgstr "﻿Страницы:"
+
+#: content.php:7
+msgid "Published by "
+msgstr "Автор "
+
+#: content.php:38
+msgid "Published by:"
+msgstr "Автор:"
+
+#: content.php:42
+msgid "Posted in:"
+msgstr "Категория:"
+
+#: footer.php:6
+msgid "Designed by"
+msgstr "Дизайн"
+
+#. Author of the plugin/theme
+msgid "Compete Themes"
+msgstr "Compete Themes"
+
+#: functions-admin.php:17
+msgid "Logo"
+msgstr "﻿Логотип"
+
+#: functions-admin.php:38
+msgid "Upload custom logo."
+msgstr "﻿Загрузите свой логотип."
+
+#: functions-admin.php:74
+msgid "Social Media Icons"
+msgstr "Значки соц. сетей"
+
+#: functions-admin.php:93
+msgid "url:"
+msgstr "﻿url:"
+
+#: functions.php:92
+msgid "Primary"
+msgstr "﻿Главная"
+
+#: functions.php:100
+msgid "Subsidiary"
+msgstr "Второстепенная"
+
+#: functions.php:102
+msgid "Widgets in this area will be shown in the footer"
+msgstr "﻿Виджеты в этой области будут отображаться в подвале"
+
+#: functions.php:149
+msgid "The Previous Post"
+msgstr "Предыдущая запись"
+
+#: functions.php:154
+msgid "The Next Post"
+msgstr "Следующая запись"
+
+#: functions.php:160
+msgid "Previous Post"
+msgstr "﻿Предыдущая запись"
+
+#: functions.php:165
+msgid "This is the oldest post"
+msgstr "Это последняя запись"
+
+#: functions.php:166 functions.php:178
+msgid "Return to Blog"
+msgstr "﻿Вернуться к новостям"
+
+#: functions.php:172
+msgid "Next Post"
+msgstr "﻿Следующая запись"
+
+#: functions.php:177
+msgid "This is the newest post"
+msgstr "Это первая запись"
+
+#: functions.php:187 functions.php:200
+msgid "View all posts in %s"
+msgstr "﻿Посмотреть все статьи в %s"
+
+#: functions.php:198
+msgid "Categories:"
+msgstr "﻿Категории:"
+
+#: functions.php:214
+msgid "Tagged as:"
+msgstr "﻿С метками:"
+
+#: functions.php:216
+msgid "View all posts tagged %s"
+msgstr "﻿Все новости с тэгом %s"
+
+#: functions.php:244
+msgid "said"
+msgstr "написал"
+
+#: functions.php:248 functions.php:253
+msgid "Your comment is awaiting moderation."
+msgstr "﻿Ваш комментарий ожидает одобрения."
+
+#: functions.php:259
+msgid "Reply"
+msgstr "﻿Ответить"
+
+#: functions.php:277
+msgid "Your Name"
+msgstr "﻿Ваше Имя"
+
+#: functions.php:284
+msgid "Your Email"
+msgstr "﻿Ваш Email"
+
+#: functions.php:291
+msgid "Your Website"
+msgstr "﻿Ваш сайт"
+
+#: functions.php:304
+msgid "Your Comment"
+msgstr "﻿Ваш комментарий"
+
+#: functions.php:333 functions.php:346
+msgid "Read the Post"
+msgstr "Читать статью"
+
+#: functions.php:382
+msgid "image credit:"
+msgstr "Выходные данные:"
+
+#: functions.php:532
+msgid "Avatar"
+msgstr "﻿Аватар"
+
+#: functions.php:550
+msgid "Upload Image"
+msgstr "﻿Загрузить фото"
+
+#: functions.php:551
+msgid "This image will be used in the sidebar instead of your Gravatar."
+msgstr ""
+"﻿Это изображение будет использоваться в боковой панели вместо вашего Gravatar."
+
+#: header.php:15
+msgid "Skip to content"
+msgstr "Читать статью"
+
+#: library/admin/meta-box-post-template.php:48
+msgid "Template"
+msgstr "﻿Шаблон"
+
+#. Translators: %s is the theme name.
+#: library/admin/theme-settings.php:134 library/admin/theme-settings.php:199
+msgid "%s Theme Settings"
+msgstr "%s настройки темы"
+
+#: library/admin/theme-settings.php:135
+msgid "Theme Settings"
+msgstr "﻿Настройки темы"
+
+#. Translators: Media dimensions - 1 is width and 2 is height.
+#: library/classes/hybrid-media-meta.php:154
+#: library/classes/hybrid-media-meta.php:282
+#: library/functions/template-media.php:102
+msgid "%1$s &#215; %2$s"
+msgstr "%1$s &#215; %2$s"
+
+#: library/classes/hybrid-media-meta.php:155
+#: library/classes/hybrid-media-meta.php:282
+msgid "Dimensions"
+msgstr "﻿Размеры"
+
+#: library/classes/hybrid-media-meta.php:161
+#: library/classes/widget-pages.php:191
+msgid "Date"
+msgstr "﻿Дата"
+
+#: library/classes/hybrid-media-meta.php:165
+msgid "Camera"
+msgstr "﻿Камера"
+
+#: library/classes/hybrid-media-meta.php:169
+msgid "Aperture"
+msgstr "﻿Диафрагма"
+
+#. Translators: Camera focal length.
+#: library/classes/hybrid-media-meta.php:174
+msgid "%s mm"
+msgstr "%s мм"
+
+#: library/classes/hybrid-media-meta.php:174
+msgid "Focal Length"
+msgstr "﻿Фокусное расстояние"
+
+#: library/classes/hybrid-media-meta.php:180
+msgid "International Organization for Standardization"
+msgstr "﻿Международная организация по стандартизации"
+
+#: library/classes/hybrid-media-meta.php:180
+msgid "ISO"
+msgstr "﻿ISO"
+
+#. Translators: Camera shutter speed. "sec" is an abbreviation for "seconds".
+#: library/classes/hybrid-media-meta.php:199
+msgid "%s sec"
+msgstr "%s сек"
+
+#: library/classes/hybrid-media-meta.php:199
+msgid "Shutter Speed"
+msgstr "﻿Выдержка"
+
+#: library/classes/hybrid-media-meta.php:248
+#: library/classes/hybrid-media-meta.php:285
+msgid "File Name"
+msgstr "﻿Имя файла"
+
+#: library/classes/hybrid-media-meta.php:256
+#: library/classes/hybrid-media-meta.php:293
+msgid "File Type"
+msgstr "﻿Тип файла"
+
+#: library/classes/widget-archives.php:43
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"archives."
+msgstr "Виджет дает вам полный контроль над отображением ваших статей."
+
+#: library/classes/widget-archives.php:55
+#: library/classes/widget-archives.php:62
+#: library/extensions/breadcrumb-trail.php:181
+#: library/functions/template-general.php:339
+msgid "Archives"
+msgstr "﻿Архив"
+
+#: library/classes/widget-archives.php:105
+msgid "Select Year"
+msgstr "﻿Выберите год"
+
+#: library/classes/widget-archives.php:108
+msgid "Select Month"
+msgstr "﻿Выберите месяц"
+
+#: library/classes/widget-archives.php:111
+msgid "Select Week"
+msgstr "﻿Выберите неделю"
+
+#: library/classes/widget-archives.php:114
+msgid "Select Day"
+msgstr "﻿Выберите день"
+
+#: library/classes/widget-archives.php:117
+msgid "Select Post"
+msgstr "﻿Выберите запись"
+
+#: library/classes/widget-archives.php:194
+msgid "Alphabetical"
+msgstr "﻿Алфавитный"
+
+#: library/classes/widget-archives.php:195
+msgid "Daily"
+msgstr "По дням"
+
+#: library/classes/widget-archives.php:196
+msgid "Monthly"
+msgstr "По месяцам"
+
+#: library/classes/widget-archives.php:197
+msgid "Post By Post"
+msgstr "По очереди"
+
+#: library/classes/widget-archives.php:198
+msgid "Weekly"
+msgstr "По неделям"
+
+#: library/classes/widget-archives.php:199
+msgid "Yearly"
+msgstr "По годам"
+
+#: library/classes/widget-archives.php:204
+#: library/classes/widget-authors.php:181
+#: library/classes/widget-bookmarks.php:220
+#: library/classes/widget-categories.php:210
+#: library/classes/widget-pages.php:185 library/classes/widget-tags.php:227
+msgid "Ascending"
+msgstr "﻿Возрастание"
+
+#: library/classes/widget-archives.php:205
+#: library/classes/widget-authors.php:182
+#: library/classes/widget-bookmarks.php:221
+#: library/classes/widget-categories.php:211
+#: library/classes/widget-pages.php:186 library/classes/widget-tags.php:228
+msgid "Descending"
+msgstr "﻿Убывание"
+
+#: library/classes/widget-archives.php:210
+msgid "Custom"
+msgstr "Произвольно"
+
+#: library/classes/widget-archives.php:211
+msgid "HTML"
+msgstr "﻿HTML"
+
+#: library/classes/widget-archives.php:212
+msgid "Option"
+msgstr "﻿Вариант"
+
+#: library/classes/widget-archives.php:218
+#: library/classes/widget-authors.php:205
+#: library/classes/widget-bookmarks.php:250
+#: library/classes/widget-calendar.php:137
+#: library/classes/widget-categories.php:234
+#: library/classes/widget-nav-menu.php:173
+#: library/classes/widget-pages.php:211 library/classes/widget-search.php:128
+#: library/classes/widget-tags.php:248
+msgid "Title:"
+msgstr "﻿Заголовок:"
+
+#: library/classes/widget-archives.php:262
+#: library/classes/widget-authors.php:261
+msgid "Show post count?"
+msgstr "﻿Показывать число записей?"
+
+#: library/classes/widget-authors.php:43
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"author lists."
+msgstr "Виджет дает вам полный контроль над отображением списка авторов."
+
+#: library/classes/widget-authors.php:55 library/classes/widget-authors.php:62
+msgid "Authors"
+msgstr "﻿Авторы"
+
+#: library/classes/widget-authors.php:186
+msgid "Display Name"
+msgstr "Показать имя"
+
+#: library/classes/widget-authors.php:187
+msgid "Email"
+msgstr "﻿Email"
+
+#: library/classes/widget-authors.php:188
+#: library/classes/widget-bookmarks.php:226
+#: library/classes/widget-bookmarks.php:232
+#: library/classes/widget-categories.php:216
+#: library/classes/widget-pages.php:192
+msgid "ID"
+msgstr "Символ"
+
+#: library/classes/widget-authors.php:189
+msgid "Nice Name"
+msgstr "Псевдоним"
+
+#: library/classes/widget-authors.php:190
+msgid "Post Count"
+msgstr "Число статей"
+
+#: library/classes/widget-authors.php:191
+msgid "Registered"
+msgstr "﻿Зарегистрирован"
+
+#: library/classes/widget-authors.php:192
+#: library/classes/widget-bookmarks.php:244
+msgid "URL"
+msgstr "﻿URL"
+
+#: library/classes/widget-authors.php:193
+msgid "Login"
+msgstr "﻿Логин"
+
+#: library/classes/widget-authors.php:197
+#: library/classes/widget-categories.php:205
+#: library/classes/widget-tags.php:223
+msgid "List"
+msgstr "﻿Список"
+
+#: library/classes/widget-authors.php:198
+#: library/classes/widget-categories.php:206
+msgid "None"
+msgstr "Нет"
+
+#: library/classes/widget-authors.php:257
+msgid "<acronym title=\"Hypertext Markup Language\">HTML</acronym>?"
+msgstr "<acronym title=\"Hypertext Markup Language\">HTML</acronym>?"
+
+#: library/classes/widget-authors.php:265
+msgid "Exclude admin?"
+msgstr "﻿Исключить администратора?"
+
+#: library/classes/widget-authors.php:269
+msgid "Show full name?"
+msgstr "﻿Показать полное имя?"
+
+#: library/classes/widget-authors.php:273
+#: library/classes/widget-categories.php:337
+#: library/classes/widget-tags.php:367
+msgid "Hide empty?"
+msgstr "﻿Скрыть пустые?"
+
+#: library/classes/widget-bookmarks.php:43
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"bookmarks (links)."
+msgstr "Виджет дает вам полный контроль над отображением закладок (ссылок)."
+
+#: library/classes/widget-bookmarks.php:55
+#: library/classes/widget-bookmarks.php:62
+#: library/classes/widget-bookmarks.php:127
+msgid "Bookmarks"
+msgstr "﻿Закладки"
+
+#: library/classes/widget-bookmarks.php:225
+#: library/classes/widget-categories.php:215
+#: library/classes/widget-tags.php:233
+msgid "Count"
+msgstr "﻿Количество"
+
+#: library/classes/widget-bookmarks.php:227
+#: library/classes/widget-bookmarks.php:235
+#: library/classes/widget-categories.php:217
+#: library/classes/widget-tags.php:234
+msgid "Name"
+msgstr "﻿Имя"
+
+#: library/classes/widget-bookmarks.php:228
+#: library/classes/widget-categories.php:218
+#: library/classes/widget-pages.php:195
+msgid "Slug"
+msgstr "Ссылка"
+
+#: library/classes/widget-bookmarks.php:233
+msgid "Description"
+msgstr "﻿Описание"
+
+#: library/classes/widget-bookmarks.php:234
+msgid "Length"
+msgstr "﻿Длина"
+
+#: library/classes/widget-bookmarks.php:236
+msgid "Notes"
+msgstr "﻿Примечания"
+
+#: library/classes/widget-bookmarks.php:237
+msgid "Owner"
+msgstr "﻿Владелец"
+
+#: library/classes/widget-bookmarks.php:238
+#: library/classes/widget-tags.php:229
+msgid "Random"
+msgstr "﻿Случайно"
+
+#: library/classes/widget-bookmarks.php:239
+msgid "Rating"
+msgstr "﻿Рейтинг"
+
+#: library/classes/widget-bookmarks.php:240
+msgid "Rel"
+msgstr "Связка"
+
+#: library/classes/widget-bookmarks.php:241
+#: library/classes/widget-categories.php:226
+msgid "RSS"
+msgstr "﻿RSS"
+
+#: library/classes/widget-bookmarks.php:242
+msgid "Target"
+msgstr "﻿Цель"
+
+#: library/classes/widget-bookmarks.php:243
+msgid "Updated"
+msgstr "﻿Обновлено"
+
+#: library/classes/widget-bookmarks.php:352
+msgid "Categorize?"
+msgstr "﻿Классифицировать?"
+
+#: library/classes/widget-bookmarks.php:356
+msgid "Show description?"
+msgstr "﻿Показать описание?"
+
+#: library/classes/widget-bookmarks.php:360
+msgid "Hide invisible?"
+msgstr "﻿Скрыть невидимые?"
+
+#: library/classes/widget-bookmarks.php:364
+msgid "Show rating?"
+msgstr "﻿Показать рейтинг?"
+
+#: library/classes/widget-bookmarks.php:368
+msgid "Show updated?"
+msgstr "﻿Показать обновлённые?"
+
+#: library/classes/widget-bookmarks.php:372
+msgid "Show images?"
+msgstr "﻿Показать изображения?"
+
+#: library/classes/widget-bookmarks.php:376
+msgid "Show name?"
+msgstr "﻿Показать имя?"
+
+#: library/classes/widget-bookmarks.php:380
+msgid "Show private?"
+msgstr "﻿Показать личные?"
+
+#: library/classes/widget-calendar.php:43
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"calendar."
+msgstr "﻿Виджет дает вам полный контроль над отображением вашего календаря."
+
+#: library/classes/widget-calendar.php:55
+#: library/classes/widget-calendar.php:62
+msgid "Calendar"
+msgstr "﻿Календарь"
+
+#: library/classes/widget-calendar.php:142
+msgid "One-letter abbreviation?"
+msgstr "Сокращать до одной буквы?"
+
+#: library/classes/widget-categories.php:43
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"category links."
+msgstr "﻿Виджет дает вам полный контроль над отображением ссылок по категориям."
+
+#: library/classes/widget-categories.php:55
+#: library/classes/widget-categories.php:62
+msgid "Categories"
+msgstr "﻿Категории"
+
+#: library/classes/widget-categories.php:219
+msgid "Term Group"
+msgstr "Группа терминов"
+
+#: library/classes/widget-categories.php:224
+msgid "Atom"
+msgstr "﻿Atom"
+
+#: library/classes/widget-categories.php:225
+msgid "RDF"
+msgstr "﻿RDF"
+
+#: library/classes/widget-categories.php:227
+msgid "RSS 2.0"
+msgstr "﻿RSS 2.0"
+
+#: library/classes/widget-categories.php:325
+#: library/classes/widget-pages.php:310
+msgid "Hierarchical?"
+msgstr "﻿По порядку?"
+
+#: library/classes/widget-categories.php:329
+msgid "Use description?"
+msgstr "﻿Использовать описание?"
+
+#: library/classes/widget-categories.php:333
+msgid "Show count?"
+msgstr "﻿Показать сколько?"
+
+#: library/classes/widget-nav-menu.php:43
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"menus."
+msgstr "﻿Виджет дает вам полный контроль над отображением ваших меню."
+
+#: library/classes/widget-nav-menu.php:55
+msgid "Navigation Menu"
+msgstr "﻿Меню навигации"
+
+#: library/classes/widget-nav-menu.php:62
+msgid "Navigation"
+msgstr "﻿Навигация"
+
+#: library/classes/widget-pages.php:43
+msgid ""
+"An advanced widget that gives you total control over the output of your page "
+"links."
+msgstr "﻿Виджет дает вам полный контроль над отображением ссылок по страницам."
+
+#: library/classes/widget-pages.php:55 library/classes/widget-pages.php:62
+msgid "Pages"
+msgstr "﻿Страницы"
+
+#: library/classes/widget-pages.php:190
+msgid "Author"
+msgstr "﻿Автор"
+
+#: library/classes/widget-pages.php:193
+msgid "Menu Order"
+msgstr "﻿Порядок меню"
+
+#: library/classes/widget-pages.php:194 library/classes/widget-pages.php:202
+msgid "Modified"
+msgstr "﻿Изменено"
+
+#: library/classes/widget-pages.php:196
+msgid "Title"
+msgstr "﻿Заголовок"
+
+#: library/classes/widget-pages.php:201
+msgid "Created"
+msgstr "﻿Создан"
+
+#: library/classes/widget-search.php:44
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"search form."
+msgstr "﻿Виджет дает вам полный контроль над отображением поисковых окон."
+
+#: library/classes/widget-search.php:56 library/classes/widget-search.php:63
+msgid "Search"
+msgstr "﻿Поиск"
+
+#: library/classes/widget-tags.php:43
+msgid ""
+"An advanced widget that gives you total control over the output of your tags."
+msgstr "﻿Виджет дает вам полный контроль над отображением ваших тэгов."
+
+#: library/classes/widget-tags.php:55 library/classes/widget-tags.php:64
+msgid "Tags"
+msgstr "﻿Теги"
+
+#: library/classes/widget-tags.php:61
+msgid "%s topic"
+msgid_plural "%s topics"
+msgstr[0] "%s тема"
+msgstr[1] "%s темы"
+msgstr[2] "%s тем"
+
+#: library/classes/widget-tags.php:217
+msgid "View"
+msgstr "﻿Просмотр"
+
+#: library/classes/widget-tags.php:218
+#: library/extensions/breadcrumb-trail.php:1135
+#: library/extensions/breadcrumb-trail.php:1171
+#: library/extensions/breadcrumb-trail.php:1188
+#: library/extensions/breadcrumb-trail.php:1219
+msgid "Edit"
+msgstr "﻿Изменить"
+
+#: library/classes/widget-tags.php:222
+msgid "Flat"
+msgstr "Ровный"
+
+#: library/classes/widget-tags.php:363
+msgid "Pad counts?"
+msgstr "Считать?"
+
+#: library/extensions/breadcrumb-trail.php:178
+msgid "Browse:"
+msgstr "﻿Обзор:"
+
+#: library/extensions/breadcrumb-trail.php:179
+msgid "Home"
+msgstr "Начало"
+
+#: library/extensions/breadcrumb-trail.php:180
+#: library/functions/template-general.php:494
+msgid "404 Not Found"
+msgstr "﻿404 Страница не найдена"
+
+#. Translators: %s is the search query. The HTML entities are opening and
+#. closing curly quotes.
+#: library/extensions/breadcrumb-trail.php:183
+#: library/functions/template-general.php:475
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "﻿Результаты поиска для &#8220;%s&#8221;"
+
+#. Translators: %s is the page number.
+#: library/extensions/breadcrumb-trail.php:185
+msgid "Page %s"
+msgstr "﻿Страница %s"
+
+#. Translators: Minute archive title. %s is the minute time format.
+#: library/extensions/breadcrumb-trail.php:187
+#: library/functions/template-general.php:436
+msgid "Minute %s"
+msgstr "Минут %s"
+
+#. Translators: Weekly archive title. %s is the week date format.
+#: library/extensions/breadcrumb-trail.php:189
+msgid "Week %s"
+msgstr "Недель %s"
+
+#: library/extensions/breadcrumb-trail.php:1163
+msgid "Split"
+msgstr "﻿Разделить"
+
+#: library/extensions/breadcrumb-trail.php:1167
+msgid "Merge"
+msgstr "Объединить"
+
+#: library/extensions/featured-header.php:208
+msgid "Featured Header"
+msgstr "Избранный заголовок"
+
+#: library/extensions/post-stylesheets.php:286
+msgid "Stylesheet"
+msgstr "Таблица стилей"
+
+#: library/extensions/theme-fonts.php:401
+msgid "Fonts"
+msgstr "﻿Шрифты"
+
+#: library/extensions/theme-layouts.php:458
+#: library/extensions/theme-layouts.php:567
+#: library/extensions/theme-layouts.php:652
+msgid "Layout"
+msgstr "Раскладка"
+
+#: library/extensions/theme-layouts.php:483
+msgid "Layout is a theme-specific structure for the single view of the post."
+msgstr "Раскладка зависит от темы и формирует структуру отображения статьи."
+
+#: library/extensions/theme-layouts.php:685
+msgid "Global Layout"
+msgstr "Общая раскладка"
+
+#: library/functions/deprecated.php:432 library/functions/deprecated.php:520
+msgid "Permalink"
+msgstr "﻿Постоянная ссылка"
+
+#: library/functions/deprecated.php:857
+msgid ""
+"<code>%1$s</code> &mdash; This function has been removed or replaced by "
+"another function."
+msgstr ""
+"﻿<code>%1$s</code> &mdash; Эта функция была удалена или заменена другой."
+
+#. Translators: 1 is the page title. 2 is the page number.
+#: library/functions/head.php:149
+msgid "%1$s Page %2$s"
+msgstr "%1$s страница %2$s"
+
+#: library/functions/media.php:32
+msgid "Post Thumbnail"
+msgstr "﻿Миниатюра записи"
+
+#: library/functions/media.php:53
+msgid "File Size"
+msgstr "﻿Размер файла"
+
+#: library/functions/media.php:54
+msgid "Mime Type"
+msgstr "﻿MIME-тип"
+
+#: library/functions/media.php:55
+msgid "Run Time"
+msgstr "﻿Время работы"
+
+#: library/functions/media.php:60
+msgid "Genre"
+msgstr "﻿Жанр"
+
+#: library/functions/media.php:61
+msgid "Year"
+msgstr "﻿Год"
+
+#: library/functions/media.php:62
+msgid "Composer"
+msgstr "﻿Композитор"
+
+#: library/functions/media.php:63
+msgid "Track"
+msgstr "Трек"
+
+#: library/functions/media.php:66
+msgid "Lyrics"
+msgstr "Стихи"
+
+#: library/functions/template-general.php:55
+msgid "State-of-the-art semantic personal publishing platform"
+msgstr "Высококлассная семантическая издательская платформа"
+
+#: library/functions/template-general.php:55
+msgid "WordPress"
+msgstr "﻿WordPress"
+
+#. Translators: Theme name.
+#: library/functions/template-general.php:82
+#: library/functions/template-general.php:115
+msgid "%s WordPress Theme"
+msgstr "﻿%s тема для WordPress"
+
+#: library/functions/template-general.php:305
+msgid "You are browsing the search results for &#8220;%s&#8221;"
+msgstr "Вы просматриваете результаты поиска по &#8220;%s&#8221;"
+
+#: library/functions/template-general.php:311
+msgid "You are browsing the site archives by time."
+msgstr "﻿Вы просматриваете архив сайта по времени."
+
+#: library/functions/template-general.php:314
+#: library/functions/template-general.php:317
+#: library/functions/template-general.php:320
+msgid "You are browsing the site archives for %s."
+msgstr "﻿Вы просматриваете архив сайта для %s."
+
+#: library/functions/template-general.php:323
+msgid "You are browsing the site archives."
+msgstr "﻿Вы просматриваете архив сайта."
+
+#. Translators: 1 is the week number and 2 is the year.
+#: library/functions/template-general.php:378
+msgid "Week %1$s of %2$s"
+msgstr "Неделя %1$s из %2$s"
+
+#: library/functions/utility.php:86
+msgid "(Untitled)"
+msgstr "(﻿Без названия)"
+
+#: search.php:11
+msgid "%d search results for"
+msgstr "%d результатов поиска по запросу"
+
+#: search.php:13
+msgid "No search results for "
+msgstr "Ничего не найдено по запросу "
+
+#: search.php:36
+msgid "Can't find what you're looking for?  Try refining your search:"
+msgstr "﻿Если вы не нашли то, что вы искали, попробуйте уточнить запрос:"
+
+#: searchform.php:3
+msgid "Search for:"
+msgstr "Искать в:"
+
+#: taxonomy-category.php:4
+msgid "Category:"
+msgstr "Категориях:"
+
+#: taxonomy-post_tag.php:4
+msgid "Tag:"
+msgstr "Тегах:"
+
+#: user.php:4
+msgid "These are posts by:"
+msgstr "Статьи сгруппированы по:"
+
+#. Theme Name of the plugin/theme
+msgid "Drop"
+msgstr "Drop"
+
+#. Theme URI of the plugin/theme
+msgid "http://www.competethemes.com/theme/drop/"
+msgstr "http://www.competethemes.com/theme/drop/"
+
+#. Description of the plugin/theme
+msgid "A Bold, Responsive Blog Theme"
+msgstr "Яркая, адаптивная тема"
+
+#. Author URI of the plugin/theme
+msgid "http://competethemes.com/"
+msgstr "http://competethemes.com/"
+
+#: home.php:4
+msgctxt "noun: the blog page"
+msgid "Blog"
+msgstr "Новости"
+
+#: library/classes/customize-control-background-image.php:49
+msgctxt "theme customizer tab"
+msgid "Default"
+msgstr "﻿По умолчанию"
+
+#: library/extensions/breadcrumb-trail.php:716
+#: library/functions/template-general.php:455
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr "﻿g:i a"
+
+#: library/extensions/breadcrumb-trail.php:733
+#: library/functions/template-general.php:436
+msgctxt "minute archives time format"
+msgid "i"
+msgstr "﻿i"
+
+#: library/extensions/breadcrumb-trail.php:750
+#: library/functions/template-general.php:416
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr "﻿g a"
+
+#: library/extensions/breadcrumb-trail.php:766
+#: library/extensions/breadcrumb-trail.php:795
+#: library/extensions/breadcrumb-trail.php:822
+#: library/extensions/breadcrumb-trail.php:849
+#: library/extensions/breadcrumb-trail.php:1036
+#: library/functions/template-general.php:358
+#: library/functions/template-general.php:378
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "﻿Y"
+
+#: library/extensions/breadcrumb-trail.php:767
+#: library/extensions/breadcrumb-trail.php:823
+#: library/extensions/breadcrumb-trail.php:1040
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr "﻿F"
+
+#: library/extensions/breadcrumb-trail.php:768
+#: library/extensions/breadcrumb-trail.php:1044
+msgctxt "daily archives date format"
+msgid "j"
+msgstr "j"
+
+#: library/functions/template-general.php:397
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "d.m.Y"
+
+#: library/extensions/breadcrumb-trail.php:796
+#: library/functions/template-general.php:378
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr "﻿W"
+
+#. Translators: Default theme layout option.
+#: library/extensions/theme-layouts.php:363
+msgctxt "theme layout"
+msgid "Default"
+msgstr "﻿По умолчанию"
+
+#. Translators: Post date/time "title" attribute.
+#: library/functions/attr.php:414
+msgctxt "post time format"
+msgid "l, F j, Y, g:i a"
+msgstr "l, d.m.Y, g:i a"
+
+#. Translators: Comment date/time "title" attribute.
+#: library/functions/attr.php:535
+msgctxt "comment time format"
+msgid "l, F j, Y, g:i a"
+msgstr "l, d.m.Y, g:i a"
+
+#. Translators: Separates tags, categories, etc. when displaying a post.
+#: library/functions/template-post.php:144
+msgctxt "taxonomy terms separator"
+msgid ", "
+msgstr ", "
