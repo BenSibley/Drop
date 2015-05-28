@@ -24,6 +24,20 @@ function ct_drop_add_customizer_content( $wp_customize ) {
 		}
 	}
 
+	// create textarea control
+	class ct_drop_textarea_control extends WP_Customize_Control {
+		public $type = 'textarea';
+
+		public function render_content() {
+			?>
+			<label>
+				<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
+				<textarea rows="8" style="width:100%;" <?php $this->link(); ?>><?php echo esc_textarea( $this->value() ); ?></textarea>
+			</label>
+		<?php
+		}
+	}
+
 	/***** Logo *****/
 
 	// section
@@ -77,6 +91,29 @@ function ct_drop_add_customizer_content( $wp_customize ) {
 		) );
 		$priority = $priority + 5;
 	}
+
+	/***** Custom CSS *****/
+
+	// section
+	$wp_customize->add_section( 'drop_custom_css', array(
+		'title'      => __( 'Custom CSS', 'drop' ),
+		'priority'   => 65,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'custom_css', array(
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'wp_filter_nohtml_kses',
+	) );
+	// control
+	$wp_customize->add_control( new ct_drop_textarea_control(
+		$wp_customize, 'custom_css', array(
+			'label'          => __( 'Add Custom CSS Here:', 'drop' ),
+			'section'        => 'drop_custom_css',
+			'settings'       => 'custom_css',
+		)
+	) );
 }
 
 function ct_drop_customizer_social_media_array() {
