@@ -81,6 +81,7 @@ function ct_drop_theme_setup() {
     // from WordPress core not theme hybrid
     add_theme_support( 'automatic-feed-links' );
     add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'title-tag' );
     
     // adds the file with the customizer functionality
     require_once( trailingslashit( get_template_directory() ) . 'functions-admin.php' );
@@ -554,5 +555,11 @@ class ct_drop_add_profile_image_upload {
 }
 new ct_drop_add_profile_image_upload();
 
-
-?>
+if ( ! function_exists( '_wp_render_title_tag' ) ) :
+	function ct_drop_add_title_tag() {
+		?>
+		<title><?php wp_title(); ?></title>
+	<?php
+	}
+	add_action( 'wp_head', 'ct_drop_add_title_tag' );
+endif;

@@ -12,7 +12,7 @@
 
 /* Adds common theme items to <head>. */
 add_action( 'wp_head', 'hybrid_meta_charset',  0 );
-add_action( 'wp_head', 'hybrid_doctitle',      0 );
+//add_action( 'wp_head', 'hybrid_doctitle',      0 );
 add_action( 'wp_head', 'hybrid_meta_viewport', 1 );
 add_action( 'wp_head', 'hybrid_meta_template', 1 );
 add_action( 'wp_head', 'hybrid_link_pingback', 3 );
@@ -91,6 +91,9 @@ function hybrid_link_pingback() {
  * @return string
  */
 function hybrid_wp_title( $doctitle, $separator, $seplocation ) {
+
+	/* Custom separator for backwards compatibility. */
+	$separator = ':';
 
 	if ( is_front_page() )
 		$doctitle = get_bloginfo( 'name' ) . $separator . ' ' . get_bloginfo( 'description' );
