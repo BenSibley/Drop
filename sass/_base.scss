@@ -220,6 +220,7 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type=
 textarea {
   color: $gray-dark;
   background: $off-white;
+  font-family: $base-font-family;
   padding: 1.6em;
   width: 100%;
   border: none;

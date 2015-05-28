@@ -278,6 +278,7 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type=
 textarea {
   color: #666666;
   background: whitesmoke;
+  font-family: "montserrat", "open sans", "sans-serif";
   padding: 1.6em;
   width: 100%;
   border: none;
