@@ -1,14 +1,14 @@
-# Copyright (C) 2014 Compete Themes
+# Copyright (C) 2015 Compete Themes
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Drop 1.18\n"
+"Project-Id-Version: Drop 1.20\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2014-08-28 15:54:28+00:00\n"
+"POT-Creation-Date: 2015-05-29 13:00:16+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
@@ -80,128 +80,136 @@ msgstr ""
 msgid "Compete Themes"
 msgstr ""
 
-#: functions-admin.php:17
-msgid "Logo"
-msgstr ""
-
-#: functions-admin.php:38
-msgid "Upload custom logo."
-msgstr ""
-
-#: functions-admin.php:74
-msgid "Social Media Icons"
-msgstr ""
-
-#: functions-admin.php:93
-msgid "url:"
-msgstr ""
-
-#: functions.php:92
+#: functions.php:45
 msgid "Primary"
 msgstr ""
 
-#: functions.php:100
+#: functions.php:53
 msgid "Subsidiary"
 msgstr ""
 
-#: functions.php:102
+#: functions.php:55
 msgid "Widgets in this area will be shown in the footer"
 msgstr ""
 
-#: functions.php:149
+#: functions.php:102
 msgid "The Previous Post"
 msgstr ""
 
-#: functions.php:154
+#: functions.php:107
 msgid "The Next Post"
 msgstr ""
 
-#: functions.php:160
+#: functions.php:113
 msgid "Previous Post"
 msgstr ""
 
-#: functions.php:165
+#: functions.php:118
 msgid "This is the oldest post"
 msgstr ""
 
-#: functions.php:166 functions.php:178
+#: functions.php:119 functions.php:131
 msgid "Return to Blog"
 msgstr ""
 
-#: functions.php:172
+#: functions.php:125
 msgid "Next Post"
 msgstr ""
 
-#: functions.php:177
+#: functions.php:130
 msgid "This is the newest post"
 msgstr ""
 
-#: functions.php:187 functions.php:200
+#: functions.php:140 functions.php:153
 msgid "View all posts in %s"
 msgstr ""
 
-#: functions.php:198
+#: functions.php:151
 msgid "Categories:"
 msgstr ""
 
-#: functions.php:214
+#: functions.php:167
 msgid "Tagged as:"
 msgstr ""
 
-#: functions.php:216
+#: functions.php:169
 msgid "View all posts tagged %s"
 msgstr ""
 
-#: functions.php:244
+#: functions.php:197
 msgid "said"
 msgstr ""
 
-#: functions.php:248 functions.php:253
+#: functions.php:201 functions.php:206
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:259
+#: functions.php:212
 msgid "Reply"
 msgstr ""
 
-#: functions.php:277
+#: functions.php:229
 msgid "Your Name"
 msgstr ""
 
-#: functions.php:284
+#: functions.php:236
 msgid "Your Email"
 msgstr ""
 
-#: functions.php:291
+#: functions.php:243
 msgid "Your Website"
 msgstr ""
 
-#: functions.php:304
+#: functions.php:256
 msgid "Your Comment"
 msgstr ""
 
-#: functions.php:333 functions.php:346
+#: functions.php:285 functions.php:298
 msgid "Read the Post"
 msgstr ""
 
-#: functions.php:382
+#: functions.php:334
 msgid "image credit:"
 msgstr ""
 
-#: functions.php:532
+#: functions.php:484
 msgid "Avatar"
 msgstr ""
 
-#: functions.php:550
+#: functions.php:502
 msgid "Upload Image"
 msgstr ""
 
-#: functions.php:551
+#: functions.php:503
 msgid "This image will be used in the sidebar instead of your Gravatar."
 msgstr ""
 
 #: header.php:15
 msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:45
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer.php:59
+msgid "Upload custom logo."
+msgstr ""
+
+#: inc/customizer.php:68
+msgid "Social Media Icons"
+msgstr ""
+
+#: inc/customizer.php:86
+msgid "url:"
+msgstr ""
+
+#: inc/customizer.php:99
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customizer.php:112
+msgid "Add Custom CSS Here:"
 msgstr ""
 
 #: library/admin/meta-box-post-template.php:48
@@ -783,7 +791,7 @@ msgid ""
 "another function."
 msgstr ""
 
-#: library/functions/head.php:149
+#: library/functions/head.php:152
 #. Translators: 1 is the page title. 2 is the page number.
 msgid "%1$s Page %2$s"
 msgstr ""
@@ -866,14 +874,16 @@ msgid "(Untitled)"
 msgstr ""
 
 #: search.php:11
-msgid "%d search results for"
-msgstr ""
+msgid "%d search result for \"%s\""
+msgid_plural "%d search results for \"%s\""
+msgstr[0] ""
+msgstr[1] ""
 
 #: search.php:13
-msgid "No search results for "
+msgid "No search results for \"%s\""
 msgstr ""
 
-#: search.php:36
+#: search.php:40
 msgid "Can't find what you're looking for?  Try refining your search:"
 msgstr ""
 
@@ -889,6 +899,52 @@ msgstr ""
 msgid "Tag:"
 msgstr ""
 
+#: theme-options.php:21
+msgid "Drop Dashboard"
+msgstr ""
+
+#: theme-options.php:24
+msgid "Customization"
+msgstr ""
+
+#: theme-options.php:25
+msgid ""
+"Click the \"Customize\" link in your menu, or use the button below to get "
+"started customizing Drop"
+msgstr ""
+
+#: theme-options.php:27
+msgid "Use Customizer"
+msgstr ""
+
+#: theme-options.php:31
+msgid "Support"
+msgstr ""
+
+#: theme-options.php:32
+msgid ""
+"You can find the knowledgebase, changelog, support forum, and more in the "
+"Drop Support Center"
+msgstr ""
+
+#: theme-options.php:34
+msgid "Visit Support Center"
+msgstr ""
+
+#: theme-options.php:38
+msgid "WordPress Resources"
+msgstr ""
+
+#: theme-options.php:39
+msgid ""
+"Save time and money searching for WordPress products by following our "
+"recommendations"
+msgstr ""
+
+#: theme-options.php:41
+msgid "View Resources"
+msgstr ""
+
 #: user.php:4
 msgid "These are posts by:"
 msgstr ""
@@ -898,7 +954,7 @@ msgid "Drop"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://www.competethemes.com/theme/drop/"
+msgid "https://www.competethemes.com/drop/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -906,7 +962,7 @@ msgid "A Bold, Responsive Blog Theme"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://competethemes.com/"
+msgid "https://www.competethemes.com/"
 msgstr ""
 
 #: home.php:4
